@@ -4,6 +4,5 @@
 # Introduction
   အရင္ဆုံး Intro အေနနဲ႔ Kernel ဆုိတာ ဘာလဲ ဘာအတြြြြက္လဲဆုိတာ ႐ွင္းျပ ေပးပါမယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး၊ Android ရဲ႕ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မွာသုံံံံံးထား Linux Kernel branch ေတြက Long Term Support(LTS) branch ေတြ ျဖစ္ပါတယ္။  https://www.kernel.org မွာ Long term branch ေတြၾကည့္ႏုိင္ပါတယ္။ ဥပမာ Nexus 5X, 6, 6P မွာဆုိ linux-3.10-y ဆုိတဲ့ branch ကုိ သုံးပါတယ္။
   Android OS က Linux Kernel ေပၚမွာ အေျခခံၿပီး တည္ေဆာက္ထားတာ ျဖစ္ၿပီး၊ Kernel ဆုိတာ OS တခုရဲ႕ အေရးႀကီးတဲ့ အစိတ္အပိုင္းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ္အပုိင္းေတြ နဲ႔ Software နဲ႔ၾကား ခ်ိတ္ဆက္ၿပီး အလုပ္လုပ္တဲ့ ေနရာမွာ Kernel က အေရႀကီးတဲ့ အပုိင္းမွာ ပါဝင္ပါတယ္။ Android OS Architecture ရဲ႕ Linux Kernel အပုိင္းမွာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစ႐ွိသျဖင့္ပါဝင္ပါတယ္(ဥပမာ ေျပာျပတာပါ ေနာက္ထက္က်န္ပါ ေသးတယ္)။ နမူနာေျပာျပရရင္ ကြၽန္ေတာ့္္ရဲ႕ Nexus 5X မွာ ပုံမွန္ built-in ပါတဲ့ Stock Kernel မွာ Double Tap to Wake/Sleep တုိ႔ Disaply နဲ႔ ပတ္သက္တဲ့ KCAL Color Control တုိ႔ Audio နဲ႔ ပတ္သက္တဲ့ Sound Control တုိ႔ မပါပါဘူူူူး၊ ကုိယ့္မွာ Skill ႐ွိရင္ Kernel source တခုုု ကေန အဲဒီ Kernel features ေတြ add ၿပီး ျပန္ compile လုပ္ႏုိင္ပါတယ္။ ဆုိိိလုိတဲ့ သေဘာက အဲဒါေတြက Kernel ပုိင္းက လုပ္ႏုိင္တဲ့ features ေတြပါ။ ဘာလုိ႔ Custom Kernel တခု ျပန္ Compile ရတာလည္း ဆုိရင္ အဲဲဲဲလုိ Kernel features ေတြ လုိခ်င္လုိ႔ပါပဲ။
+<center><img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" height="54%" width="54%;"/></center>  
   
-  
- 
