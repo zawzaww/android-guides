@@ -14,3 +14,18 @@
 - Kernel compile ဖုိ႔အတြက္ လုိအပ္တဲ့ Toolchins (တနည္းအားျဖင့္ ARM/ARM64 GCC Compiler တခု)
 - Git သုံးတတ္ရင္ ပုိေကာင္းပါမယ္ ေနာက္ပုိင္း Kernel features ေတြ add ရင္ လုိလာပါလိမ့္မယ္
 
+
+# Kernel Sources
+Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ မူတည္ၿပီး download ရမယ့္ site ေတြက ကြဲျပားသြားပါလိမ့္မယ္၊ လုိအပ္တဲ့ Link ေတြ ေအာက္မွေပးထားပါမယ္။
+- Google Nexus/Pixel ( Qualcomm Chipset Only) : https://android.googlesource.com/kernel/msm
+- Google Nexus (For all Chipsets) : https://android.googlesource.com/kernel/
+- Sony Xperia : https://developer.sonymobile.com/downloads/xperia-open-source-archives/
+- LG : http://opensource.lge.com/index
+- Samsung : http://opensource.samsung.com/reception.do
+- HTC : https://www.htcdev.com/devcenter/downloads
+- OnePlus : https://github.com/OnePlusOSS
+- Motorola : https://github.com/MotorolaMobilityLLC
+
+
+
+
