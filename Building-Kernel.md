@@ -27,5 +27,8 @@ Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ �
 - Motorola : https://github.com/MotorolaMobilityLLC
 
 
-
+# Toolchains
+Kernel Source ကေန compile ဖုိ႔အတြက္ဆုိရင္ Toolchain တခုလုိအပ္ပါတယ္၊ Toolchain မွာ ကုိယ့္ဖုန္ ရဲ႕ CPU arch ေပၚ မူတည္ၿပီ ARM နဲ႔ ARM64 ဆုိၿပီး ၂မ်ဳိး ႐ွိပါတယ္။ လုိအပ္တဲ့ Link ေတြ ေအာက္မွာ ေပးထားပါတယ္။
+- arm : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
+- arm64 : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 
