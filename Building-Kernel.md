@@ -32,3 +32,30 @@ Kernel Source ကေန compile ဖုိ႔အတြက္ဆုိရင္ To
 - arm : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
 - arm64 : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 
+
+# Downloading
+ဒီ TUT ကုုိ ကြၽန္ေတာ္မွာ႐ွိတဲ့ Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာသြားမွာပါ။ က်န္တဲ့ဖုန္းေတြ အတြက္ကလည္း သေဘာတရာက တူတူပါပဲ၊ Kernel Source dowbload တဲ့ ေနရာပဲ ကြာသြားမွွွွွာပါ။
+- အရင္ဆုံး Terminal ကုိဖြင့္ၿပီး ဒီ command ေလး႐ုိက္လုိက္ပါ။ (Dir တခုေဆာက္ပါမယ္)
+```bash
+mkdir KernelName
+```
+```bash
+cd KernelName
+```
+
+- Nexus 5X အတြက္ Kernel source download ဖုိ႔ အတြက္ ဒီ command ေလး ႐ုိက္လုိက္ပါ။
+- အရင္ဆုံး ကုိယ့္ Computer ထဲမွာ git install ထားဖုိ႔ လုိပါတယ္​။
+```bash
+git clone -b android-msm-bullhead-3.10-oreo-r4 --depth=1 https://android.googlesource.com/kernel/msm
+```
+
+- ၿပီးရင္ Kernel compile ဖုိ႔အတြက္ Toolchains download ရပါမယ္။ (ဒီေနရာမွာ တခု သတိထားဖုိ႔လုိပါတယ္ ကုိယ္ရဲ႕ဖုန္း CPU arch က arm64 ဆုိ arm64 toolchain ကုိ download ပါ၊ မဟုတ္ဘူး arm ဆုိရင္ arm toolchain ကုိ download ပါ)
+```bash
+git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+```
+- အဲဒါေတြအကုန္ၿပီးသြာၿပီ ဆုိရင္ Kernel build ဆုိ အဆင္သင့္ ျဖစ္ပါၿပီ။
+
+
+
+
+
