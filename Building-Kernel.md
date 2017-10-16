@@ -122,5 +122,52 @@ make -j$(nproc --all)
 
 - အဲဒါ ေတြ ေအာင္ျမင္သြာၿပီး ဆုိရင္ ကုိယ္ဖုန္းအတြက္ Kernel Install ဖု႔ိ FlashableZip ဘယ္လုိလုပ္မလဲ ဆုိိိတာ ဆက္ေရးပါမယ္။
 
+# How To Create FlashableZip
+- Kernel Build ၿပီးလုိ႔ zImage ေတြ ထြက္လာၿပီဆုိရင္ ကုိယ့္ရဲ႕ဖုန္းအတြက္ CustomRecovery (TWRP) ကေန Install လု႔ိရမယ့္ FlashableZip Create နည္းကုိ ေျပာျပပါမယ္။ XDA Recognized Developer တေယာက္ျဖစ္တဲ့ osm0sis ေရးထားတဲ့ AnyKernel2 - Kernel FlashableZip Template ဆုိတာ႐ွိပါတယ္။ အဲဒီ Template ကေန ကုိယ့္ဖုန္းအတြက္ ဘာေတြ ျပင္ဆင္ဖုိ႔ လုိအပ္လည္းဆုိတာ ဆက္ေျပာပါမယ္။
+- AnyKernel2 Documentation နည္းနည္းဖက္ၾကည့္လုိက္ပါ လြယ္ပါတယ္ : https://github.com/osm0sis/AnyKernel2/blob/master/README.md
+
+- အရင္ဆုံး AnyKernel2 ကုိ download လုိက္ပါ။
+```bush
+git clone https://github.com/osm0sis/AnyKernel2
+```
+- ဘာေတြလုိအပ္လည္း ဆုိရင္ Kernel name ျပင္ ေပးလုိ႔ရမယ္၊ device name သိရပါမယ္ (eg: LG Nexus 5X ဆုိ device name - bullhead)၊ ကုိယ့္ဖုန္းရဲ႕ boot partition location သိရမယ္၊ ramdisk ထဲမွာဆုိရင္ ကုိယ့္ဖုန္းရဲ႕ fstab.devicename (eg- fstab.bullhead) လုိပါတယ္၊ fstab ဆုိတာ file systems table ကုိေျပာတာပါ။ 
+- Nexus 5X အတြက္ fstab.bullhead တခု ဥပမာေပးပါမယ္ : https://github.com/purezandroid/device-lge-bullhead/blob/purez-8.0.0/fstab.bullhead ( အဲလုိပဲ ကုိယ့္ရဲ႕ဖုန္းအတြက္ လုိအပ္ပါတယ္ device-tree/fstab.your-devicename )
+- ပထမဦးဆုံး အေနနဲ႔ Compile လုိ႔ရလာတဲ့ Image.gz-dtb (kernelsource/arch/arm64/boot/Image-gz-dtb) ကုိ Copy ကူးၿပီး ခုနက AnyKernel2 Folder ထဲ Paste လုိက္ပါ၊ ၿပီးရင္ zImage-dtb လုိ႔ rename လုိက္​ပါ။
+- ျပင္ရမယ့္ ေကာင္ေတြကုိ စေျပာပါမယ္
+- Kernel Name : AnyKernel2 ထဲက anykernel2.sh file ေလးကုိ Text Editor တခုခုနဲ႔ ဖြင္လုိက္ၿပီး kernel.string= kernel name ေရးလုိက္ပါ။
+```bush
+kernel.string=PureZ Kernel by ZawZaw @XDA-Developers
+```
+
+- Device Name : anykernel2.sh ကုိဖြင့္ၿပီး device.name1 နဲ႔ device.name2 ေနရာမွာ ကုိယ္႔ဖုန္းရဲ႕ device name ကုိ ေရးလုိက္ပါ။ (ဖုန္း အမ်ဳိးအစာေပၚ မူတည္ၿပီး device name ကြာသြားပါလိမ့္မယ္)
+```bush
+device.name1=bullhead
+```
+```bush
+device.name2=Bullhead
+```
+
+- boot partition : ဒါက အေရးႀကီးပါတယ္ ကုိယ့္ဖုန္းအတြက္ boot partition location ကုိ အတိအက် သိရပါမယ္၊ ဘယ္လုိ႐ွာၾကည့္ႏုိင္လဲ ဆုိရင္ ကုိယ့္ဖုန္းက Root ထားရင္ၾကည့္ႏုိင္ပါတယ္၊ anykernel2.sh ထဲက "block=/dev/block/platform/..." ဆုိတဲ့ line မွာ ျပင္ေပးရမွာပါ။
+- For Nexus 5X 
+```bush
+block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
+```
+
+- fstab.device-name : AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab.bullhead file ေလး ကုိ သြားထည့္ရမွာပါ။ (အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ ပါလဲဆုိေတာ့ disk operation ပုိင္းေတြ၊ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့ file location ေတြ ပါဝင္ပါတယ္၊ တနည္းအားျဖင့္ file location table ေလး တခုပါပဲ)
+- For Nexus 5X (fstab.bullhead)
+```bus
+#Android fstab file
+```
+- အဲဒါေတြ ေအာင္ျမင္ၿပီ ဆုုိုိုိုိရင္ FlashableZip တခု Create ပါမယ္။
+- AnyKernel2 folder ထဲမွာ Right Click ေထာက္ၿပီး Terminal ကုိဖြင့္လုိက္ပါ။
+- Type this command
+```bush
+zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
+```
+
+- ၿပီးသြာရင္ AnyKernel2 folder ထဲမွာ Kernel Flashable Zip တခုထြက္လာပါၿပီ။
+- Reday to flash your Kernel Zip from TWRP Recovery for your Android Device
+- Done
+
 Regards,
 - Z @XDA-Developers
