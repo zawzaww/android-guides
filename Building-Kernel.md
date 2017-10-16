@@ -130,6 +130,12 @@ make -j$(nproc --all)
 ```bush
 git clone https://github.com/osm0sis/AnyKernel2
 ```
+### OR ###
+
+- Recommended for Nexus 5X
+```bush
+git clone -b bullhead --depth=1 https://github.com/zawzaww/anykernel2-flashable
+```
 - ဘာေတြလုိအပ္လည္း ဆုိရင္ Kernel name ျပင္ ေပးလုိ႔ရမယ္၊ device name သိရပါမယ္ (eg: LG Nexus 5X ဆုိ device name - bullhead)၊ ကုိယ့္ဖုန္းရဲ႕ boot partition location သိရမယ္၊ ramdisk ထဲမွာဆုိရင္ ကုိယ့္ဖုန္းရဲ႕ fstab.devicename (eg- fstab.bullhead) လုိပါတယ္၊ fstab ဆုိတာ file systems table ကုိေျပာတာပါ။ 
 - Nexus 5X အတြက္ fstab.bullhead တခု ဥပမာေပးပါမယ္ : https://github.com/purezandroid/device-lge-bullhead/blob/purez-8.0.0/fstab.bullhead ( အဲလုိပဲ ကုိယ့္ရဲ႕ဖုန္းအတြက္ လုိအပ္ပါတယ္ device-tree/fstab.your-devicename )
 - ပထမဦးဆုံး အေနနဲ႔ Compile လုိ႔ရလာတဲ့ Image.gz-dtb (kernelsource/arch/arm64/boot/Image-gz-dtb) ကုိ Copy ကူးၿပီး ခုနက AnyKernel2 Folder ထဲ Paste လုိက္ပါ၊ ၿပီးရင္ zImage-dtb လုိ႔ rename လုိက္​ပါ။
