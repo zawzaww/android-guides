@@ -219,4 +219,4 @@ zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
 - Done
 
 Regards,
-- ZawZaw @XDA-Developers
+- ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
