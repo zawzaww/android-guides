@@ -77,7 +77,7 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 ```bush
 export CROSS_COMPILE=${HOME}/KernelName/AOSP-Toolchain/bin/aarch64-linux-android-
 ```
-- ကုိယ့္ဖုန္းရဲ႕ CUP arch က arm လား arm64 လား သိထားဖုိ႔ အရင္လုိပါတယ္
+- ကုိယ့္ဖုန္းရဲ႕ CPU arch က arm လား arm64 လား သိထားဖုိ႔ အရင္လုိပါတယ္
 - အရင္ဆုံး ကုိယ့္ဖုန္းရဲ႕ arch ကုိ ေျပာေပးဖုိိိ့ လုိပါတယ္။
 - Nexus 5X က arm64 ျဖစ္တဲ့အတြက္ ဒီ command ေလး ဆက္႐ုိက္လုိက္ပါ။ (တကယ္လုိ႔ ကုိယ့္ဖုန္းက arm ဆုိရင္ arm64 ေနရာမွာ armလုိ႔ ေျပာင္း ႐ုိက္လုိက္ပါ။
 ```bush
