@@ -153,9 +153,22 @@ device.name2=Bullhead
 block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
 ```
 
-- fstab.device-name : AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab.bullhead file ေလး ကုိ သြားထည့္ရမွာပါ။ (အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ ပါလဲဆုိေတာ့ disk operation ပုိင္းေတြ၊ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့ file location ေတြ ပါဝင္ပါတယ္၊ တနည္းအားျဖင့္ file location table ေလး တခုပါပဲ)
-- For Nexus 5X (fstab.bullhead) : https://android.googlesource.com/device/lge/bullhead/+/oreo-r6-release/fstab.bullhead
-```bus
+- fstab.device-name : AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab.bullhead file ေလး ကုိ သြားထည့္ရမွာပါ။ (အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့  <mount_point> partition ေတြ ပါဝင္ပါတယ္၊ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပဲ ျဖစ္ပါတယ္၊ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android filesystems table ေလး တခုပါပဲ)
+- သူရဲ႕ format ေလးကုိ နည္းနည္းေရးျပပါမယ္။ (Android 4.3 နဲ႔ ေနာက္ပုိင္း version ေတြရဲ႕ ပုံစံပါ)
+- ဒီထက္မက ေလ့လာခ်င္ရင္ AOSP site မွာ အျပည့္အစုံဖက္ႏုိင္ပါတယ္ : https://source.android.com/devices/storage/config
+```bush
+ <src>  <mount_point>  <type>  <mount_flags>  <fs_mgr_flags>
+```
+ 
+- E.g for Nexus 5X ( /system )
+```bush
+ /dev/block/platform/soc.0/f9824900.sdhci/by-name/system       /system         ext4   ro,barrier=1,inode_readahead_blks=8
+```
+  
+- For Nexus 5X (fstab.bullhead) Sample : https://android.googlesource.com/device/lge/bullhead/+/oreo-r6-release/fstab.bullhead
+
+
+```bush
 # Android fstab file.
 #<src>                                         <mnt_point>  <type>  <mnt_flags and options>  <fs_mgr_flags>
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
@@ -206,4 +219,4 @@ zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
 - Done
 
 Regards,
-- Z @XDA-Developers
+- ZawZaw @XDA-Developers
