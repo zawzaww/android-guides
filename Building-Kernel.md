@@ -152,6 +152,8 @@ device.name2=Bullhead
 ```bush
 block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
 ```
+<center><img src="https://s20.postimg.org/576jo7bz1/Screenshot_20171016-175722.png" height="54%" width="54%;"/></center>
+
 
 - fstab.device-name : AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab.bullhead file ေလး ကုိ သြားထည့္ရမွာပါ။ (အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့  <mount_point> partition ေတြ ပါဝင္ပါတယ္၊ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပဲ ျဖစ္ပါတယ္၊ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android filesystems table ေလး တခုပါပဲ)
 - သူရဲ႕ format ေလးကုိ နည္းနည္းေရးျပပါမယ္။ (Android 4.3 နဲ႔ ေနာက္ပုိင္း version ေတြရဲ႕ ပုံစံပါ)
