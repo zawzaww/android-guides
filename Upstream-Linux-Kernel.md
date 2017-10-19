@@ -9,3 +9,51 @@
 - Git သုံးတတ်ရပါမယ် 
 - C Programming ကို basic လောက်တော့ သိရပါမယ်
  
+ 
+# How To Update
+- ဘယ်လို Linux Kernel version ကို Update လုပ်မလဲ ဆိုတဲ့ နေရာမှာ နှစ်မျိုးရှိပါတယ်၊ [git merge] ကိုသုံးပြီး code တွေ merge တဲ့နည်းရယ်၊ [git cherry-pick] ကိုသုံးပြီး code တွေ merge တဲ့ နည်းရယ် ဆိုပြီး ရှိပါတယ်။
+- အကြံပေးချင်ပါတယ် ခုမှ git နဲ့ စထိတွေ့မယ့်သူဆို git cherry-pick နည်းပဲ သုံးပါလို့ အကြံပေးချင်ပါတယ်၊ မဟုတ်ရင် tag တွေသုံးပြီး git merge ကိုသုံးရင် conflicts တွေ ထောင်သောင်းချီသွားပါလိမ့်မယ်။
+- ပထမဦးဆုံး အနေနဲ့ ကိုယ့် Computer ထဲမှာ git install ထားဖို့လိုပါတယ်။
+ 
+## Method(1) : git merge
+- ပထမဦးဆုံး အနေနဲ့ linux kernel branch တွေရှိတဲ့ နေရာ သိရပါမယ် Link...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
+- နောက်တခုက ကိုယ့်ဖုန်းအတွက် Kernel source က ဘယ် linux kernel branch ကို သုံးလဲ ဆိုတာ သိရပါမယ်၊ ဥပမာ ပြောပြပါမယ် kernel-source/Makefile ကို ဖွင့်ကြည့်လိုက်ပါ၊ Nexus 5X မှဆို 3.10.73 ဆိုပြီး တွေ့ရပါမယ်။
+- Format
+```bush
+VERSION = 3
+PATCHLEVEL = 10
+SUBLEVEL = 73
+EXTRAVERSION =
+NAME = TOSSUG Baby Fish
+```
+- အပေါ်က format ကို ကြည့်ရင် 3 10 ဆိုတာ linux kernel branch မှာဆိုရင် linux-3.10.y ကို ဆိုလိုခြင်း ဖြစ်ပါတယ်။
+- အခု git command တွေသုံးပြီး code တွေ merge ပါမယ်။
+- အရင် ကိုယ့်ဖုန်းအတွက် download ထားတဲ့ Kernel source folder ထဲဝင်ပြီး Right Click ပြီး Terminal ကို ဖွင့်လိုက်ပြီး အောက်က command လေး ရိုက်လိုက်ပါ။ ( Nexus 5X အတွက်ဖြစ်လို့ branch name က linux-3.10.y ပါ )
+- Format ( git merge မလုပ်ခင် git fetch အရင် လုပ်ပေးရပါမယ် )
+```bush
+git fetch --tags <repo-url> <branch-name>
+```
+- Example: for Nexus 5X
+```bush
+git fetch --tags https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/ linux-3.10.y
+```
+- git fetch လုပ်တာက Internet connectio ပေါ် မူတည်ပြီး ကြာပါမယ်၊ ပြီးသွားရင် tags အလိုက်တွေ Terminal မှာ စီပြီးပြပေးပါလိမ့်မယ်။
+- git merge ပါတော့မယ်။ (ဒီနေရာက အရေးကြီးပါတယ် ခုလက်ရှိ ကိုယ့် Kernel source ထဲက Makefile မှာ တချက်လောက် ကြည့်လိုက်ပါ kernel version ကို 3.10.73 ဆိုရင် နောက် git mergeရင် .74 ကို တဆင့်ချင်း merge ပါ၊ မဟုတ်ဘူးဆိုရင် Latest .107 ကို တန်းပြီး mergeရင် merge conflicts တွေများသွားပါလိမ့်မယ်)
+- Format
+```bush
+git merge <tag-name>
+```
+- Example for Nexus 5X
+```bush
+git merge v3.10.74
+```
+- ဒါမှမဟုတ် Latest version ကို တန်း merge ရဲရင်လည်း merge ပါ conflicts တွေကများလို့ စိတ်တော့ မညစ်နဲ့ :P (စတာပါ ဟီးဟီး)
+```bush
+git merge v3.10.107
+```
+
+ 
+## Method(2) : git cherry-pick
+ Coming soon...
+ 
+ 
