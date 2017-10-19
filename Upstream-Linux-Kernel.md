@@ -54,6 +54,48 @@ git merge v3.10.107
 
  
 ## Method(2) : git cherry-pick
- Coming soon...
+- git cherry-pick တဲ့နေရာမှာ အမှန်က နှစ်မျိုးရှိပါတယ်၊ tag အလိုက် cherry-pick တာရယ် commit အလိုက် cherry- pick တာရယ် ဆိုပြီး ရှိပါတယ်၊ မပြောတော့ပါဘူး လွယ်လွယ်နဲ့ မြန်မြန်လုပ်လို့ရမယ့် commit အလိုက် cherry-pick တာပဲ ပြောပါမယ်။
+- ပထမဆုံး git fetch အရင်လုပ်ပေးရပါမယ်။
+- Format
+```bush
+git fetch <repo_url> <branch_name>
+```
+- Example: for Nexus 5X
+```bush
+git fetch https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/ linux-3.10.y
+```
+- ပြီးသွားရင် ကိုယ် Update ချင်တဲ့ Linux kernel version Page ထိ သွားရပါမယ်၊ ဥပမာ Nexus 5X အတွက် linux v3.10.107 ကို update ချင်ရင် https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.10.y သွားပါ၊ အဲဒီမှာ အပေါ်ဆုံးမှ Linux 3.10.107 ဆိုတဲ့ commit တွေ့ပါလိမ့်မယ် အဲဒါ အခုလက်ရှိ Latest kernel version(3.10.107) ရဲဲ့ last commit ပါ၊ ပြီးရင်အောက်ထိ ဆင်းပါ [next] ကိုနှိတ်ပါ ဘယ်ထိသွားရမလဲ ဆိုရင် အဝါရောင်လေးနဲ့ ရေးထားတဲ့ tag လေး v3.10.106 ထိ သွားပြီး၊ အဲဒီအပါ် commit တကြောင်း Latest kernel version(3.10.107) ရဲ first commit ပါ။ (ဒီနေရာမှာက ပြောချင်တာက first commit နဲ့ last commit အကြောင်းပါ )
+- First commit နဲ့ Last commit အကြောင်း အပေါ်မှာ ရှင်းပြထားပါတယ်၊ အဲဒါ git cherry-pick တဲ့ နေရာမှာ ပြန်သုံးရမှာပါ၊ အဲဒါကြောင့် ရှင်းပြတာပါ။
+- အပေါ်မှာ git fetch သွားတာ ပြီးသွားရင် ဒီ command လေး ရိုက်လိုက်ပါ
+- Format (သဘောက Linux 3.0.107 အတွက် commit ထားတဲ့ code အတွေအကုန် ကိုယ့် Repo ထဲ merge လုပ်သွားပါလိမ့်မယ်)
+```bush
+git cherry-pick <first_commit>^..<last_commit>
+```
+
+- Example: (အဲဒါတွေက <commit_hash> တွေပါ copy ပြီး paste လိုက်တာပါ)
+- First commit...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=linux-3.10.y&id=0ee88216358c4a1821022763cb84d2b0550bf1e2
+- Last commit...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=linux-3.10.y&id=0e3d5747a3ef9986d7617cec396850bf9d039309
+```bush
+git cherry-pick 0ee88216358c4a1821022763cb84d2b0550bf1e2^..0e3d5747a3ef9986d7617cec396850bf9d039309
+```
  
- 
+- OR
+- ဒါက commit တခုချင်းစီ git cherry-pick တဲ့ နည်းပါ
+- Format
+```bush
+git cherry-pick <commit_hash>
+```
+Example: ( first commit ကနေ last commit ထဲ တခုချင်းစီ merge တဲ့နည်းပါ၊ စိတ်ရှည်ဖို့တော့ လိုပါတယ် commit တွေက များကြီးပါပဲ )
+```bush
+ git cherry-pick 0ee88216358c4a1821022763cb84d2b0550bf1e2
+ git cherry-pick de714a8a75b6985452fe6e5d3f6393eb1da2eb3d
+ git cherry-pick 408d8245b80b5426d670de4b4ec60f24b05eb0ef
+ Continue...
+```
+
+- အဲဒါတွေ ပြီးသွားရင် Merge တဲ့ လုပ်ငန်းတော့ ပြီးသွားပြီ။
+- အဲဒီနောက် ပထမက Kernel-Building Tutorial အတိုင်း ပြန် Compile လိုက်ပါ။
+- တကယ်လို့ Merge conflicts တွေ ဖြစ်ခဲ့ရင် Terminal ကနေ code error တွေ line no. အတိအကျပြောပေးပါလိမ့်မယ်။ (C Programmig Language ကို အနည်းအပါး ရရင် ဖြေရှင်းနိုင်ပါ လိမ့်မယ်)
+- Conflicts တွေ ဖြေရှင်းတဲ့ နည်းလမ်းတွေ နောက်ထက် သက်သက်ဆက်ရေးပါ့မယ်။
+- Screenshots တွေ မကြာခင် ထက်ပြီးထည့်ပေးပါမယ်။
+- DONE
