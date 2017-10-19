@@ -1,2 +1,1 @@
-# How To Update Latest Kernel-version with Upstream Linux Kernel for Your Andorid Device
-## Coming soon...
+# How To Update Latest Linux Kernel Version For Android Devices

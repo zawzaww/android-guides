@@ -1,4 +1,4 @@
-# How To Build Kernel For Your Android Device
+# How To Build Kernel For Android Devices
 
 
 # Introduction
@@ -60,10 +60,10 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 
 # How To Build Kernel
 - အရင္ဆုံး Kernel source နဲ႔ toochains ကုိ ပထမက ေဆာက္ထားတဲ့ KernelName (PuerZ-Kernel-N5X) ဆုိတဲ့ Dir ထဲမွာ ႏွစ္ခုလုံး အဆင္သင့္ ႐ွိေနရပါမယ္။
-- Toolchain Name ကုိ AOSP-Toolchain လုိ႔ အမည္ေပးလုိက္ၿပီး၊ Nexus 5X Kernel Source Name ကုိ bullhead လုိ႔ အမည္ ေပးလုိက္ပါမယ္။ (အဆင္ေျပသလုိ Rename လုိက္ပါ ျပႆ နာ မ႐ွိပါဘူး၊ တခုပဲ Toolchain Location ျပန္ ေပးတဲ့ ေနရာမွာ အဲဒီ Name ေတြအတုိင္း အတိအက်သိ ဖုိ႔ လုိပါတယ္)
+- Toolchain Name ကုိ AOSP-Toolchains လုိ႔ အမည္ေပးလုိက္ၿပီး၊ Nexus 5X Kernel Source Name ကုိ bullhead လုိ႔ အမည္ ေပးလုိက္ပါမယ္။ (အဆင္ေျပသလုိ Rename လုိက္ပါ ျပႆ နာ မ႐ွိပါဘူး၊ တခုပဲ Toolchains Location ျပန္ ေပးတဲ့ ေနရာမွာ အဲဒီ Name ေတြအတုိင္း အတိအက်သိ ဖုိ႔ လုိပါတယ္)
 - e.g : Toolchains location
 ```bush
-/home/zawzaw/PureZ-Kernel-N5X/AOSP-Toolchain
+/home/zawzaw/PureZ-Kernel-N5X/AOSP-Toolchains
 ```
 - e.g : Kernel Source location
 ```bush
@@ -76,7 +76,7 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 - ပထမဦးဆုံး လုပ္ရမွာ Kernel source ကေန compile ဖုိိိိ႔အတြက္ export ဆုိတဲ့ command ကုိ သုံးၿပီး toolchains ကုိ Set new environment variable သြားလုပ္ရပါမယ္။ (export - Set a New Environmetn Variable)
 - Type this command (အဲဒီမွာ bin/ေနာက္ကေကာင္ကုိ toochains prefix လုိ႔ေခၚပါတယ္ အခု Google က ေပးထားတဲ့ Toochain ေတြ ရဲ႕ prefix ေတြကုိ ေျပာျပပါမယ္၊ ARM အတြက္ဆုိရင္ "arm-eabi-" ၊ ARM64 အတြက္ဆုိရင္ "aarch64-linux-android-" ျဖစ္ပါတယ္)
 ```bush
-export CROSS_COMPILE=${HOME}/PureZ-Kernel-N5X/AOSP-Toolchain/bin/aarch64-linux-android-
+export CROSS_COMPILE=${HOME}/PureZ-Kernel-N5X/AOSP-Toolchains/bin/aarch64-linux-android-
 ```
 
 - ကုိယ့္ဖုန္းရဲ႕ CPU arch က arm လား arm64 လား သိထားဖုိ႔ အရင္လုိပါတယ္
