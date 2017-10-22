@@ -1,1 +1,1 @@
-# How To Add Awesome Kernel Features Your Android Devices
+# How To Add Awesome Kernel Features For Android Devices
