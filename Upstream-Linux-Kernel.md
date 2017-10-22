@@ -98,3 +98,9 @@ Example: ( first commit ကနေ last commit ထဲ တခုချင်းစ
 - တကယ်လို့ Merge conflicts တွေ ဖြစ်ခဲ့ရင် Terminal ကနေ code error တွေ line no. အတိအကျပြောပေးပါလိမ့်မယ်။ (C Programmig Language ကို အနည်းအပါး ရရင် ဖြေရှင်းနိုင်ပါ လိမ့်မယ်)
 - Conflicts တွေ ဖြေရှင်းတဲ့ နည်းလမ်းတွေ နောက်ထက် သက်သက်ဆက်ရေးပါ့မယ်။
 - DONE
+
+Regards,
+
+Android Building Tutorials by ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+
+https://github.com/zawzaww/android-building-tutorials/
