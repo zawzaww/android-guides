@@ -1,2 +1,9 @@
-# How To Build an Android CustomROM from Pure AOSP SourceCode
-### Coming soon...
+# How To Build a Pure AOSP ROM for Android Devices
+# AOSP - Android Open Source Project
+
+# Building Pure Android OS
+
+## Requirements
+- Linux Computer
+- Git
+- Google's git-repo
