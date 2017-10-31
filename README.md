@@ -1,12 +1,12 @@
-# Android Building Guide/Tutorials
+# Android Building Tutorials
 
-## Guide/Tutorials: Building Android CustomROM, Kernel and CustomRecovery(TWRP) From SourceCode
+## Guide/Tutorials: Building Android CustomROM, Custom Kernel and CustomRecovery (TWRP) From SourceCode
 
 ## Index:
 - Building Kernel for Android Devices from SourceCode
   - How to Build Kernel
   - How to Add Awesome Kernel Features
-  - How to Update Latest Linux Kernel version
+  - How to Update Latest upstream Linux Kernel version
 - Building Android CustomROM for Android Devices from SourceCode
 - Building Custom Recovery(TWRP) for Android Devices from SourceCode
 
