@@ -77,3 +77,11 @@ Sony Xperia Apps ကုိ Install လုပ္တဲ့ေနရာမွာ �
 - Sony Xperia Apps(AFH link)...https://forum.xda-developers.com/showpost.php?p=73108388&postcount=4
 - Sony Xperia Apps (Playstore)...https://play.google.com/store/apps/dev?id=4851747018805076305
 
+# XDA Support Thread
+- Bugs ေတြ႐ွိရင္ XDA မွာ ဝင္ျပီး bugs report ေတြ လုပ္ေပးႏုိင္ပါတယ္
+https://forum.xda-developers.com/apps/magisk/apps-purez-xperia-mod-xperiahome-icons-t3639860
+
+# SourceCode
+• https://github.com/purezandroid/purez-xperia-mod
+
+
