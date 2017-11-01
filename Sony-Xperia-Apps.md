@@ -69,3 +69,11 @@ PureZ-XperiaMOD-MagiskModule ကေတာ့ System file ေတြျဖစ္�
 - Magisk Manager ရဲ႕ Modules ဆုိတဲ့ Section ထဲကုိဝင္လုိက္ပါ၊ ေအာက္ဆုံးက [+] button ေလးကုိႏွိတ္ၿပီး PureZ-Xperia-MagiskModule.zip ကုိ ေရြၿပီး Install လုိက္ပါ
 - ၿပီးသြားရင္ Reboot တခ်က္ခ်ၿပီး ျပန္တတ္လာရင္ Xperia apps ေတြ Install လုိ႔ ရပါၿပီ။
 
+# Installation Xperia Apps
+Sony Xperia Apps ကုိ Install လုပ္တဲ့ေနရာမွာ ႏွစ္မ်ဳိးျဖစ္ပါလိမ့္မယ္
+- ပထမ တခုက ကြၽန္ေတာ္ Upload ထားတဲ့ apps link ကေန Install လုပ္ရင္လည္း ရပါတယ္။ 
+( ဒါမွမဟုတ္ )
+- Google Playstore မွာ တုိက္႐ုိက္ Install လုပ္ပါ ရပါၿပီ။
+- Sony Xperia Apps(AFH link)...https://forum.xda-developers.com/showpost.php?p=73108388&postcount=4
+- Sony Xperia Apps (Playstore)...https://play.google.com/store/apps/dev?id=4851747018805076305
+
