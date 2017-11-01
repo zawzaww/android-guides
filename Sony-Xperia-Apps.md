@@ -29,3 +29,32 @@ Magisk Manager app ကေတာ့ Root Management လုပ္ဖုိ႔အ�
 PureZ-XperiaMOD-MagiskModule ကေတာ့ System file ေတြျဖစ္တဲ့ Sony Xperia apps ေတြ Normal install လုပ္လုိ႔ရေအာင္ လုိအပ္တဲ့ Sony framework ေတြ lib ေတြ permission ေတြ စုစည္းထားတဲ့ FlashableZip တခုပါ။
 ```
 
+# Features
+- Official Sony Xperia apps ေတြ တျခား Android ဖုန္းေတြမွာ သုံးလုိ႔ရမယ္
+- Normal install လုပ္႐ုံနဲ႔ သုံးႏုိင္မယ္
+- Google Playstore ကေန တုိက္႐ုိက္ Install/Update လုပ္ႏုိင္မယ္
+- Magisk Module ျဖစ္တဲ့အတြက္ မၾကဳိက္ေတာ့ရင္ ခ်က္ခ်င္း Uninstall လုပ္ႏုိင္မယ္
+- Android 5.0+ ဖုန္းေတြအတြက္ Magisk Install ထားတဲ့ ဖုန္းတုိင္း ေကာင္းေကာင္းအလုပ္လုပ္ႏုိင္ပါတယ္
+
+# Sony Xperia Apps List
+ဒါကေတာ့ Magisk Module Zip ကုိ Installၿပီး ေနာက္ပုိင္း Normal install ႏုိင္တဲ့ Xperia apps list ပါ။
+- Xperia Album
+- Xperia Audio Recoder
+- Xperia Calendar
+- Xperia Clock
+- Xperia Calculator
+- Xperia Email
+- Xperia Lifelog
+- Xperia Movie Creator
+- Xperia Music
+- Xperia Music Visualizer
+- Xperia Photo Analyzer
+- Xperia PhotoEditor
+- Xperia Sketch
+- Xperia TrackID
+- Xperia Video
+- Xperia Weather
+- Xperia Keyboard
+- Xperia Home
+- Xperia IconPacks ( Support for Xperia Home )
+- Xperia What'sNew
