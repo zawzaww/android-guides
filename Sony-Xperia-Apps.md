@@ -58,3 +58,14 @@ PureZ-XperiaMOD-MagiskModule ကေတာ့ System file ေတြျဖစ္�
 - Xperia Home
 - Xperia IconPacks ( Support for Xperia Home )
 - Xperia What'sNew
+
+# How To Install
+- အရင္ဆုံး ကုိယ့္ရဲ႕ Android ဖုန္းက TWRP Recovery Install လုပ္ထားရပါမယ္
+- ၿပီးတဲ့ေနာက္ Magisk.zip ရယ္ Magisk Manager app နဲ႔ PureZ XperiaMOD Magisk Module ကုိ download လုပ္ထားပါ
+- TWRP Recovery Mode ကုိ ဝင္လုိက္ပါ
+- ၿပီးရင္ Magisk.zip ကုိ TWRP ရဲ႕ Install ထဲကေန Zip ကုိ Install လုပ္လုိက္ပါ
+- Reboot ခ်လုိက္ပါ
+- ၿပီးတဲ့ေနာက္ Magisk Manager.apk ကုိ Install ေပးပါ
+- Magisk Manager ရဲ႕ Modules ဆုိတဲ့ Section ထဲကုိဝင္လုိက္ပါ၊ ေအာက္ဆုံးက [+] button ေလးကုိႏွိတ္ၿပီး PureZ-Xperia-MagiskModule.zip ကုိ ေရြၿပီး Install လုိက္ပါ
+- ၿပီးသြားရင္ Reboot တခ်က္ခ်ၿပီး ျပန္တတ္လာရင္ Xperia apps ေတြ Install လုိ႔ ရပါၿပီ။
+
