@@ -1,4 +1,4 @@
-# Sony Xperia™ Apps for all Android Devices
+-# Sony Xperia™ Apps for all Android Devices
 ## Magisk Module
 ## Install/Update Official apps from Google Playstore
 
@@ -7,4 +7,15 @@
 Magisk အေၾကာင္း အျပည့္အစုံ ဒီမွာဝင္ဖက္ၾကည့္ပါ
 https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445
 
+# Requirements
+- ကုိယ့္ရဲ႕ ဖုန္းက Android 5.0 နဲ႔ အထက္႐ွိရပါမယ္
+- TWRP Custom Recovery ႐ွိရပါမယ္
+- Magisk Install လုပ္ထားရပါမယ္ ( Magisk.zip ကုိ TWRP ကေန Install ေပးရမွာပါ )
+- Magisk Manager app လုိပါတယ္
 
+# Downloads for Magisk
+Magisk အတြက္ လုိအပ္တဲ့ link ေတြ ေပးပါမယ္
+- [Magisk-v14.0](http://tiny.cc/latestmagisk)
+- [Magisk-Uninstaller](http://tiny.cc/latestuninstaller)
+- [Magisk-Manager-app](https://github.com/topjohnwu/MagiskManager/releases/download/v5.4.0/MagiskManager-v5.4.0.apk)
+Explaination: Magisk-v14.zip ဆုိတာက Root ဖုိ႔အတြက္ပါ TWRP Recovery Mode ကေန Zip ကုိ Install ေပးရပါမယ္၊ Magisk Uninstaller ဆုိတာကေတာ့ Install ထားတဲ့ Magisk ကုိ ျပန္ၿပီး Uninstall လုပ္ေပးမယ့္ FlashableZip ပါ တနည္းအားျဖင့္ Unroot ျပန္လုပ္ဖုိ႔ အတြက္ပါ၊ Magisk Manager app ကေတာ့ Root Management လုပ္ဖုိ႔အတြက္၊ Magisk module ေတြပါ ပါပါတယ္။
