@@ -15,15 +15,17 @@ https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-system
 - Magisk Install လုပ္ထားရပါမယ္ ( Magisk.zip ကုိ TWRP ကေန Install ေပးရမွာပါ )
 - Magisk Manager app လုိပါတယ္
 
-# Downloads for Magisk
+# Downloads
 Magisk အတြက္ လုိအပ္တဲ့ link ေတြ ေအာက္မွာ ေပးထားပါတယ္။
 - [Magisk-stable.zip](http://tiny.cc/latestmagisk)
 - [Magisk-Uninstaller](http://tiny.cc/latestuninstaller)
 - [Magisk-Manager-app](https://github.com/topjohnwu/MagiskManager/releases/download/v5.4.0/MagiskManager-v5.4.0.apk)
+- [PureZ-XperiaMOD-MagiskModule](https://androidfilehost.com/?fid=889764386195922552)
 - Explaination:
 ```bash
 Magisk-stable.zip ဆုိတာက Root ဖုိ႔အတြက္ပါ TWRP Recovery Mode ကေန Zip ကုိ Install ေပးရပါမယ္။
 Magisk Uninstaller ဆုိတာကေတာ့ Install ထားတဲ့ Magisk ကုိ ျပန္ၿပီး Uninstall လုပ္ေပးမယ့္ FlashableZip ပါ တနည္းအားျဖင့္ Unroot ျပန္လုပ္ဖုိ႔ အတြက္ပါ။
 Magisk Manager app ကေတာ့ Root Management လုပ္ဖုိ႔အတြက္၊ Magisk module ေတြပါ ပါပါတယ္။
+PureZ-XperiaMOD-MagiskModule ကေတာ့ System file ေတြျဖစ္တဲ့ Sony Xperia apps ေတြ Normal install လုပ္လုိ႔ရေအာင္ လုိအပ္တဲ့ Sony framework ေတြ lib ေတြ permission ေတြ စုစည္းထားတဲ့ FlashableZip တခုပါ။
 ```
 
