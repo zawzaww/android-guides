@@ -1,4 +1,4 @@
-# How To Build a Pure AOSP ROM for Android Devices
+# How To Build an AOSP ROM for Android Devices
 
 ## AOSP - Android Open Source Project
 ## Building Pure Android OS
@@ -16,7 +16,7 @@ https://code.google.com/archive/p/git-repo/
 ( git-repo ဆုိတာ Google က develop ထားတဲ့ repo tool တခုပါ၊ android ROM Development မွာ အရမ္းအသုံးဝင္ပါတယ္၊ git-repo - Multiple Repository Tool လုိ႔ေခၚပါတယ္၊ သူ႔ရဲ႕ အသုံးဝင္ပုံက Repo တခုေဆာက္ၿပီး အဲဒီထဲမွာ .xml file ေလးတခုေဆာက္ၿပီး ကုိယ္လုိခ်င္တဲ့ ကုိယ္ remote လုပ္ခ်င္တဲ့ repo ေတြကုိအမ်ာႀကီးကုိ link ေပးၿပီး repo sync ဆုိတဲ့ command ကုိသုံးၿပီး၊ ကုိယ့္ရဲ႕ Local machine ထဲကုိ တေနရာတည္းမွာပဲ repo ေတြအမ်ာႀကီးကုိ download ဆြဲလုိ႔ရပါတယ္၊ သေဘာက ROM တခု build ဖုိ႔ လုိအပ္တဲ့ Android SourceCode Repository ေတြက အမ်ားႀကီးပါ အဲဒါကုိ တခုခ်င္းလုိက္ git clone မေနပဲ .xml file ေလးကေန Repository အမ်ားႀကီးစုၿပီး Local ထဲကုိ download ဆြဲလုိက္တဲ့ သေဘာပါပဲ။ )
 
 # Setup Your Environment
-## Step(1): Installation OpenJDK
+## Installation OpenJDK
 - ပထမဦးဆုံး OpenJDK ကုိ ကုိယ့္ရဲ့ Computer မွာ Install ထားဖုိ့ လုိပါတယ္၊ Terminal ကုိဖြင့္ၿပီး ေအာက္ပါ command ေလးေတြ ႐ုိက္ေပးပါ။
 
 ```bash
@@ -30,4 +30,11 @@ OpenJDK Install တဲ့ ေနရာမွာ နည္းနည္းေျ�
 - Android Gingerbread ကေန Android KitKat ဆုိ ( OpenJDK 6 ကုိ Install ေပးပါ )
 ( သူ႔ရဲ႕ ေအာက္က Android version အတြက္ေတာ့ မေျပာေတာ့ပါဘူး ဘယ္သူမွလည္း Build မွာ မဟုတ္ေတာ့ပါဘူး )
 
+## Installation Python
+- OpenJDK install ၿပီးရင္ Python install ေပးဖု႔ိ လုိပါတယ္၊ Python 2.7 ေလာက္ဆုိ အဆင္ေျပပါၿပီ။
+```bash
+sudo add-apt-repository ppa:fkrull/deadsnakes
+sudo apt-get update
+sudo apt-get install python2.7
+```
 
