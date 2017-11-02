@@ -20,9 +20,9 @@ https://code.google.com/archive/p/git-repo/
 - ပထမဦးဆုံး OpenJDK ကုိ ကုိယ့္ရဲ့ Computer မွာ Install ထားဖုိ့ လုိပါတယ္၊ Terminal ကုိဖြင့္ၿပီး ေအာက္ပါ command ေလးေတြ ႐ုိက္ေပးပါ။
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install openjdk-8-jdk
-$ sudo apt-get install openjdk-8-jre
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+sudo apt-get install openjdk-8-jre
 ```
 OpenJDK Install တဲ့ ေနရာမွာ နည္းနည္းေျပာျပပါမယ္၊ ကုိယ့္ Build မယ့္ Android Version ေပၚ မူတည္ၿပီး Install ရမယ့္ OpenJDK version ေတြ ကြဲသြားပါလိမ့္မယ္။
 - Android Nougat ကေန Android Oreo ဆုိ ( OpenJDK 8 ကုိ Install ေပးပါ )
@@ -41,8 +41,34 @@ sudo apt-get install python2.7
 ## Installation Build-Tools
 - လုိအပ္တဲ့ build tools ေတြ install ဖုိ႔ ေအာက္ပါ command ေလးကုိ terminal မွာ ႐ုိက္ေပးပါ။
 ```bash
-$ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl \
+sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl \
 zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev \
 x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils \
 xsltproc unzip
 ```
+
+## Installation Git and Repo (git-repo)
+- အရင္ဆုံး Git install မလုပ္ရေသးဘူးဆုိရင္ လုပ္ေပးပါ။ ( Install ထားၿပီးသားဆုိရင္ ဒီအဆင့္ကုိ ထပ္လုပ္စရာမလုိပါဘူး )
+```bash
+sudo apt-get install git-core
+```
+- Setting your username and email in Git
+- Format:
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+- Example:
+```bash
+git config --global user.name "zawzaw"
+git config --global user.email "zawzaw@gmail.com"
+```
+
+- Google ရဲ႕ git-repo ကုိ install လုပ္ေပးရပါမယ္။ ( အသုံးဝင္ပုံကုိ အေပၚမွာ ႐ွင္းျပထားၿပီးျဖစ္လု႔ိ ထပ္မေျပာေတာ့ပါဘူး )
+```bash
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > repo
+$ chmod a+x repo
+$ sudo install repo /usr/local/bin
+$ rm repo
+```
+အဲဒါေတြ အကုန္ၿပီးသြားၿပီ ဆုိရင္ေတာ့ ROM တခု build ဖုိ႔အတြက္ Setup Environment ပုိင္းက ျပည့္စုံသြားပါၿပီ။
