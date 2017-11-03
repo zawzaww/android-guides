@@ -110,3 +110,54 @@ repo sync
 အဲဒီေနာက္မွာေတာ့ Sources ေတြ Downloading လုပ္ေနတဲ့ အပုိင္းပါ၊
 SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connection ေပၚမွာ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
 
+## Building AOSP from Sources
+- အရင္ဆုံး Source ကေန Compilation မလုပ္ခင္ ၾကဳိတင္ျပင္ဆင္ရမယ့္ အရာေတြကုိ ေျပာျပေပးပါမယ္။
+- ပထမဆုံး လုိအပ္တာက ကုိယ့္ဖုန္းရဲ႕ Device tree ပါ
+- Location က ဘယ္မွာ သြားထည့္ရမလဲဆုိရင္ Download ထားတဲ့ Source dir ေအာက္က /device ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
+- Format:
+```bash
+/device/manufacturer/device_name
+```
+- Example for Nexus 5X:
+```bash
+/device/lge/bullhead
+```
+- ROM build တဲ့ေနရာမွာ Kernel ပုိင္းက ႏွစ္မ်ဳိးကြဲပါမယ္၊ Kernel source ကေန build တာရယ္ အဆင္သင့္ build ထားၿပီးသား prebuilt kernel ကေန ROM ထဲထည့္ၿပီး Build တာဆုိၿပီး ႐ွိပါတယ္၊ kernel source ကေန build တာပဲ အၾကံေပးတယ္။
+- ၿပီးတဲ့ေနာက္ Kernel source ကေန build မယ္ဆုိရင္ Device tree ထဲက ျပင္ဆင္စရာ႐ွိပါတယ္၊ Nexus 5X အေနနဲ႔ ေျပာပါမယ္ /device/lge/bullhead/BoardConfig.mk ကုိ TextEditor တခုနဲ႔ ဖြင့္ၿပီး ေအာက္က code ေလးေတြ ထပ္ျဖည့္လုိက္ပါ။
+```bash
+# Inline PureZ Kernel Build
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_SOURCE := kernel/lge/bullhead
+TARGET_KERNEL_CONFIG := purez_defconfig
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+```
+Explanation:
+```bash
+ဒီအဆင့္က ကြၽန္ေတာ္ ပထမဆုံး ေရးထားခဲ့တဲ့ Building-Kernel ဆုိတဲ့ Tutorial ကုိ ဖက္ၿပီးမွ အဆင္ေျပပါလိမ့္မယ္။
+Line 1 - Kernel ကုိ Compile မယ့္ Toolchain location ကုိ ေပးတာပါ
+Line 2 - ကုိယ္သုံးမယ့္ Toolchain ရဲ႕ Kernel toolchain prefix လုိ႔ေခၚပါတယ္ ( သိပ္နားမလည္ဘူးဆုိရင္ Kernel Compilation Tutorial မွာ ေလ့လာၾကည့္ပါ )
+Line 3 - ဒါကေတာ့ ကုိယ္ Build မယ့္ kernel source location ပါ
+Line 4 - Kernel build ဖုိ႔အတြက္ kernel configuration လုပ္ေပးရပါတယ္၊ အဲဒီအေၾကာင္းက Kernel config အပုိင္းပါ
+Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မယ့္ Kernel image name ကုိ အတိအက်ေရးေပးရပါမယ္
+```
+- ေနာက္တဆင့္က Kernel source အပုိင္းပါ သြားထည့္ေပးရမယ့္ Location က Source dir ေအာက္က /kernel ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
+- Format:
+```bash
+/kernel/manufacturer/device_name
+```
+- Example: for Nexus 5X ( ဒီ Location က Device tree ထဲမွာ Kernel source path လမ္းေၾကာင္း ျပန္ေပးရမွာပါ )
+```bash
+/kernel/lge/bullhead
+```
+- vendor အပုိင္းပါ အဲဒီေကာင္က Source dir ေအာက္က /vendor ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
+- Format:
+```bash
+/vendor/manufacturer/device_name
+```
+- Example: for Nexus 5X
+```bash
+/vendor/lge/bullhead
+```
+ဒါေတြျပည့္စုံသြားရင္ေတာ့ AOSP ROM တခု Build ဖုိ႔ အဆင္သင့္ ျဖစ္ပါၿပီ။
+
