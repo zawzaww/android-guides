@@ -161,3 +161,34 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 ```
 ဒါေတြျပည့္စုံသြားရင္ေတာ့ AOSP ROM တခု Build ဖုိ႔ အဆင္သင့္ ျဖစ္ပါၿပီ။
 
+- ဒါကေတာ့ ေနာက္ဆုံးအဆင့္ေရာက္ပါၿပီ၊ Download ထားတဲ့ Source Dir ထဲ ဝင္လုိက္ၿပီး Terminal ကုိ ဖြင့္လုိက္ပါ၊ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
+```bash
+. build/envsetup.sh
+```
+ၿပီးသြာရင္ ကုိယ္ build မယ့္ device ကုိ lunch လုပ္ေပးရပါမယ္။
+- Format
+```bash
+lunch <device_name> (OR) lunch
+```
+Example: for Nexus 5X
+```bash
+lunch aosp_bullhead-eng
+```
+
+- အေကာင္းဆုံးက lunch လုိ႔ ႐ုိက္လုိက္ရင္ ကုိယ္ build မယ့္ device name ေတြ က်လာၿပီး build ခ်င္တဲ့ device no. ကုိ ဆက္႐ုိက္ေပးပါ။
+```bash
+lunch
+```
+```bash
+Enter 1 or 2 or 3 etc...
+```
+- ၿပီးရင္ Build ဖုိ႔အတြက္ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
+```bash
+make -j4
+```
+ (OR)
+```bash
+make -j$(nproc --all)
+```
+ၿပီးရင္ေတာ့ Compilation process စတင္ပါမယ္၊ process time ကေတာ့ ကုိယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
+
