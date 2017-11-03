@@ -1,6 +1,6 @@
 # Android Building Tutorials
 
-## Tutorials: Building Pure Android OS, Kernel and CustomRecovery (TWRP) From SourceCode
+## Tutorials: Building Pure Android OS, Kernel and Custom Recovery (TWRP) From SourceCode
 
 ## Index:
 - Building Kernel for Android Devices from SourceCode
@@ -8,7 +8,7 @@
   - How to Add Awesome Kernel Features
   - How to Update Latest upstream Linux Kernel version
 - Building Pure Android OS for Android Devices from SourceCode
-- Building CustomRecovery (TWRP) for Android Devices from SourceCode
+- Building Custom Recovery (TWRP) for Android Devices from SourceCode
 
 This Repo is for only my Myanmar friends and Tutorials.
 
