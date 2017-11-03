@@ -86,9 +86,10 @@ mkdir AOSP-ROM-Project
 cd AOSP-ROM-Project
 ```
 
-- Android SourceCode ေတြ download လုပ္ပါေတာ့မယ္။ ( ဒီေနရာမွာ ေျပာစ႐ွိပါတယ္ AOSP Repo ကေန download လုပ္ရင္ Size အရမ္းမ်ားပါတယ္၊ အဲဒါေၾကာင့္ ကြၽန္ေတာ့ GitHub မွာေဆာက္ထားတဲ့ Personal AOSP Repo ကေန down ရင္ ပုိသက္သာပါလိမ့္မယ္၊ ဘာလုိ႔လဲဆုိေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub AOSP Repo ထဲမွာ မလုိအပ္တဲ့ project path ေတြ ေလ်ာ့ထားတာပါ၊ သေဘာပါပဲ ႏွစ္သက္တဲ့ Repo ကေန download ဆြဲပါ။ )
+- Android SourceCode ေတြ download လုပ္ပါေတာ့မယ္။ ( ဒီေနရာမွာ ေျပာစ႐ွိပါတယ္ Google Git က AOSP Repo ကေန download လုပ္ရင္ Size အရမ္းမ်ားပါတယ္၊ အဲဒါေၾကာင့္ ကြၽန္ေတာ့ GitHub မွာေဆာက္ထားတဲ့ Personal AOSP Repo ကေန down ရင္ ပုိသက္သာပါလိမ့္မယ္၊ ဘာလုိ႔လဲဆုိေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub AOSP Repo ထဲမွာ မလုိအပ္တဲ့ project path ေတြ ေလ်ာ့ထားတာပါ၊ သေဘာပါပဲ ႏွစ္သက္တဲ့ Repo ကေန download ဆြဲပါ။ )
 - ပထမဦးဆုံး AOSP SourceCode ေတြ ႐ွိတဲ့ေနရာကုိ သိရပါမယ္...https://android.googlesource.com/platform/manifest
 - -b ေနာက္က ကုိယ့္ Build မယ့္ branch ပါ။ ( တနည္းအားျဖင့္ ကုိယ္ Build ခ်င္တဲ့ Android version ပါ r (r_23) ဆုိတာ Release ကုိ ဆုိလုိတာပါ )
+- ဒီေနရာမွာ သုံးတဲ့ command ေတြက git-repo command ေတြပါ https://source.android.com/source/using-repo သုံးမယ့္ Repository ကလည္း git-repo အတြက္ ရည္ရြယ္ၿပီး ေရးထားတဲ့ Repository တခုျဖစ္ပါတယ္ xml နဲ႔ေရးပါတယ္၊ ေရးနည္းက ႐ုိး႐ွင္းပါယ္ ဒီမွာေလ့လာၾကည့္ပါ https://github.com/purezandroid/purezandroid-manifest/blob/purez-8.0.0/default.xml
 ```bash
 repo init -u https://android.googlesource.com/platform/manifest -b android-8.0.0_r23
 ```
