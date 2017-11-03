@@ -190,5 +190,32 @@ make -j4
 ```bash
 make -j$(nproc --all)
 ```
+```bash
+Output - /out/target/product/bullhead/ ေအာက္မွာ ထြက္သြားပါလိမ့္မယ္
+```
 ၿပီးရင္ေတာ့ Compilation process စတင္ပါမယ္၊ process time ကေတာ့ ကုိယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
+
+- တျခား AOSP based or LineageOS based ROM ေတြ အတြက္ build တဲ့ command ေလးကုိ ထပ္ျဖည့္ၿပီး ေျပာေပးပါမယ္။ ( အေပၚမွာ ေျပာခဲ့တာက လုံးဝ Pure AOSP source ကေန build တာပါ နည္းနည္းကြဲျပားပါတယ္ သုံးမယ့္ command ေတြ တျခား ROM Team ေတြနဲ႔ )
+- ပထမဆုံး command ကေတာ့ တူတူပါပဲ
+```bash
+. build/envsetup.sh
+```
+- ၿပီးရင္ ေအာက္က command ေလး ဆက္႐ုိက္ေပးပါ။
+- Format:
+```bash
+breakfast <device_name>
+```
+- Example: for Nexus 5X (bullhead)
+```bash
+breakfast bullhead
+```
+- Build ဖုိ႔အတြက္ ေအာက္က command ေလး ဆက္႐ုိက္ေပးပါ
+```bash
+mka bacon
+```
+```bash
+Output - /out/target/product/bullhead/ ေအာက္မွာ flashablezip ထြက္လာပါလိမ့္မယ္
+```
+Compilation process time က Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီး ၾကာပါလိမ့္မယ္။
+
 
