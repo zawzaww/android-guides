@@ -93,9 +93,15 @@ cd AOSP-ROM-Project
 ```bash
 repo init -u https://android.googlesource.com/platform/manifest -b android-8.0.0_r23
 ```
-(OR)
+ (OR)
 ```bash
 repo init -u https://github.com/zawzaww/aosp-android -b oreo
+```
+ (OR)
+- တျခား CustomROM တခုရဲ႕ SourceCode ပါ Download ဖုိ႔အတြက္ ထပ္ျဖည့္ေျပာပါမယ္။ ( လူသိမ်ားတဲ့ LineageOS နဲ႔ပဲ ဥပမာေပး ေျပာပါမယ္ )
+- -b ေနာက္ကေကာင္က branch name ပါ၊ lineage-15.0 က Oreo build အတြက္ပါ၊ cm-14.1/cm-14.0 သုံးရင္ Nougat build အတြက္ပါ၊ ၾကဳိက္တဲ့ Android version ကုိ Build ႏုိင္ပါတယ္။
+```bash
+repo init -u git://github.com/LineageOS/android.git -b lineage-15.0
 ```
 - Sources ေတြ download ဖုိ႔ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
 ```bash
