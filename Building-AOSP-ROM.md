@@ -124,6 +124,9 @@ SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connect
 ```bash
 /device/lge/bullhead
 ```
+
+<img src="https://s20.postimg.org/4hn5zcmx9/Screenshot_from_2017-11-03_21-54-22.png" height="100%" width="100%;"/>
+
 - ROM build တဲ့ေနရာမွာ Kernel ပုိင္းက ႏွစ္မ်ဳိးကြဲပါမယ္၊ Kernel source ကေန build တာရယ္ အဆင္သင့္ build ထားၿပီးသား prebuilt kernel ကေန ROM ထဲထည့္ၿပီး Build တာဆုိၿပီး ႐ွိပါတယ္၊ kernel source ကေန build တာပဲ အၾကံေပးတယ္။
 - ၿပီးတဲ့ေနာက္ Kernel source ကေန build မယ္ဆုိရင္ Device tree ထဲက ျပင္ဆင္စရာ႐ွိပါတယ္၊ Nexus 5X အေနနဲ႔ ေျပာပါမယ္ /device/lge/bullhead/BoardConfig.mk ကုိ TextEditor တခုနဲ႔ ဖြင့္ၿပီး ေအာက္က code ေလးေတြ ထပ္ျဖည့္လုိက္ပါ။
 ```bash
@@ -143,6 +146,9 @@ Line 3 - ဒါကေတာ့ ကုိယ္ Build မယ့္ kernel source 
 Line 4 - Kernel build ဖုိ႔အတြက္ kernel configuration လုပ္ေပးရပါတယ္၊ အဲဒီအေၾကာင္းက Kernel config အပုိင္းပါ
 Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မယ့္ Kernel image name ကုိ အတိအက်ေရးေပးရပါမယ္
 ```
+
+<img src="https://s20.postimg.org/thf0h4mjh/Screenshot_from_2017-11-03_21-58-30.png" height="100%" width="100%;"/>
+
 - ေနာက္တဆင့္က Kernel source အပုိင္းပါ သြားထည့္ေပးရမယ့္ Location က Source dir ေအာက္က /kernel ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
 - Format:
 ```bash
@@ -152,6 +158,9 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 ```bash
 /kernel/lge/bullhead
 ```
+
+<img src="https://s20.postimg.org/852x5n81p/Screenshot_from_2017-11-03_21-54-57.png" height="100%" width="100%;"/>
+
 - vendor အပုိင္းပါ အဲဒီေကာင္က Source dir ေအာက္က /vendor ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
 - Format:
 ```bash
@@ -161,6 +170,9 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 ```bash
 /vendor/lge/bullhead
 ```
+
+<img src="https://s20.postimg.org/yesl2cjel/Screenshot_from_2017-11-03_21-56-37.png" height="100%" width="100%;"/>
+
 ဒါေတြျပည့္စုံသြားရင္ေတာ့ AOSP ROM တခု Build ဖုိ႔ အဆင္သင့္ ျဖစ္ပါၿပီ။
 
 - ဒါကေတာ့ ေနာက္ဆုံးအဆင့္ေရာက္ပါၿပီ၊ Download ထားတဲ့ Source Dir ထဲ ဝင္လုိက္ၿပီး Terminal ကုိ ဖြင့္လုိက္ပါ၊ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
@@ -174,8 +186,10 @@ lunch <device_name> (OR) lunch
 ```
 Example: for Nexus 5X
 ```bash
-lunch aosp_bullhead-eng
+lunch aosp_bullhead-userdebug
 ```
+
+<img src="https://s20.postimg.org/oy2rvsk59/Screenshot_from_2017-11-04_06-23-10.png" height="100%" width="100%;"/>
 
 - အေကာင္းဆုံးက lunch လုိ႔ ႐ုိက္လုိက္ရင္ ကုိယ္ build မယ့္ device name ေတြ က်လာၿပီး build ခ်င္တဲ့ device no. ကုိ ဆက္႐ုိက္ေပးပါ။
 ```bash
