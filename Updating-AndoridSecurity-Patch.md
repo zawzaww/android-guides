@@ -24,7 +24,17 @@ git fetch --tags https://android.googlesource.com/kernel/msm/ android-msm-bullhe
 ```
 - ၿပီးရင္ ဒီ Link...https://android.googlesource.com/kernel/msm/+/android-msm-bullhead-3.10-oreo-r6 မွာဝင္ၿပီး log ဆုိတာေတြ႔ရမွာ ျဖစ္ပါတယ္၊ အဲဒီ log ေလးကုိႏွိတ္လုိက္ပါ၊ အေပၚဆုံး commit ကုိ ၾကည့္လုိက္ရင္ အစိမ္းေရာင္ tag ေလးတခု ေတြ႔ရပါလိမ့္မယ္၊ အခု ႏုိဝင္ဘာလအတြက္ android-8.0.0_r25 ဆုိတာ႐ွိပါတယ္။ ( အဲဒီ tag name ေလးမွတ္ထားပါ git merge တဲ့ေနရာမွာ ျပန္သုံးမွာပါ )
 - ၿပီးတဲ့ေနာက္ fetch ၿပီးသြားရင္ Terminal မွာ ေအာက္က command ေလး႐ုိက္ေပးပါ။
+- Format
+```bash
+git merge <tag_name>
+```
+- Example: for Nexus 5X
 ```bash
 git merge android-8.0.0_r0.25
 ```
-Coming soon...
+- ဥပမာ အေနနဲ႔ ကြၽန္ေတာ္ merge ထားတဲ့ commit တခုကုိ ျပထားေပးပါမယ္၊ ၾကည့္ၾကည့္ပါ။ ( Merge android-8.0.0_r25  https://github.com/purezandroid/purez-kernel-bullhead/commit/c20be4d476135e98b67753d7d766d0c4b6de2ba8 )
+- အဲဒီေနာက္မွာေတာ့ Code ေတြကုိ Auto merging လုပ္သြားပါလိမ့္မယ္။
+- တကယ္လုိ႔ Conflicts ျဖစ္သြားရင္ Terminal မွာ file location နဲ႔အတူ message ျပေပးပါလိမ့္မယ္။
+- ေနာက္ဆုံးအဆင့္ကေတာ့ Code ေတြ merge ၿပီးရင္ ပုံမွန္အတုိင္း Kernel Compilation လုပ္လုိ႔ရပါၿပီ။
+- DONE
+
