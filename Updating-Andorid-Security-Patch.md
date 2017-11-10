@@ -49,3 +49,8 @@ git merge android-8.0.0_r0.25
 - ေနာက္ဆုံးအဆင့္ကေတာ့ Code ေတြ merge ၿပီးရင္ ပုံမွန္အတုိင္း Kernel Compilation လုပ္လုိ႔ရပါၿပီ။
 - DONE
 
+Regards,
+
+Android Building Tutorials by ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+
+https://github.com/zawzaww/android-buiding-guides
