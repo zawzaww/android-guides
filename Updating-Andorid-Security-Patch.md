@@ -9,9 +9,12 @@
 - Linux Computer
 
 # How To Update
-- သေဘာတရားကုိ အရင္႐ွင္းျပေပးပါမယ္၊ ဥပမာ - ကုိယ့္မွာ Nexus 5X အတြက္ Build မယ့္ Kernel source တခု႐ွိတယ္ထားပါေတာ့၊ အဲဒီကုိယ့္ရဲ႕ Keenel Repo ထဲကုိ အခုေနာက္ဆုံးထြက္ထားတဲ့ November Android Patch Code မ်ားကုိ Merge ၿပီးရင္ ပုံမွန္အတုိင္း ျပန္ၿပီး Kernel Compile လုပ္မွာျဖစ္ပါတယ္။ ( ၾကဳိေျပာထားပါမယ္ အခု Code ေတြက Kernel ပုိင္းအတြက္ ျဖစ္ပါတယ္ )
+- သေဘာတရားကုိ အရင္႐ွင္းျပေပးပါမယ္၊ ဥပမာ - ကုိယ့္မွာ Nexus 5X အတြက္ Build မယ့္ Kernel source တခု႐ွိတယ္ထားပါေတာ့၊ အဲဒီကုိယ့္ရဲ႕ Keenel Repo ထဲကုိ အခုေနာက္ဆုံးထြက္ထားတဲ့ November Android Security Patch Code မ်ားကုိ Merge ၿပီးရင္ ပုံမွန္အတုိင္း ျပန္ၿပီး Kernel Compile လုပ္မွာျဖစ္ပါတယ္။ ( ၾကဳိေျပာထားပါမယ္ အခု Code ေတြက Kernel ပုိင္းအတြက္ ျဖစ္ပါတယ္ )
 - ပထမဦးဆုံး ကုိယ့္ဖုန္းအတြက္ အဆင္သင့္ Kernel source တခု႐ွိဖုိ႔လုိပါတယ္။ အဲဒီအထဲကုိ Security Update Code ေတြ Merge မွာျဖစ္ပါတယ္။ Nexus 5X နဲ႔ ဥပမာေပး ေျပာျပမွာ ျဖစ္ပါတယ္။
 - ၿပီးတဲ့ေနာက္ Google Nexus နဲ႔ Pixel Device ေတြအတြက္ Kernel Repo ေတြ ႐ွိတဲ့ေနရာကုိ သိရပါမယ္ (Qualcomm chipset only Devices) https://android.googlesource.com/kernel/msm
+
+<img src="https://s20.postimg.org/4auhrh17h/Screenshot_from_2017-11-10_22-12-45.png" height="100%" width="100%;"/>
+
 - အရင္ ကုိယ့္ရဲ႕ Local Kernel Source Repo ထဲ ဝင္ၿပီး Terminal ကုိ ဖြင့္လုိက္ပါ။
 - ေအာက္က command ေလး႐ုိက္ေပးပါ။ ( git fetch ၿပီး tag အလုိက္ merge မွာ ျဖစ္ပါတယ္ )
 - Format:
@@ -22,7 +25,15 @@ git fetch --tags <repo_url> <branch_name>
 ```bash
 git fetch --tags https://android.googlesource.com/kernel/msm/ android-msm-bullhead-3.10-oreo-r6
 ```
+
+<img src="https://s20.postimg.org/tgvfy6cql/Screenshot_from_2017-11-10_22-12-30.png" height="100%" width="100%;"/>
+
 - ၿပီးရင္ ဒီ Link...https://android.googlesource.com/kernel/msm/+/android-msm-bullhead-3.10-oreo-r6 မွာဝင္ၿပီး log ဆုိတာေတြ႔ရမွာ ျဖစ္ပါတယ္၊ အဲဒီ log ေလးကုိႏွိတ္လုိက္ပါ၊ အေပၚဆုံး commit ကုိ ၾကည့္လုိက္ရင္ အစိမ္းေရာင္ tag ေလးတခု ေတြ႔ရပါလိမ့္မယ္၊ အခု ႏုိဝင္ဘာလအတြက္ android-8.0.0_r25 ဆုိတာ႐ွိပါတယ္။ ( အဲဒီ tag name ေလးမွတ္ထားပါ git merge တဲ့ေနရာမွာ ျပန္သုံးမွာပါ )
+
+<img src="https://s20.postimg.org/e9fgdlv3x/Screenshot_from_2017-11-10_22-13-09.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.org/6uq4l3r71/Screenshot_from_2017-11-10_22-13-22.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.org/o80f029od/Screenshot_from_2017-11-10_22-13-44.png" height="100%" width="100%;"/>
+
 - ၿပီးတဲ့ေနာက္ fetch ၿပီးသြားရင္ Terminal မွာ ေအာက္က command ေလး႐ုိက္ေပးပါ။
 - Format
 ```bash
