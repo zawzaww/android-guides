@@ -17,6 +17,7 @@ This Repo is for only my Myanmar friends and Tutorials.
 
 Regards,
 
-©2017 Android Building Tutorials by ZawZaw
+ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Contributed by: ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
+©2017 ZawZaw, Android Building Tutorials.
+
