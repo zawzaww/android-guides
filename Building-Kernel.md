@@ -226,6 +226,6 @@ zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
 
 Regards,
 
-Android Building Tutorials by ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+ ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-https://github.com/zawzaww/android-building-tutorials/
+©2017 ZawZaw, Android Building Tutorials.
