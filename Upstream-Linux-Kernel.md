@@ -101,6 +101,6 @@ Example: ( first commit ကနေ last commit ထဲ တခုချင်းစ
 
 Regards,
 
-Android Building Tutorials by ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-https://github.com/zawzaww/android-building-tutorials/
+©2017 ZawZaw, Android Building Tutorials.
