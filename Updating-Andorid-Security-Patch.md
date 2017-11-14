@@ -51,6 +51,7 @@ git merge android-8.0.0_r0.25
 
 Regards,
 
-Android Building Tutorials by ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-https://github.com/zawzaww/android-buiding-guides
+©2017 ZawZaw, Android Building Tutorials.
+
