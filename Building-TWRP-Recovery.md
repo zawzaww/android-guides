@@ -49,3 +49,23 @@ repo sync
 ```
 - Downloading အပုိင္းက ကုိယ့္ရဲ႕ Internet connection ေပၚမွာ မူတည္ၿပီး ၾကာပါလိမ့္မယ္။
 - ဒါေတြ ႃပီးသြားရင္ေတာ့ TWRP Recovery တခု Build ဖု႔ိ အဆင္သင့္ ႃဖစ္ပါၿပီ။
+
+## How To Build
+- အရင္ဆုံး SourceCode ကေန TWRP Recovery Compilation မလုပ္ခင္ Device tree ထဲမွာ ႃပင္ဆင္စရာေတြ႐ွိပါတယ္၊ TWRP flags ေတြ ထည့္ေပးဖု႔ိလုိအပ္ပါတယ္။ ( ကြၽန္ေတာ္ အဆင္သင့္ေရးေပးထားပါတယ္ ဒီ Repo ထဲမွာ အသုံးဝင္တဲ့ TWRP flags ေတြကုိ https://github.com/zawzaww/android-building-tutorials/blob/tutorials/Useful-TWRP-flags.mk Programming နဲ႔ မစိမ္းတဲ့သူတေယာက္ဆုိ နားလည္ပါလိမ့္မယ္ ဖက္ၾကည့္ေပးပါ Code ေတြ အေပၚမွာ ဘယ္အတြက္သုံးတယ္ဆုိတာ အသုံးဝင္ပုံကုိ comment line ေတြနဲ႔ တခါတည္း နားလည္ေအာင္ ေရးေပးထားပါတယ္၊ အခု Tutorial မွာ ကြၽန္ေတာ္ လက္႐ွိသုံးေနတဲ့ Nexus 6 နဲ႔ ပဲ ဥပမာေပးေျပာသြားမွာပါ )
+- ပထမဆုံး ကုိယ္ Build မယ့္ Android Device ရဲ႕ Device tree နဲ႔ Kernel source လုိပါတယ္၊ Device tree နဲ႔ Kernel Source သြားထည့္ေပးရမယ့္ Location ကေတာ့ ROM Building Tutorial ထဲကတုိင္း တူတူပါပဲ၊ ထပ္ေျပာေပးပါမယ္ယ
+- Format: Device tree
+```bash
+device/manufacturer/device_name
+```
+- Example: for Nexus 6
+```bash
+device/moto/shamu
+```
+- Format: Kernel Source
+```bash
+kernel/manufacturer/device_name (or) chipset_name for any android devices
+```
+- Example: for Nexus 6
+```bash
+kernel/moto/shamu
+```
