@@ -18,9 +18,34 @@ Custom Recovery ဆုိတဲ့ ေခါင္းစဥ္ေအာက္မ
 ## Sources
 - အရင္ဆုံး SourceCode ကေန Compilation မလုပ္ခင္ လုိအပ္တဲ့ Sources ေတြ ႐ွိတဲ့ေနရာကုိေျပာျပပါမယ္။
 - TWRP Recovery တခု Build ဖုိ႔ SourceCode ယူရမယ့္ ေနရာက ႏွစ္ခု႐ွိပါတယ္၊ ပထမတခုက OmniROM Sourceျဖစ္ႃပီး၊ ဒုတိယ တခုက LineageOS Source ႃဖစ္ပါတယ္၊ ကြၽန္ေတာ္အၾကံေပးခ်င္တာကေတာ့ OmniROM SourceCode ကေန Build ပါလု႔ိႂကံေပးခ်င္ပါတယ္၊ ကြၽန္ေတာ္ကုိယ္တုိင္လည္း OmniROM Source ပဲ သုံးပါတယ္၊ TWRP ရဲ႕ Core Recovery files ေတြက "omnirom/android_bootable_recovery" ဆုိတဲ့ Repository ေအာက္မွာ႐ွိပါတယ္၊ Omni Source က ပုိၿပီး Stable ႃဖစ္ပါလိမ့္မယ္။
-- ေနာက္ထပ္ၿပီး အၾကံေပးခ်င္တာကေတာ့ OmniROM Full SourceCode ဆုိ Internet Connection မေကာင္းရင္ အဆင္မေျပပါဘူး filesize က အရမ္းမ်ားပါတယ္၊ ဒါေၾကာင့္ TWRP Build ဖုိ႔ သပ္သပ္လုပ္ထားတဲ့ minimal omni sources Repo ပဲ အသုံးျပဳပါလုိ႔ အၾကံေပးပါတယ္။
+- ေနာက္ထပ္ၿပီး အၾကံေပးခ်င္တာကေတာ့ OmniROM Full SourceCode ဆုိ Internet Connection မေကာင္းရင္ အဆင္မေျပပါဘူး filesize က အရမ္းမ်ားပါတယ္၊ ဒါေၾကာင့္ TWRP Build ဖုိ႔ သပ္သပ္လုပ္ထားတဲ့ OmniROM Minimal Manifest Sources ပဲ အသုံးျပဳပါလုိ႔ အၾကံေပးပါတယ္။
 - Minimal OmniROM SourceCode...(for only TWRP Building)
 https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni
 - ေနာက္တခု လုိအပ္တာေတြကေတာ့ ကုိယ့္ Android ဖုန္းရဲ႕ Device tree နဲ႔ Kernel source ပါပဲ။ ( ကြၽန္ေတာ္ကေတာ့ ထုံစံအတုိင္း Nexus 5X နဲ႔ Nexus 6 နဲ႔ နမူနာေပးၿပီး ေရးေပးသြားမွာပါ )
 - Setup Environment လုပ္တဲ့ အပုိင္းကေတာ့ AOSP ROM Building Tutorial မွာ ေရးထားႃပီးသားျဖစ္လု႔ိ ထပ္ၿပီး မေျပာေတာ့ပါဘူး၊ ပထမ Tutorial ကုိ အရင္ေလ့လာၿပီးမွ အဆင္ေျပပါလိမ့္မယ္။ ( Installation Python, Git, git-repo and buildtools )
-- အဲဒါေတြ ႃပည့္စုံသြားရင္ေတာ့ TWRP Recovery တခု Build ဖု႔ိ အဆင္သင့္ျဖစ္ပါၿပီ။
+
+## Downloading the Sources
+- Sources ေတြ download မလုပ္ခင္ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Computer မွာ Setup Environment လုပ္တဲ့အပုိင္းကုိ ပထမ AOSP ROM Building Tutorial မွာ အရင္ဖက္ၾကည့္ပါ၊ အဲဒါေတြ ရသြားမွ Downloading လုပ္တဲ့ အပုိင္းက အဆင္ေျပပါလိမ့္မယ္။
+- ပထမဆုံး Dir တခု ေဆာက္ႃပီး SourceCode Repos ေတြ ကုိယ့္ရဲ႕ Local Computer ထဲကုိ Downloading လုပ္သြားမွာပါ။
+- Dir တခု ေဆာက္ပါမယ္။
+```bash
+mkdir TWRP-Recovery-Project
+```
+```bash
+cd TWRP-Recovery-Project
+```
+- ႃပီးတဲ့ေနာက္ Local Repository မွာ Sources ေတြ Download ဖုိ႔ Initialize လုပ္ေပးဖုိ႔ လုိပါတယ္။ ( ဒီေနရာမွာ တခုေျပာျပခ်င္ပါတယ္ ကုိယ့္ေအာက္ဆုံးထား Build ခ်င္တဲ့ Android version (branch name) ကုိ သိရပါမယ္ ကြၽန္ေတာ္ကေတာ့ 6.0 branch ပဲသုံးပါတယ္ )
+```bash
+repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
+```
+(OR)
+- ေနာက္ထပ္ အၾကံေပးခ်င္တာကေတာ့ Internet အဆင္မေျပလု႔ိ Sources ေတြ filesize သက္သက္သာသာန႔ဲ download လုပ္ခ်င္ရင္ ေအာက္က command ေလး သုံးႏုိင္ပါတယ္။ ( minimal sources ေတြက size အရမ္းမမ်ားပါဘူး 5GB ကေန 8GB ၾကားေလာက္ပဲ ႐ွိပါတယ္ )
+```bash
+repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
+```
+- Download လုပ္ဖုိ႔အတြက္ ဒီ command ေလးဆက္႐ုိက္ေပးပါ။
+```bash
+repo sync
+```
+- Downloading အပုိင္းက ကုိယ့္ရဲ႕ Internet connection ေပၚမွာ မူတည္ၿပီး ၾကာပါလိမ့္မယ္။
+- ဒါေတြ ႃပီးသြားရင္ေတာ့ TWRP Recovery တခု Build ဖု႔ိ အဆင္သင့္ ႃဖစ္ပါၿပီ။
