@@ -65,17 +65,20 @@ device/manufacturer/device_name
 ```bash
 device/moto/shamu
 ```
+<img src="https://s20.postimg.org/hdkvxcj5p/Screenshot_from_2017-11-22_14-06-49.png" />
 
 - Kernel Source
 - Format: 
 ```bash
 kernel/manufacturer/device_name (or) chipset_name for any android devices
 ```
-- Example: for Nexus 6
+- Example: for Nexus 6 ( I used purez kernel, therefore renamed: purez-kernel-shamu )
 ```bash
 kernel/moto/shamu
 ```
-- Vendor ( need for any android devices )
+<img src="https://s20.postimg.org/j6nslbwj1/Screenshot_from_2017-11-22_14-07-23.png" />
+
+- Vendor 
 - Format:
 ```bash
 vendor/manufacturer/device_name
@@ -84,6 +87,8 @@ vendor/manufacturer/device_name
 ```bash
 vendor/motorola/shamu
 ```
+<img src="https://s20.postimg.org/watcy4jgt/Screenshot_from_2017-11-22_14-07-41.png" />
+
 - အရင္ဆုံး TWRP flags ေတြန႔ဲ ရင္းႏွီးသြားေအာင္ ဒီမွာ သြားေလ့လာၾကည့္ပါ https://github.com/zawzaww/android-building-tutorials/blob/tutorials/Useful-TWRP-flags.mk
 - ႃပီးသြားရင္ Device tree folder ထဲဝင္လုိက္ပါ၊ အဲဒီထဲက BoardConfig.mk မွာ မျဖစ္ေနထည့္သြင္းရမယ့္ TWRP flags ေတြ ေအာက္မွာ ဆက္ေျပာေပးပါမယ္။
 - Example: device/moto/shamu/BoardConfig.mk (or) BoardConfigOmni.mk ကုိ TextEditor တခုခုနဲ႔ ဖြင့္လုိက္ႃပီး ေအာက္က လုိအပ္တဲ့ TWRP flags ေတြ add ေပးပါ။ ( TWRP flags ေတြေတာ့ အေသးစိတ္႐ွင္းမျပေတာ့ပါဘူး၊ လြယ္ပါတယ္ Eng လုိပဲ comment line သေဘာမ်ဳိးပဲ ေရးေပးထားပါတယ္ )
@@ -223,32 +228,48 @@ If you want to write 'TWRP device version' or 'Author name' on TWRP (Ex: 3.1.1-s
 ```bash
 TW_DEVICE_VERSION := shamu by ZawZaw
 ```
+<img src="https://s20.postimg.org/x0c5amp71/Screenshot_from_2017-11-22_14-08-40.png" />
+
 - ဒီေလာက္ဆုိ TWRP flags ေတြက လုံေလာက္မယ္ ထင္ပါတယ္၊ ဒီထက္မက သိခ်င္ရင္ features ေတြ add ခ်င္ရင္ေတာ့ အေပၚမွာေပးထားတဲ့ Useful-TWRP-flags.mk file ထဲမွာ ဝင္ၿပီး ေလ့လာႏုိင္ပါတယ္။
 - Nexus 6 အတြက္ full device tree နဲ႔ Kernel source လုိအပ္ရင္ေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub Repo မွာ ယူႏုိင္ပါတယ္
 - Device Tree ( https://github.com/zawzaww/twrp-device-shamu )
 - PureZ Kernel Source ( https://github.com/purezandroid/purez-kernel-shamu )
-
 - အဲဒါေတြ ႃပီးသြားၿပီဆုိရင္ေတာ့ TWRP Build တဲ့ လုပ္ငန္းစပါေတာ့မယ္။
 - ပထမဆုံး Download ထားတဲ့ Source dir ထဲဝင္ၿပီး Terminal ကုိဖြင့္ႃပီး ေအာက္က command ေတြ႐ုိက္ေပးပါ။
 ```bash
 . build/envsetup.sh
 ```
+<img src="https://s20.postimg.org/hrm7x1qfh/Screenshot_from_2017-11-22_14-09-12.png" />
+
 - ႃပီးသြားရင္ ကုိယ္ build ခ်င္တဲ့ Device ကုိ lunch လုပ္ေပးရပါမယ္။
 ```bash
 lunch
 ```
-- lunch လု႔ိ႐ုိက္လုိက္ရင္ Build မယ့္ device name ေတြ တန္းစီၿပီးက်လာပါလိမ့္မယ္၊ နံပါတ္ေလး ႐ုိက္လုိက္႐ုံပါပဲ။ ( ဥပမာ - Nexus 6 က No.3 ဆုိရင္ 3 လု႔ိဆက္႐ုိက္လုိက္ရင္ ရပါၿပီ )
+<img src="https://s20.postimg.org/h3dddnp0d/Screenshot_from_2017-11-22_14-09-24.png" />
+
+- lunch လု႔ိ႐ုိက္လုိက္ရင္ Build မယ့္ device name ေတြ တန္းစီၿပီးက်လာပါလိမ့္မယ္၊ နံပါတ္ေလး ႐ုိက္လုိက္႐ုံပါပဲ။ ( ဥပမာ - Nexus 6 က No.12 ဆုိရင္ 12 လု႔ိဆက္႐ုိက္လုိက္ရင္ ရပါၿပီ )
 - Example: 
 ```bash
-3
+12
 ```
+<img src="https://s20.postimg.org/iiey2esod/Screenshot_from_2017-11-22_14-09-59.png" />
+
 - ႃပီးတဲ့ေနာက္ Recovery Build ဖုိ႔အတက္ ေအာက္က command ေလးဆက္႐ုိက္ေပးပါ။
 ```bash
 mka recoveryimage
 ```
+<img src="https://s20.postimg.org/eyt0coxp9/Screenshot_from_2017-11-22_14-11-26.png" />
+
 - ႃပီးတဲ့ေနာက္ Compilation process လုပ္သြားပါလိမ့္မယ္။
+
+<img src="https://s20.postimg.org/t58r808l9/Screenshot_from_2017-11-22_14-54-22.png" />
+
 - အားလုံးၿပီးသြားရင္ေတာ့ Output က /out/target/product/your_device_name/recovery.img မွာ recovery.img ထြက္လာပါလိမ့္မယ္။
+
+<img src="https://s20.postimg.org/chh95lta5/Screenshot_from_2017-11-22_17-11-18.png" />
+
 - DONE
+<img src="https://s20.postimg.org/turjker59/Screenshot_2017-11-22-04-47-48.png" /> 
 
 Regards,
 
