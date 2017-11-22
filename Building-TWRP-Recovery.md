@@ -86,7 +86,7 @@ vendor/motorola/shamu
 ```
 - အရင္ဆုံး TWRP flags ေတြန႔ဲ ရင္းႏွီးသြားေအာင္ ဒီမွာ သြားေလ့လာၾကည့္ပါ https://github.com/zawzaww/android-building-tutorials/blob/tutorials/Useful-TWRP-flags.mk
 - ႃပီးသြားရင္ Device tree folder ထဲဝင္လုိက္ပါ၊ အဲဒီထဲက BoardConfig.mk မွာ မျဖစ္ေနထည့္သြင္းရမယ့္ TWRP flags ေတြ ေအာက္မွာ ဆက္ေျပာေပးပါမယ္။
-- Example: device/moto/shamu/BoardConfig.mk (or) BoardConfigOmni.mk ကုိ TextEditor တခုခုနဲ႔ ဖြင့္လုိက္ႃပီး ေအာက္က လုိအပ္တဲ့ TWRP flags ေတြ add ေပးပါ။
+- Example: device/moto/shamu/BoardConfig.mk (or) BoardConfigOmni.mk ကုိ TextEditor တခုခုနဲ႔ ဖြင့္လုိက္ႃပီး ေအာက္က လုိအပ္တဲ့ TWRP flags ေတြ add ေပးပါ။ ( TWRP flags ေတြေတာ့ အေသးစိတ္႐ွင္းမျပေတာ့ပါဘူး၊ လြယ္ပါတယ္ Eng လုိပဲ comment line သေဘာမ်ဳိးပဲ ေရးေပးထားပါတယ္ )
 
 TWRP Theme: for TWRP UI Theme
 ```bash
@@ -106,7 +106,7 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TWRP Inline Kernel (Need this flags If you want to build from kernel source.This is my PureZ Kernel for Nexus 6)
 ```bash
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
+TARGET_KERNEL_SOURCE := kernel/moto/purez-kernel-shamu
 TARGET_KERNEL_CONFIG := purez_defconfig
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
@@ -223,4 +223,6 @@ If you want to write 'TWRP device version' or 'Author name' on TWRP (Ex: 3.1.1-s
 ```bash
 TW_DEVICE_VERSION := shamu by ZawZaw
 ```
-If you want to full Nexus 6 Device tree...https://github.com/zawzaww/twrp-device-shamu
+- ဒီေလာက္ဆုိ TWRP flags ေတြက လုံေလာက္မယ္ ထင္ပါတယ္၊ ဒီထက္မက သိခ်င္ရင္ features ေတြ add ခ်င္ရင္ေတာ့ အေပၚမွာေပးထားတဲ့ Useful-TWRP-flags.mk file ထဲမွာ ဝင္ၿပီး ေလ့လာႏုိင္ပါတယ္။
+- Nexus 6 အတြက္ full device tree လုိအပ္ရင္ေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub Repo မွာ ယူႏုိင္ပါတယ္...https://github.com/zawzaww/twrp-device-shamu
+
