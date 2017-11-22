@@ -84,4 +84,20 @@ vendor/manufacturer/device_name
 ```bash
 vendor/motorola/shamu
 ```
+- အရင္ဆုံး TWRP flags ေတြန႔ဲ ရင္းႏွီးသြားေအာင္ ဒီမွာ သြားေလ့လာၾကည့္ပါ https://github.com/zawzaww/android-building-tutorials/blob/tutorials/Useful-TWRP-flags.mk
+- ႃပီးသြားရင္ Device tree folder ထဲဝင္လုိက္ပါ၊ အဲဒီထဲက BoardConfig.mk မွာ မျဖစ္ေနထည့္သြင္းရမယ့္ TWRP flags ေတြ ေအာက္မွာ ဆက္ေျပာေပးပါမယ္။
+- Example: device/moto/shamu/BoardConfig.mk (or) BoardConfigOmni.mk ကုိ TextEditor တခုခုနဲ႔ ဖြင့္လုိက္ႃပီး ေအာက္က လုိအပ္တဲ့ TWRP flags ေတြ add ေပးပါ။
+- TWRP Theme: for TWRP UI Theme
+```bash
+TW_THEME := portrait_hdpi
+```
+- This enables proper handling of /data/media on devices that have this folder for storage
+```bash
+RECOVERY_SDCARD_ON_DATA := true
+```
+-  Disables things like sdcard partition
+```bash
+BOARD_HAS_NO_REAL_SDCARD := true
+```
+
 
