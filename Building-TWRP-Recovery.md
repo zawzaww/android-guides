@@ -228,3 +228,25 @@ TW_DEVICE_VERSION := shamu by ZawZaw
 - Device Tree ( https://github.com/zawzaww/twrp-device-shamu )
 - PureZ Kernel Source ( https://github.com/purezandroid/purez-kernel-shamu )
 
+- အဲဒါေတြ ႃပီးသြားၿပီဆုိရင္ေတာ့ TWRP Build တဲ့ လုပ္ငန္းစပါေတာ့မယ္။
+- ပထမဆုံး Download ထားတဲ့ Source dir ထဲဝင္ၿပီး Terminal ကုိဖြင့္ႃပီး ေအာက္က command ေတြ႐ုိက္ေပးပါ။
+```bash
+. build/envsetup.sh
+```
+- ႃပီးသြားရင္ ကုိယ္ build ခ်င္တဲ့ Device ကုိ lunch လုပ္ေပးရပါမယ္။
+```bash
+lunch
+```
+- lunch လု႔ိ႐ုိက္လုိက္ရင္ Build မယ့္ device name ေတြ တန္းစီၿပီးက်လာပါလိမ့္မယ္၊ နံပါတ္ေလး ႐ုိက္လုိက္႐ုံပါပဲ။ ( ဥပမာ - Nexus 6 က No.3 ဆုိရင္ 3 လု႔ိဆက္႐ုိက္လုိက္ရင္ ရပါၿပီ )
+- Example: 
+```bash
+3
+```
+- ႃပီးတဲ့ေနာက္ Recovery Build ဖုိ႔အတက္ ေအာက္က command ေလးဆက္႐ုိက္ေပးပါ။
+```bash
+mka recoveryimage
+```
+- ႃပီးတဲ့ေနာက္ Compilation process လုပ္သြားပါလိမ့္မယ္။
+- အားလုံးၿပီးသြားရင္ေတာ့ Output က /out/target/product/your_device_name/recovery.img မွာ recovery.img ထြက္လာပါလိမ့္မယ္။
+- DONE
+
