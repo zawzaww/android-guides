@@ -87,17 +87,172 @@ vendor/motorola/shamu
 - အရင္ဆုံး TWRP flags ေတြန႔ဲ ရင္းႏွီးသြားေအာင္ ဒီမွာ သြားေလ့လာၾကည့္ပါ https://github.com/zawzaww/android-building-tutorials/blob/tutorials/Useful-TWRP-flags.mk
 - ႃပီးသြားရင္ Device tree folder ထဲဝင္လုိက္ပါ၊ အဲဒီထဲက BoardConfig.mk မွာ မျဖစ္ေနထည့္သြင္းရမယ့္ TWRP flags ေတြ ေအာက္မွာ ဆက္ေျပာေပးပါမယ္။
 - Example: device/moto/shamu/BoardConfig.mk (or) BoardConfigOmni.mk ကုိ TextEditor တခုခုနဲ႔ ဖြင့္လုိက္ႃပီး ေအာက္က လုိအပ္တဲ့ TWRP flags ေတြ add ေပးပါ။
-- TWRP Theme: for TWRP UI Theme
+
+TWRP Theme: for TWRP UI Theme
 ```bash
 TW_THEME := portrait_hdpi
 ```
-- This enables proper handling of /data/media on devices that have this folder for storage
+
+This enables proper handling of /data/media on devices that have this folder for storage
 ```bash
 RECOVERY_SDCARD_ON_DATA := true
 ```
--  Disables things like sdcard partition
+
+Disables things like sdcard partition (If you do not define this flag and also do not include any references to /sdcard, /internal_sd, /internal_sdcard, or /emmc in your fstab)
 ```bash
 BOARD_HAS_NO_REAL_SDCARD := true
 ```
 
+TWRP Inline Kernel (Need this flags If you want to build from kernel source.This is my PureZ Kernel for Nexus 6)
+```bash
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+TARGET_KERNEL_SOURCE := kernel/moto/shamu
+TARGET_KERNEL_CONFIG := purez_defconfig
+TARGET_KERNEL_ARCH := arm
+TARGET_KERNEL_HEADER_ARCH := arm
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+```
 
+Disables the display of the battery percentage for devices on TWRP
+```bash
+TW_NO_BATT_PERCENT := true
+```
+
+Disables the display of the CPU Temperature for devices on TWRP
+```bash
+TW_NO_CPU_TEMP := true
+```
+
+CPU Architecture (This is depend on your Device's cpu architecture)
+
+Example: for Nexus 6 (ARM device)
+```bash
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := krait
+```
+
+Bootloader and Board Platform
+
+Example: for Nexus 6
+```bash
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+TARGET_BOARD_PLATFORM := msm8084
+TARGET_BOOTLOADER_BOARD_NAME := shamu
+TARGET_NO_RPC := true
+TARGET_BOARD_INFO_FILE := device/moto/shamu/board-info.txt
+```
+
+F2FS filesystem Support for TWRP  (Make sure your kernel supports f2fs)
+```bash
+TARGET_USERIMAGES_USE_F2FS := true
+```
+
+fstab.shamu : Example for Nexus 6
+```bash
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+#
+#<src>                                             <mnt_point>     <type>  <mnt_flags and options>                                         <fs_mgr_flags>
+/dev/block/platform/msm_sdcc.1/by-name/system       /system         ext4    ro,barrier=1                                wait
+/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    rw,nosuid,nodev,noatime,nodiratime,noauto_da_alloc,nobarrier    wait,check,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    rw,nosuid,nodev,noatime,nodiratime,inline_xattr,nobarrier       wait,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    rw,noatime,nosuid,nodev,barrier=1,data=ordered   wait,check,formattable
+/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    rw,nosuid,nodev,noatime,nodiratime,inline_xattr,nobarrier       wait,check,formattable
+/dev/block/platform/msm_sdcc.1/by-name/modem        /firmware       ext4    ro,barrier=1,context=u:object_r:firmware_file:s0    wait
+/dev/block/platform/msm_sdcc.1/by-name/persist      /persist        ext4    rw,nosuid,nodev,barrier=1                      wait,check,notrim
+/dev/block/platform/msm_sdcc.1/by-name/boot         /boot           emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/recovery     /recovery       emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/misc         /misc           emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/modem        /modem          emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs1  /mdm1m9kefs1    emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs2  /mdm1m9kefs2    emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs3  /mdm1m9kefs3    emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/sbl1         /sbl1           emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/tz           /tz             emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/rpm          /rpm            emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/sdi          /sdi            emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/aboot        /aboot          emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/versions     /versions       emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/logo         /logo           emmc    defaults                                                        defaults
+/dev/block/platform/msm_sdcc.1/by-name/frp          /persistent     emmc    defaults                                                        defaults
+/devices/*/xhci-hcd.0.auto/usb* auto auto defaults 
+```
+
+Recovery fstab for Nexus 6
+```bash
+TARGET_RECOVERY_FSTAB = device/moto/shamu/fstab.shamu
+```
+
+Your Device's screen will stay awake on TWRP
+```bash
+TW_NO_SCREEN_TIMEOUT := true
+```
+
+Add support for encryption data on TWRP
+```bash
+TW_INCLUDE_CRYPTO := true
+```
+
+Disable/enable SELinux (Only suggested when you want to enable SELinux support)
+```bash
+TWHAVE_SELINUX := true
+```
+
+Max Screen brightness for TWRP
+```bash
+TW_MAX_BRIGHTNESS := 255
+```
+
+Default Screen Brightness for TWRP
+```bash
+TW_DEFAULT_BRIGHTNESS := 112
+```
+
+Needed on devices without a recovery partition (some devices have recovery included in boot.img)
+```bash
+TW_HAS_NO_RECOVERY_PARTITION := true
+```
+
+recovery.fstab (OR) twrp.fstab
+
+TWRP Configuration for Nexus 6
+
+Example: for Nexus 6
+```bash
+/system      ext4    /dev/block/platform/msm_sdcc.1/by-name/system
+/data        ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata      flags=encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/cache       ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
+/firmware    ext4    /dev/block/platform/msm_sdcc.1/by-name/modem         flags=mounttodecrypt
+/boot        emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery    emmc    /dev/block/platform/msm_sdcc.1/by-name/recovery      flags=backup=1
+#/misc        emmc    /dev/block/platform/msm_sdcc.1/by-name/misc
+/modem       emmc    /dev/block/platform/msm_sdcc.1/by-name/modem
+/mdm1m9kefs1 emmc    /dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs1   flags=backup=1;display=EFS
+/mdm1m9kefs2 emmc    /dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs2   flags=backup=1;subpartitionof=/mdm1m9kefs1
+/mdm1m9kefs3 emmc    /dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs3   flags=backup=1;subpartitionof=/mdm1m9kefs1
+/sbl1        emmc    /dev/block/platform/msm_sdcc.1/by-name/sbl1
+/tz          emmc    /dev/block/platform/msm_sdcc.1/by-name/tz
+/rpm         emmc    /dev/block/platform/msm_sdcc.1/by-name/rpm
+/sdi         emmc    /dev/block/platform/msm_sdcc.1/by-name/sdi
+/aboot       emmc    /dev/block/platform/msm_sdcc.1/by-name/aboot
+/versions    emmc    /dev/block/platform/msm_sdcc.1/by-name/versions
+/logo        emmc    /dev/block/platform/msm_sdcc.1/by-name/logo
+/usb-otg vfat /dev/block/sda1 /dev/block/sda flags=removable;storage;display=USB-OTG
+```
+
+And, you need add this line on your device.mk (for twrp.fstab)
+```bash
+PRODUCT_COPY_FILES += device/moto/shamu/twrp.fstab:recovery/root/etc/twrp.fstab
+```
+
+If you want to write 'TWRP device version' or 'Author name' on TWRP (Ex: 3.1.1-shamu by ZawZaw )
+
+```bash
+TW_DEVICE_VERSION := shamu by ZawZaw
+```
+If you want to full Nexus 6 Device tree...https://github.com/zawzaww/twrp-device-shamu
