@@ -1,6 +1,6 @@
 <img src="https://img.xda-cdn.com/XXEijIJ9sFe_-u4VZQgkjZkKwcU=/http%3A%2F%2Fwww.aftvnews.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fteamwin-recovery-project-twrp-logo.jpg" height="100%" width="100%;" />
 
-# How To Build a CustomRecovery (TWRP) for Android Devices
+# How To Build TWRP Recovery for Android Devices from SourceCode
 
 # Team Win Recovery Project (TWRP)
 
@@ -250,3 +250,8 @@ mka recoveryimage
 - အားလုံးၿပီးသြားရင္ေတာ့ Output က /out/target/product/your_device_name/recovery.img မွာ recovery.img ထြက္လာပါလိမ့္မယ္။
 - DONE
 
+Regards,
+
+ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
+
+Copyright (c) 2017 ZawZaw, Android Building Tutorials.
