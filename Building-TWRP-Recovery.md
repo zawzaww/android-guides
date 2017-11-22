@@ -224,5 +224,7 @@ If you want to write 'TWRP device version' or 'Author name' on TWRP (Ex: 3.1.1-s
 TW_DEVICE_VERSION := shamu by ZawZaw
 ```
 - ဒီေလာက္ဆုိ TWRP flags ေတြက လုံေလာက္မယ္ ထင္ပါတယ္၊ ဒီထက္မက သိခ်င္ရင္ features ေတြ add ခ်င္ရင္ေတာ့ အေပၚမွာေပးထားတဲ့ Useful-TWRP-flags.mk file ထဲမွာ ဝင္ၿပီး ေလ့လာႏုိင္ပါတယ္။
-- Nexus 6 အတြက္ full device tree လုိအပ္ရင္ေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub Repo မွာ ယူႏုိင္ပါတယ္...https://github.com/zawzaww/twrp-device-shamu
+- Nexus 6 အတြက္ full device tree နဲ႔ Kernel source လုိအပ္ရင္ေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub Repo မွာ ယူႏုိင္ပါတယ္
+- Device Tree ( https://github.com/zawzaww/twrp-device-shamu )
+- PureZ Kernel Source ( https://github.com/purezandroid/purez-kernel-shamu )
 
