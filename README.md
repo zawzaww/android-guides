@@ -3,13 +3,14 @@
 ## A Technical Author of TechX Myanmar : Contributions and writing Articles - Android OS, System, Android Building Guides and More
 
 ## Index:
-- Building Pure Android OS (AOSP ROM) for Android Devices
-- Building TWRP Recovery for Andorid Devices
-- Building Kernel for Android Devices
-  - How To Add Kernel Features
-  - How To Build Kernel from SourceCode
-  - How To Update Latest Linux Kernel version
-  - How To Update Latest Android Security Patch
+#### Guides/Tutorials for Android Devices
+#### Links
+- [How To Build Pure Android OS (Pure AOSP ROM)](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Building-AOSP-ROM.md)
+- [How To Build TWRP Recovery](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Building-TWRP-Recovery.md)
+- [How To Build Kernel](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Building-Kernel.md)
+- [How To Add Kernel Features](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Adding-Kernel-Features.md)
+- [How To Update Latest Linux Kernel version](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Upstream-Linux-Kernel.md)
+- [How To Update Latest Android Security Patch](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Updating-Andorid-Security-Patch.md)
 
 This Repo is for only my Myanmar friends and TechX Myanmar's Articles.
 
@@ -20,4 +21,4 @@ Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Copyright (c) 2017, ZawZaw.
+Copyright (c) 2017 ZawZaw.
