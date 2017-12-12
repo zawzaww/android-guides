@@ -1,4 +1,4 @@
-# Android Articles for TechX Myanmar by ZawZaw
+# ANDROID ARTICLES
 
 ## A Technical Author of TechX Myanmar : Contributions and writing Articles - Android OS, System, Android Building Guides and More
 
@@ -19,6 +19,6 @@ This Repo is for only my Myanmar friends and TechX Myanmar's Articles.
 
 Regards,
 
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
+ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Copyright (c) 2017 ZawZaw.
+Copyright (C) 2017, ZawZaw.
