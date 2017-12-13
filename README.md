@@ -8,7 +8,7 @@
 - [How To Build Pure Android OS (Pure AOSP ROM)](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
 - [How To Build TWRP Recovery](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
 - [How To Build Kernel](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-Kernel.md)
-- [How To Add Kernel Features(https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Adding-Kernel-Features.md)
+- [How To Add Kernel Features](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Adding-Kernel-Features.md)
 - [How To Update Latest Linux Kernel version](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Upstream-Linux-Kernel.md)
 - [How To Update Latest Android Security Patch](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Updating-Andorid-Security-Patch.md)
 
