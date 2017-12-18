@@ -275,4 +275,4 @@ Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Copyright (c) 2017 ZawZaw, Android Building Tutorials.
+Copyright (C) 2017, ZawZaw.
