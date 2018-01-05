@@ -1,10 +1,10 @@
 # ANDROID ARTICLES
 
-## A Technical Author of TechX Myanmar : Contributions and writing Articles - Android OS, System, Android Building Guides and More
+## I am a Technical Author of TechX Myanmar : Contributions and writing Articles - Android OS, System, Android Building Guides and More
 
 ## Index:
-#### Guides/Tutorials for Android Devices
-#### Links
+### Guides/Tutorials
+### Links
 - [How To Build Pure Android OS (Pure AOSP ROM)](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
 - [How To Build TWRP Recovery](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
 - [How To Build Kernel](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-Kernel.md)

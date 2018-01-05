@@ -93,11 +93,11 @@ cd AOSP-ROM-Project
 - -b ေနာက္က ကုိယ့္ Build မယ့္ branch ပါ။ ( တနည္းအားျဖင့္ ကုိယ္ Build ခ်င္တဲ့ Android version ပါ r (r_23) ဆုိတာ Release ကုိ ဆုိလုိတာပါ )
 - ဒီေနရာမွာ သုံးတဲ့ command ေတြက git-repo command ေတြပါ https://source.android.com/source/using-repo သုံးမယ့္ Repository ကလည္း git-repo အတြက္ ရည္ရြယ္ၿပီး ေရးထားတဲ့ Repository တခုျဖစ္ပါတယ္ xml နဲ႔ေရးပါတယ္၊ ေရးနည္းက ႐ုိး႐ွင္းပါယ္ ဒီမွာေလ့လာၾကည့္ပါ https://github.com/purezandroid/purezandroid-manifest/blob/purez-8.0.0/default.xml
 ```bash
-repo init -u https://android.googlesource.com/platform/manifest -b android-8.0.0_r23
+repo init -u https://android.googlesource.com/platform/manifest.git -b android-8.1.0_r2
 ```
  (OR)
 ```bash
-repo init -u https://github.com/zawzaww/aosp-android -b oreo
+repo init -u https://github.com/zawzaww/aosp-android.git -b android-8.1.0
 ```
  (OR)
 - တျခား CustomROM တခုရဲ႕ SourceCode ပါ Download ဖုိ႔အတြက္ ထပ္ျဖည့္ေျပာပါမယ္။ ( လူသိမ်ားတဲ့ LineageOS နဲ႔ပဲ ဥပမာေပး ေျပာပါမယ္ )
