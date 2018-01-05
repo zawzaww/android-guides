@@ -53,4 +53,4 @@ Regards,
 
 ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Copyright (C) 2017, ZawZaw.
+Copyright (C) 2017-2018, ZawZaw.
