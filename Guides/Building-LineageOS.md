@@ -2,10 +2,10 @@
 
 # How To Build LineageOS for Andorid Devices
 
-## Introduction
+# Introduction
    ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ LineageOS SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ LineageOS CustomROM တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ LineageOS ဆုိတာ Android CustomROM Cummunity ေတြထဲမွာ Support Device အမ်ားဆုံး Popular အျဖစ္ဆုံးနဲ႔ အႀကီးဆုံးလု႔ိ ေျပာလု႔ိ ရပါတယ္၊ Android User ေတာ္ေတာ္မ်ားမ်ားလည္း ရင္းႏွီးၾကပါတယ္။ အခုေျပာမယ့္ နည္းကုိသိသြားရင္ တျခားေသာ Android CustomROM အမ်ားအျပားပါ build တတ္သြားပါလိမ့္မယ္။ တခုပဲကြဲျပားသြားပါလိမ့္မယ္ Android OS SourceCode ယူရတဲ့ ေနရာပဲကြဲသြားတာပါ။(Example: Android CustomROM Teams - OmniROM, AOSiP, AOKP, AOSP Extended, Dirty Unicorns, ResurrectionRemix and etc...) တခုေတာ့ သတိေပးထားပါရေစ Android OS SourceCode ရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Nexus 5X / 6 နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
 
-## Requirements
+# Requirements
 - Linux OS သုံးထားတဲ့ Computer တလုံး႐ွိရပါမယ္
 - OpenJDK Install ထားရပါမယ္
 - Python 2.7+ Install ထားရပါမယ္ (ဘာလုိ႔လဲဆုိေတာ့ Google ရဲ့ git-repo က Python နဲ႔ေရးထားတာ ျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ Python Install လုပ္မထားရင္ git-repo က အလုပ္မလုပ္ပါဘူး)
@@ -13,7 +13,7 @@
 - Google ရဲ႕ git-repo လည္း သုံးတတ္ရပါမယ္။ git-repo အေၾကာင္းကုိ ဒီမွာဝင္ဖက္ႏုိင္ပါတယ္... https://code.google.com/archive/p/git-repo/ ၿပီးသြားရင္ git-repo command ေတြကုိ ဒီမွာ ေလ့လာၾကည့္ပါ... https://source.android.com/source/using-repo 
 (git-repo ဆုိတာ Git ေပၚမွာ အေျခခံၿပီး Google က develop ထားတဲ့ tool တခုပါ၊ Android ROM Development မွာ အရမ္းအသုံးဝင္ပါတယ္၊ [ git-repo - Multiple Repository Tool ] လုိ႔ေခၚပါတယ္၊ သူ႔ရဲ႕ အသုံးဝင္ပုံက Repo တခုေဆာက္ၿပီး အဲဒီထဲမွာ xml file ေလးတခုေဆာက္ၿပီး ကုိယ္လုိခ်င္တဲ့ ကုိယ္ remote လုပ္ခ်င္တဲ့ repo ေတြကုိအမ်ာႀကီးကုိ link ေပးၿပီး repo sync ဆုိတဲ့ command ကုိသုံးၿပီး ကုိယ့္ရဲ႕ Local machine ထဲကုိ တေနရာတည္းမွာပဲ Repository ေတြအမ်ာႀကီးကုိ download ဆြဲလုိ႔ရပါတယ္၊ သေဘာက ROM တခု build ဖုိ႔ လုိအပ္တဲ့ Android SourceCode Repository ေတြက အမ်ားႀကီးပါ အဲဒါကုိ တခုခ်င္းလုိက္ git clone မေနပဲ xml file ေလးကေန Repository အမ်ားႀကီးစုၿပီး Local ထဲကုိ download ဆြဲလုိက္တဲ့ သေဘာပါပဲ)
 
-## Setup Your Environment
+# Setup Your Environment
 ## Step 1: Installation OpenJDK
 - ပထမဦးဆုံး OpenJDK ကုိ ကုိယ့္ရဲ့ Computer မွာ Install ထားဖုိ့ လုိပါတယ္၊ Terminal ကုိဖြင့္ၿပီး ေအာက္ပါ command ေလးေတြ ႐ုိက္ေပးပါ။
 
@@ -67,39 +67,4 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
 အဲဒါေတြ အကုန္ၿပီးသြားၿပီ ဆုိရင္ေတာ့ ROM တခု build ဖုိ႔အတြက္ Setup Environment ပုိင္းက ျပည့္စုံသြားပါၿပီ။
-
-## Downloading the Sources
-- Android OS ႀကီးတခုလုံး အတြက္ လုိအပ္ Repository ေတြပါတဲ့ Android Plaform Manifest ( ဘာေတြပါလဲဆုိေတာ့ Android OS အတြက္ လုိအပ္တဲ့ framework ေတြ၊ lib ေတြ၊ system apps package ေတြ၊ device tree ေတြ kernel tree ေတြ၊ bootable recovery ၊ build tools ေတြ toochains GCC compiler ေတြ အကုန္ပါပါတယ္ filesize က 20GB နဲ႔ အထက္မွာ႐ွိပါတယ္ )
-- LineageOS Main SourceCode - All Repos (https://github.com/LineageOS)
-- LineageOS - Android Platform Manifest for downloading the sources (https://github.com/LineageOS/android)
-
-- ပထမဆုံး လုပ္ရမွာက Sources ေတြ download ဖုိ႔ Directory တခုေဆာက္ပါမယ္
-```bash
-mkdir LineageOS-Project
-```
-```bash
-cd LineageOS-Project
-```
-
-- LineageOS SourceCode ကုိ Download ပါေတာ့မယ္။
-- -b ေနာက္ကေကာင္က 'lineage-15.0' က branch name ပါ။ 
-- lineage-15.1(Coming soon...) က Oreo(8.1.0+) build အတြက္ပါ၊ lineage-15.0 က Oreo(8.0.0) build အတြက္ပါ၊ cm-14.0 သုံးရင္ Nougat(7.0) build အတြက္ပါ၊ cm-14.1 သုံးရင္ Nougat(7.1.1-7.1.2) build အတြက္ပါ၊ ၾကဳိက္တဲ့ Android version ကုိ Build ႏုိင္ပါတယ္။
-- For android 8.0.0 build
-```bash
-repo init -u git://github.com/LineageOS/android.git -b lineage-15.0
-```
-(OR)
-
-- If yow want to Build android 8.1.0 for your Device, type this
-```bash
-repo init -u git://github.com/LineageOS/android.git -b staging/lineage-15.1
-```
-
-- Sources ေတြ download ဖုိ႔ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
-
-```bash
-repo sync
-```
-အဲဒီေနာက္မွာေတာ့ Sources ေတြ Downloading လုပ္ေနတဲ့ အပုိင္းပါ၊
-SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connection ေပၚမွာ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
 
