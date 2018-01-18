@@ -10,7 +10,7 @@
 - [How To Build Kernel](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-Kernel.md)
 - [How To Add Kernel Features](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Adding-Kernel-Features.md)
 - [How To Update Latest Linux Kernel version](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Upstream-Linux-Kernel.md)
-- [How To Update Latest Android Security Patchs](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Updating-Andorid-Security-Patchs.md)
+- [How To Update Latest Android Security Patchs](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Updating-Andorid-Security-Patch.md)
 
 This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 
