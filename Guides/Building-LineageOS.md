@@ -186,3 +186,8 @@ Output - /out/target/product/bullhead/ ေအာက္မွာ flashablezip ထ
 ```
 Compilation process time က Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီး ၾကာပါလိမ့္မယ္။ 
 
+Regards,
+
+ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
+
+Copyright (C) 2017-2018, ZawZaw.
