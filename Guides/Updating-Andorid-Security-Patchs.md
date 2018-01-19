@@ -51,6 +51,6 @@ git merge android-8.0.0_r0.25
 
 Regards,
 
-ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
 Copyright (C) 2017-2018, ZawZaw.

@@ -237,6 +237,6 @@ Compilation process time က Computer ရဲ႕ CPU core ေပၚ မူတည�
 
 Regards,
 
-ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
 Copyright (C) 2017-2018, ZawZaw.
