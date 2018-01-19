@@ -107,6 +107,26 @@ SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connect
 # Building LineageOS
 - Official Documentation: LineageOS Building for Nexus 5X (https://wiki.lineageos.org/devices/bullhead/build)
 - အရင္ဆုံး Source ကေန Compilation မလုပ္ခင္ ၾကဳိတင္ျပင္ဆင္ရမယ့္ အရာေတြကုိ ေျပာျပေပးပါမယ္။
+- အေပၚမွာ Introduction မွာ ေျပာခဲ့သလုိပါပဲ ကုိယ့္ Android Phone အတြက္ လုိအပ္တဲ့ Kernel Source နဲ႔ Device tree Repo ေတြကုိ github.com/LineageOS/ ေအာက္မွာ သြား႐ွာလု႔ိ ရပါတယ္။
+- ဘယ္လုိ ႐ွာရမလဲ ေျပာပါမယ္၊ Name ေပးပုံ ေပးနည္းကုိ သိရင္ ရပါၿပီ။ 
+- Example for Nexus 5X ( Nexus 5X ရဲ႕ device name ကုိ bullhead လု႔ိေခၚပါတယ္ )
+- Format: Device tree
+```bash
+android_device_manufacturer_devicename
+```
+- Example: Device tree for Nexus 5X
+```bash
+android_device_lge_bullhead
+```
+- Format: Kernel Source
+```bash
+android_kernel_manufacturer_devicename
+```
+- Example: Kernel source for Nexus 5X
+```bash
+android_kernel_lge_bullhead
+```
+
 - ပထမဆုံး လုိအပ္တာက ကုိယ့္ဖုန္းရဲ႕ Device tree ပါ
 - Location က ဘယ္မွာ သြားထည့္ရမလဲဆုိရင္ Download ထားတဲ့ Source dir ေအာက္က /device ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
 - Format:
@@ -118,7 +138,7 @@ SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connect
 /device/lge/bullhead
 ```
 - ROM build တဲ့ေနရာမွာ Kernel ပုိင္းက ႏွစ္မ်ဳိးကြဲပါမယ္၊ Kernel source ကေန build တာရယ္ အဆင္သင့္ build ထားၿပီးသား prebuilt kernel ကေန Build တာဆုိၿပီး ႐ွိပါတယ္၊ kernel source ကေန build တာပဲ အၾကံေပးတယ္။
-- ၿပီးတဲ့ေနာက္ Kernel source ကေန build မယ္ဆုိရင္ Device tree ထဲက ျပင္ဆင္စရာ႐ွိပါတယ္၊ Nexus 5X အေနနဲ႔ ေျပာပါမယ္ /device/lge/bullhead/BoardConfig.mk ကုိ TextEditor တခုနဲ႔ ဖြင့္ၿပီး ေအာက္က code ေလးေတြ ထပ္ျဖည့္လုိက္ပါ။
+- ၿပီးတဲ့ေနာက္ Kernel source ကေန build မယ္ဆုိရင္ Device tree ထဲက ျပင္ဆင္စရာ႐ွိပါတယ္၊ Nexus 5X အေနနဲ႔ ေျပာပါမယ္ /device/lge/bullhead/BoardConfig.mk ကုိ TextEditor တခုနဲ႔ ဖြင့္ၿပီး ေအာက္က code ေလးေတြ ထပ္ျဖည့္လုိက္ပါ။ (အခုအဆင့္က ကုိယ္တုိင္ Modified ႏုိင္ေအာင္ သိေအာင္ ေျပာေပးတာပါ၊ LineageOS source ကေနဆုိ မလုိပါဘူး သူတုိ႔ရဲ႔ Official Contributor ေတြ အဆင့္သင့္ လုပ္ေပးထားပါတယ္၊ သူတု႔ိ Support ထားတဲ့ Device အတြက္ဆုိရင္ လုပ္စရာမလုိေတာ့ပါဘူး)
 ```bash
 # Inline Kernel Build
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
@@ -163,7 +183,12 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 ```bash
 . build/envsetup.sh
 ```
-- ၿပီးရင္ ေအာက္က command ေလး ဆက္႐ုိက္ေပးပါ။ (Same as 'lunch' command)
+(OR)
+```bash
+source build/envsetup.sh
+```
+
+- ၿပီးရင္ ေအာက္က command ေလး ဆက္႐ုိက္ေပးပါ။ ( AOSP တုန္းက lunch ဆုိတဲ့ command နဲ႔တူပါတယ္ )
 - Format:
 ```bash
 breakfast <device_name>
@@ -172,16 +197,20 @@ breakfast <device_name>
 ```bash
 breakfast bullhead
 ```
-- Configure jack for LineageOS 14.1 and Up, type this
+- Note: ဒီေနရာမွာ မလုိတာေတြ ခ်န္ထားခဲ့တာ ႐ွိပါတယ္ Compilation process time ျမန္ေအာင္ "ccache" Setup လုပ္တဲ့ အပုိင္းေတြ မေျပာေတာ့ပါဘူး ႐ႈပ္သြားမွာဆုိးလု႔ိပါ၊ ေနာက္တခုက Android CustomROM Team တခုနဲ႔ တခုက 
+သူတု႔ိ ROM Build ဖု႔ိအတြက္ make build command ေတြက မတူၾကပါဘူး ဘာလု႔ိလဲဆုိေတာ့ AOSP/platform/build (https://android.googlesource.com/platform/build) ဆုိတဲ့ Repo တခု ႐ွိပါတယ္ သူက OS ႀကီးတခုလုံးအတြက္ build System တခုပါ Makefile နဲ႔ ေရးထားပါတယ္ နားလည္ရင္ စိတ္ၾကဳိက္ျပဆင္ခြင့္႐ွိပါတယ္ အဲဒီမွာ make build command ေတြ ဖန္တီးႏုိင္ပါတယ္။
+- Screenshots ေတြကုိ ထပ္ႃပီး Upload မလုပ္ေတာ့ပါဘူး တူတူပါပဲ AOSP Building Guide မွာ ၾကည့္ႏုိင္ပါတယ္...https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-AOSP-ROM.md
+- LineageOS 14.1 နဲ႔ အထက္အတြက္ Jack Configure လုပ္ေပးဖု႔ိ လုိအပ္ပါတယ္
 ```bash
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 ```
 
-- Build ဖုိ႔အတြက္ ေအာက္က command ေလး ဆက္႐ုိက္ေပးပါ
+- ေနာက္ဆုံးအဆင့္ အေနနဲ႔ ROM Build ဖုိ႔အတြက္ ေအာက္က command ေလး ဆက္႐ုိက္ေပးပါ ( bullhead ဆုိတဲ့ေနရာမွာ ကုိယ္ဖုန္းရဲ႔ device name ေပၚ မူတည္ၿပီး ကြဲျပားသြားပါလိမ့္မယ္ )
 ```bash
 croot
 brunch bullhead
 ```
+- Output ထြက္မယ့္ေနရာကေတာ့ ေအာက္ပါ location အတုိင္း ျဖစ္ပါတယ္
 ```bash
 Output - /out/target/product/bullhead/ ေအာက္မွာ flashablezip ထြက္လာပါလိမ့္မယ္
 ```
