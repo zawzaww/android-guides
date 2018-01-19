@@ -69,7 +69,8 @@ chmod a+x ~/bin/repo
 အဲဒါေတြ အကုန္ၿပီးသြားၿပီ ဆုိရင္ေတာ့ ROM တခု build ဖုိ႔အတြက္ Setup Environment ပုိင္းက ျပည့္စုံသြားပါၿပီ။
 
 # Downloading the Sources
-- Android OS ႀကီးတခုလုံး အတြက္ လုိအပ္ Repository ေတြပါတဲ့ Android Plaform Manifest ( ဘာေတြပါလဲဆုိေတာ့ Android OS အတြက္ လုိအပ္တဲ့ framework ေတြ၊ lib ေတြ၊ system apps package ေတြ၊ device tree ေတြ kernel tree ေတြ၊ bootable recovery ၊ build tools ေတြ toochains GCC compiler ေတြ အကုန္ပါပါတယ္ filesize က 20GB နဲ႔ အထက္မွာ႐ွိပါတယ္ )
+- Android OS ႀကီးတခုလုံး အတြက္ လုိအပ္ Repositories အမ်ားႀကီးကုိ Android Plaform Manifest Repo ကေန Download လုပ္မွာ ႃဖစ္ပါတယ္။ 
+- အဆုိပါ Android Platform Manifest မွာ ဘာေတြပါလဲဆုိေတာ့ Android OS အတြက္ လုိအပ္တဲ့ Repos ေတြ အကုန္ပါပါတယ္ ( frameworks repos, bootable recovery, kernel trees(for AOSP), device trees(for AOSP), system repos, hardware repos, system packages apps, Prebuilt GCC Toolchains and buildtools, external repos, vendor and tools repos and more ) filesize က 20GB နဲ႔ အထက္မွာ႐ွိပါတယ္ မူးရင္း AOSP SourceCode ရဲ႕ filesize ဒီထက္မက မ်ားပါတယ္
 - LineageOS Main SourceCode - All Repos (https://github.com/LineageOS)
 - LineageOS - Android Platform Manifest for downloading the sources (https://github.com/LineageOS/android)
 
