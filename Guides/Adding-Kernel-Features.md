@@ -1,2 +1,2 @@
-# How To Add Kernel Features for Android Devices  
-
+## How To Add Kernel Features for Android Devices Using Git
+Coming soon...
