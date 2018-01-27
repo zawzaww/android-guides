@@ -1,6 +1,6 @@
-# ANDROID BUILDING ARTICLES
+# ANDROID ARTICLES
 
-## I am a Technical Author of TechX Myanmar : Contributed Articles - Android OS, System, Android Building Guides and More
+## I am a Technical Writer of TechX Myanmar : Contributing Android Articles - Android OS, System, Android Building Guides and More
 
 ### Guides/Tutorials
 ### Index
