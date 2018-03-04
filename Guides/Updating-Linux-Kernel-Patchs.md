@@ -47,12 +47,37 @@ git merge <tag_name>
 ```bush
 git merge v3.10.74
 ```
-- ဒါမှမဟုတ် Latest version ကို တန်း merge ရဲရင်လည်း merge ပါ conflicts တွေကများလို့ စိတ်တော့ မညစ်နဲ့ :P
+
 ```bush
-git merge v3.10.107
+git merge v3.10.75
 ```
 
- 
+```bush
+git merge v3.10.76
+```
+
+```bush
+git merge v3.10.77
+```
+
+```bush
+git merge v3.10.78
+```
+
+```bush
+git merge v3.10.79
+```
+
+```bush
+git merge v3.10.80
+```
+
+- Continue...latest Linux kernel version
+```bush
+git merge v3.10.108
+```
+
+
 ## Method(2) : git cherry-pick
 - git cherry-pick တဲ့နေရာမှာ အမှန်က နှစ်မျိုးရှိပါတယ်၊ tag အလိုက် cherry-pick တာရယ် commit အလိုက် cherry- pick တာရယ် ဆိုပြီး ရှိပါတယ်၊ မပြောတော့ပါဘူး လွယ်လွယ်နဲ့ မြန်မြန်လုပ်လို့ရမယ့် commit အလိုက် cherry-pick တာပဲ ပြောပါမယ်။
 - ပထမဆုံး git fetch အရင်လုပ်ပေးရပါမယ်။
