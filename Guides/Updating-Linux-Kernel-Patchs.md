@@ -17,7 +17,9 @@
  
 ## Method(1) : git merge
 - ပထမဦးဆုံး အေနနဲ႔ linux kernel branch ေတြရွိတဲ့ ေနရာ သိရပါမယ္ Link...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
-- ေနာက္တခုက ကိုယ့္ဖုန္းအတြက္ Kernel source က ဘယ္ linux kernel branch ကို သုံးလဲ ဆိုတာ သိရပါမယ္၊ ဥပမာ ေျပာျပပါမယ္ kernel-source/Makefile ကို ဖြင့္ၾကည့္လိုက္ပါ၊ Nexus 5X မွဆို 3.10.73 ဆိုၿပီး ေတြ႕ရပါမယ္။
+<img src="https://s20.postimg.org/9ormx6trx/Screenshot_from_2018-03-08_10-17-42.png" /> 
+
+- ေနာက္တခုက ကိုယ့္ဖုန္းအတြက္ Kernel source က ဘယ္ linux kernel branch ကို သုံးလဲ ဆိုတာ သိရပါမယ္၊ ဥပမာ kernel-source/Makefile ကို ဖြင့္ၾကည့္လိုက္ပါ၊ Nexus 5X မွဆို 3.10.73 ဆိုၿပီး ေတြ႕ရပါမယ္။
 - Format
 ```bush
 VERSION = 3
@@ -37,8 +39,10 @@ git fetch --tags <repo_url> <branch_name>
 ```bush
 git fetch --tags https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/ linux-3.10.y
 ```
+<img src="https://s20.postimg.org/ijsh7pqa5/Screenshot_from_2018-03-08_10-18-14.png" />
+
 - git fetch လုပ္တာက Internet connection ေပၚ မူတည္ၿပီး ၾကာပါမယ္၊ ၿပီးသြားရင္ tags အလိုက္ေတြ Terminal မွာ စီၿပီးျပေပးပါလိမ့္မယ္။
-- git merge ပါေတာ့မယ္။ (ဒီေနရာက အေရးႀကီးပါတယ္ ခုလက္ရွိ ကိုယ့္ Kernel source ထဲက Makefile မွာ တခ်က္ေလာက္ ၾကည့္လိုက္ပါ kernel version ကို 3.10.73 ဆိုရင္ ေနာက္ git mergeရင္ .74 ကို တဆင့္ခ်င္း merge ပါ၊ မဟုတ္ဘူးဆိုရင္ Latest .107 ကို တန္းၿပီး mergeရင္ merge conflicts ေတြမ်ားသြားပါလိမ့္မယ္)
+- git merge ပါေတာ့မယ္။ (ဒီေနရာက အေရးႀကီးပါတယ္ ခုလက္ရွိ ကိုယ့္ Kernel source ထဲက Makefile မွာ တခ်က္ေလာက္ ၾကည့္လိုက္ပါ kernel version ကို 3.10.73 ဆိုရင္ ေနာက္ git mergeရင္ .74 ကို တဆင့္ခ်င္း merge ပါ၊ မဟုတ္ဘူးဆိုရင္ Latest .108 ကို တန္းၿပီး mergeရင္ merge conflicts ေတြမ်ားသြားပါလိမ့္မယ္)
 - Format
 ```bush
 git merge <tag_name>
