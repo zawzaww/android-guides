@@ -114,7 +114,7 @@ git cherry-pick <first_commit>^..<last_commit>
 [	c9ef473a544f0c10e631c25e631f31f9dc0eaed7](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=v3.10.74&id=c9ef473a544f0c10e631c25e631f31f9dc0eaed7)
 
 ```bush
-git cherry-pick 	70bd96c4dfffc1e34a7e9225220405e0adb93d69^..c9ef473a544f0c10e631c25e631f31f9dc0eaed7
+git cherry-pick 70bd96c4dfffc1e34a7e9225220405e0adb93d69^..c9ef473a544f0c10e631c25e631f31f9dc0eaed7
 ```
 <img src="https://s20.postimg.org/c63e4h0tp/Screenshot_from_2018-03-08_10-20-01.png" />
 <img src="https://s20.postimg.org/msx79woel/Screenshot_from_2018-03-08_10-20-17.png" />
