@@ -1,16 +1,16 @@
 # ANDROID ARTICLES
 
-## I am a Technical Writer of TechX Myanmar : Contributing Android Articles - Android OS, System, Android Building Guides and More
+## I am a Technical Writer of TechX Myanmar - Contributing Android Articles/Guides : Android OS, Linux Kernel, Building Android and More
 
 ### Guides/Tutorials
 ### Index
-- [How To Build Pure Android OS (Pure AOSP)](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
+- [How To Build Pure Android OS](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
 - [How To Build TWRP Recovery](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
 - [How To Build LineageOS](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-LineageOS.md)
-- [How To Build Kernel](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-Kernel.md)
+- [How To Build Android Kernel](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Building-Android-Kernel.md)
 - [How To Add Kernel Features](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Adding-Kernel-Features.md)
-- [How To Update Latest Linux Kernel version](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Upstream-Linux-Kernel.md)
-- [How To Update Latest Android Security Patchs](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Updating-Andorid-Security-Patchs.md)
+- [How To Update Linux Kernel Version](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Updating-Linux-Kernel-Patchs.md)
+- [How To Update Android Security Patchs](https://github.com/zawzaww/techxmm-articles/blob/techx-android/Guides/Updating-Android-Security-Patchs.md)
 
 This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 
@@ -21,4 +21,4 @@ Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Copyright (C) 2018, ZawZaw.
+Copyright (C) 2018, Zaw Zaw.
