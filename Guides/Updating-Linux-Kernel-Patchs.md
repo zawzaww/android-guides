@@ -127,6 +127,7 @@ git cherry-pick 70bd96c4dfffc1e34a7e9225220405e0adb93d69^..c9ef473a544f0c10e631c
 git cherry-pick <commit_hash>
 ```
 Example: (v3.10.74 first commit ကေန last commit ထဲ တခုခ်င္းစီ merge တဲ့နည္းပါ၊ စိတ္ရွည္ဖို႔ေတာ့ လိုပါတယ္ commit ေတြက မ်ားႀကီးပါပဲ)
+- အဲဒီနည္းနဲ႔ Linux Kernel version တခုခ်င္းစီအတြက္ တဆင့္ခ်င္း v3.10.74, 75, 76, 77, 78...ကေန လက္႐ွိ Latest ႃဖစ္တဲ့ 108 ထိ Merge ေပးရမွာျဖစ္ပါတယ္။ Linux Kernel Patchs ေတြကုိ version ေက်ာ္ႃပီး Merge လုိ႔မရပါဘူး၊ v3.10.73 ကေန 74 ႃပီးရင္ 75 ႃပီးရင္ 76 တခုခ်င္းစီ ေသခ်ာ Merge ေပးရပါတယ္။ ဘာလုိ႔လဲဆုိေတာ့ Version တခုတုိင္း တခုတုိင္းအတြက္ Bugs Fix & Linux Kernel Security Flaw Fixed Code ေတြ Patchs ေတြက အမ်ားႀကီးပါ အေရးႀကီးပါတယ္။ တဆင့္ခ်င္းစီ Merge မွသာ ကုိယ့္ရဲ႕ Kernel က ႃပီးျပည့္စုံတဲ့ Linux Kernel patchs ေတြ ရ႐ွိမွာ ႃဖစ္ပါတယ္။ (အဲဒါမွသာ စနစ္တက်ျဖစ္တဲ့ မွန္ကန္တဲ့နည္းလမ္းျဖစ္ပါလိမ့္မယ္)
 ```bush
  git cherry-pick 70bd96c4dfffc1e34a7e9225220405e0adb93d69
  git cherry-pick 574947bf3ce72410455e76d11ac57c3da69d36d8
