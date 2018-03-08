@@ -71,8 +71,10 @@ git merge v3.10.79
 ```bush
 git merge v3.10.80
 ```
+- Continue...
+- git merge တာကို Linux version တဆင့်ချင်းစီ Merge ပေးပါ v3.10.74, 75, 76, 78, 79, 80, 81 ကနေ ဆက်ပြီးတောာ့ လက်ရှိ 3.10.y branch ရဲ့ နောက်ဆုံး version ဖြစ်တဲ့ 108 ထိ Merge ပေးပါ (73 ကနေ 108  တန်းပြီး Merge မလုပ်ပါနဲ့ တဆင့်ချင်းစီ Merge တာက နည်းလမ်းအမှန်ပါပဲ)
 
-- Continue...latest Linux kernel version
+
 ```bush
 git merge v3.10.108
 ```
