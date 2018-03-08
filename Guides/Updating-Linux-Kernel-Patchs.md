@@ -1,4 +1,4 @@
-# How To Update Latest Linux Kernel Version For Android Devices
+# How To Update Linux Kernel Version For Android Devices
  
 # Indroduction
   ဒီတခါက ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Kernel မွာ Linux Kernel version ကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ (၄)မ်ိဳး ကြဲျပားပါတယ္ ( Prepatch, Mainline, Stable & Long Term ) ဆိုၿပီး ရွိပါတယ္။ အေသးစိတ္ကိုေတာ့ ဒီမွာ ေလ့လာၾကည့္ပါ https://www.kernel.org/category/releases.html ပထမ tutorial မွာလည္း ကၽြန္ေတာ္ေျပာခဲ့ပါတယ္ Android မွာ သုံးတဲ့ Linux Kernel branch ေတြက Long Term Support (LTS) branch ေတြျဖစ္ပါတယ္။ Linux Kernel LTS branch ေတြအမ်ားႀကီး ရွိပါတယ္။ Android ဖုန္း အမ်ိဳးအစားေပၚ မူတည္ၿပီး သုံးတဲ့ Linux Kernel LTS branch ေတြက မတူနိုင္ပါဘူး။ ဥပမာ အေနနဲ႔ ေျပာျပရရင္ Nexus 5X မွာဆိုရင္ [linux-3.10.y](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.10.y) ဆိုတဲ့ LTS branch ကိုသုံးၿပီး၊ Google Pixel မွာဆိုရင္ [linux-3.18.y](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.18.y) ဆိုတဲ့ LTS branch ကို သုံးပါတယ္။ ၿပီးမွ အဲဒီ သက္ဆိုင္ရာ Linux kernel branch ေတြကို အေျခခံၿပီး အသုံးခ်ၿပီး Android ဘက္က Engineer ေတြ သူတို႔ရဲ့ Android Mobile Device အတြက္ ကိုက္ညီမႈရွိေအာင္ ျပန္ Modifed ခဲ့တဲ့သေဘာပါပဲ။ ဒါေၾကာင့္ ကိုယ့္ဖုန္းအတြက္ Kernel source ယူရင္ Android ဘက္က Engineer ေပးတဲ့ သက္ဆိုင္ရာဖုန္းအတြက္ Kernel source ေတြယူရၿပီး၊ Linux kernel version update ေတြ လုပ္ခ်င္ရင္ မူရင္း kernel.org site ကေန git. ကိုသုံးၿပီး code ေတြ merge ၿပီး ကိုယ့္ဖုန္းအတြက္ kernel version ေတြ update လုပ္ေပးရမွာပါ။ ေနာက္တခုက Android ဘက္ကလူေတြက ဘယ္ေတာ့မွ Linux kernel version ေတြကို latest လုပ္မေပးပါဘူး၊ kernel source မွာ ပါလာတဲ့ built-in kernel version အျမဲနိမ့္ပါတယ္၊ ဥပမာ အေနနဲ႔ ေျပာေပးရရင္ Nexus 5X မွာ linux-v3.10.73 နဲ႔ default လာပါတယ္၊ ခုလက္ရွိ Latest က linux-v3.10.107 ပါ၊ အဲဒါေၾကာင့္ ကိုယ္တိုင္ လုပ္ေပးနိုင္ရင္ အေကာင္းဆုံးပါပဲ။ တခ်ိဳ႕ေသာ Android ဘက္က Developer ေတြက ေျပာၾကပါတယ္ Android ရဲ့ linux kernel branch က LTS ျဖစ္လို႔ update မလုပ္လည္း ဘာျပႆနာမွ မရွိပါဘူး ေရရွည္ Support နိုင္တဲ့ ဆိုတဲ့သေဘာမ်ိဳးကို ေျပာၾကပါတယ္။ မွန္ေတာ့မွန္ပါတယ္ ဒါေပမယ့္လည္း ကၽြန္ေတာ္ကေတာ့ အဲဒါကို သိပ္သေဘာမက်ပါဘူး၊ ပုံမွန္ linux kernel update ေတြ update လုပ္ရတာ သေဘာက်ပါတယ္။ ဒါေၾကာင့္ အခု Tutorial မွာ git ကိုသုံးၿပီး linux kernel site ကေန ကိုယ့္ဖုန္းအတြက္ Kernel version ကို ဘယ္လို update လုပ္မလဲ ဘယ္လို linux kernel Code(C Programming Code) ေတြ ဘယ္လို merge လုပ္မလဲ ဆိုတာ ဆက္ေရးပါမယ္။ ဒီေနရာမွာ နည္းနည္း ေျပာျပခ်င္ပါတယ္ Linux kernel Repo က C နဲ႔ ေရးပါတယ္၊ တကယ္တမ္း ကိုယ့္ဖုန္းအတြက္ code ေတြ merge ရင္ အနည္းနဲ႔ အမ်ား "merge conflicts" ေတြျဖစ္နိုင္ပါတယ္၊ အဲဒါေၾကာင့္ conflicts ေတြရွင္းနိုင္တဲ့ အရည္အခ်င္းေတာ့ ရွိရပါမယ္၊ အဲလိုမွ မရွင္းနိုင္ရင္ Compiler ကေန compile ေနတဲ့အခ်ိန္ Terminal ကေန error code ေတြျပေပးၿပီး Kernel image ေတြ ထြက္မလာနိုင္ေတာ့ပါဘူး၊ တနည္းအားျဖင့္ ဒီအတိုင္းႀကီးရွင္းတာထက္ စာရင္ C Programming Language ကို ေလ့လာၿပီး ေကာင္းေကာင္း နားလည္ထားရင္ အေကာင္းဆုံးပါပဲ။
@@ -95,33 +95,43 @@ git fetch <repo_url> <branch_name>
 ```bush
 git fetch https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/ linux-3.10.y
 ```
-- ၿပီးသြားရင္ ကိုယ္ Update ခ်င္တဲ့ Linux kernel version Page ထိ သြားရပါမယ္၊ ဥပမာ Nexus 5X အတြက္ linux v3.10.107 ကို update ခ်င္ရင္ https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.10.y သြားပါ၊ အဲဒီမွာ အေပၚဆုံးမွ Linux 3.10.107 ဆိုတဲ့ commit ေတြ႕ပါလိမ့္မယ္ အဲဒါ အခုလက္ရွိ Latest kernel version(3.10.107) ရဲဲ့ last commit ပါ၊ ၿပီးရင္ေအာက္ထိ ဆင္းပါ [next] ကိုႏွိတ္ပါ ဘယ္ထိသြားရမလဲ ဆိုရင္ အဝါေရာင္ေလးနဲ႔ ေရးထားတဲ့ tag ေလး v3.10.106 ထိ သြားၿပီး၊ အဲဒီအပၚ commit တေၾကာင္း Latest kernel version(3.10.107) ရဲ first commit ပါ။ (ဒီေနရာမွာက ေျပာခ်င္တာက first commit နဲ႔ last commit အေၾကာင္းပါ )
+<img src="https://s20.postimg.org/ijsh7pqa5/Screenshot_from_2018-03-08_10-18-14.png" />
+
+- ၿပီးသြားရင္ ကိုယ္ Update ခ်င္တဲ့ Linux kernel version Page ထိ သြားရပါမယ္၊ ဥပမာ Nexus 5X အတြက္ Linux v3.10.73 ကေန v3.10.74 ကို update ခ်င္ရင္ https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.10.y သြားပါ၊ အဲဒီမွာ v3.10.74 ဆိုတဲ့ Yellow color tag နဲ့ Page ထိ သြားပါ၊ အဲဒီ အေပၚဆုံးက Linux 3.10.74 commit က အခုလက္ရွိ kernel version(3.10.74) ရဲဲ့ last commit ပါ၊ ၿပီးရင္ေအာက္ထိ ဆင္းပါ၊ အဝါေရာင္ေလးနဲ႔ ေရးထားတဲ့ tag ေလး v3.10.73 ထိ သြားၿပီး၊ အဲဒီအပၚ commit တေၾကာင္းက Linux kernel version(3.10.74) ရဲ first commit ပါ။ (ဒီေနရာမွာက ေျပာခ်င္တာက first commit နဲ႔ last commit အေၾကာင္းပါ )
+
+<img src="https://s20.postimg.org/f06jhxxv1/Screenshot_from_2018-03-08_10-20-32.png" />
+
 - First commit နဲ႔ Last commit အေၾကာင္း အေပၚမွာ ရွင္းျပထားပါတယ္၊ အဲဒါ git cherry-pick တဲ့ ေနရာမွာ ျပန္သုံးရမွာပါ၊ အဲဒါေၾကာင့္ ရွင္းျပတာပါ။
 - အေပၚမွာ git fetch သြားတာ ၿပီးသြားရင္ ဒီ command ေလး ရိုက္လိုက္ပါ
-- Format (သေဘာက Linux 3.0.107 အတြက္ commit ထားတဲ့ code အေတြအကုန္ ကိုယ့္ Repo ထဲ merge လုပ္သြားပါလိမ့္မယ္)
+- Format (သေဘာက Linux 3.0.74 အတြက္ commit ထားတဲ့ code အေတြအကုန္ ကိုယ့္ Repo ထဲ merge လုပ္သြားပါလိမ့္မယ္)
 ```bush
 git cherry-pick <first_commit>^..<last_commit>
 ```
-
 - Example: (အဲဒါေတြက <commit_hash> ေတြပါ copy ၿပီး paste လိုက္တာပါ)
-- First commit...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=linux-3.10.y&id=0ee88216358c4a1821022763cb84d2b0550bf1e2
-- Last commit...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=linux-3.10.y&id=0e3d5747a3ef9986d7617cec396850bf9d039309
+- First commit of v3.10.74...
+[70bd96c4dfffc1e34a7e9225220405e0adb93d69](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=v3.10.74&id=70bd96c4dfffc1e34a7e9225220405e0adb93d69)
+- Last commit of v3.10.74...
+[	c9ef473a544f0c10e631c25e631f31f9dc0eaed7](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/commit/?h=v3.10.74&id=c9ef473a544f0c10e631c25e631f31f9dc0eaed7)
+
 ```bush
-git cherry-pick 0ee88216358c4a1821022763cb84d2b0550bf1e2^..0e3d5747a3ef9986d7617cec396850bf9d039309
+git cherry-pick 	70bd96c4dfffc1e34a7e9225220405e0adb93d69^..c9ef473a544f0c10e631c25e631f31f9dc0eaed7
 ```
+<img src="https://s20.postimg.org/c63e4h0tp/Screenshot_from_2018-03-08_10-20-01.png" />
+<img src="https://s20.postimg.org/msx79woel/Screenshot_from_2018-03-08_10-20-17.png" />
  
-- OR
+ (OR)
+
 - ဒါက commit တခုခ်င္းစီ git cherry-pick တဲ့ နည္းပါ
 - Format
 ```bush
 git cherry-pick <commit_hash>
 ```
-Example: ( first commit ကေန last commit ထဲ တခုခ်င္းစီ merge တဲ့နည္းပါ၊ စိတ္ရွည္ဖို႔ေတာ့ လိုပါတယ္ commit ေတြက မ်ားႀကီးပါပဲ )
+Example: (v3.10.74 first commit ကေန last commit ထဲ တခုခ်င္းစီ merge တဲ့နည္းပါ၊ စိတ္ရွည္ဖို႔ေတာ့ လိုပါတယ္ commit ေတြက မ်ားႀကီးပါပဲ)
 ```bush
- git cherry-pick 0ee88216358c4a1821022763cb84d2b0550bf1e2
- git cherry-pick de714a8a75b6985452fe6e5d3f6393eb1da2eb3d
- git cherry-pick 408d8245b80b5426d670de4b4ec60f24b05eb0ef
- Continue...
+ git cherry-pick 70bd96c4dfffc1e34a7e9225220405e0adb93d69
+ git cherry-pick 574947bf3ce72410455e76d11ac57c3da69d36d8
+ git cherry-pick 1290b015b701b4c772251e63da5866974e5ccb77
+ Continue... latest commit of Linux v3.10.74
 ```
 
 - အဲဒါေတြ ၿပီးသြားရင္ Merge တဲ့ လုပ္ငန္းေတာ့ ၿပီးသြားၿပီ။
