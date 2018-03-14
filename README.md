@@ -1,8 +1,8 @@
-# ANDROID ARTICLES/GUIDES
+# Android Technical Articles / Guides
 
-## I am a Technical Writer of TechX Myanmar - Contributing Android Technical Articles/Guides : Android OS, Linux Kernel, Building Android and More
+### Zat, A Technical Writer of TechX Myanmar.
+### Android Technical Articles/Guides: Android OS, Linux Kernel, Customization, Porting and Building the Android OS.
 
-## Android Articles/Guides
 ### Index
 - [How To Build Pure Android OS](https://github.com/zawzaww/android-articles-guides/blob/techx-android/Guides/Building-AOSP-ROM.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-articles-guides/blob/techx-android/Guides/Building-Android-Kernel.md)
