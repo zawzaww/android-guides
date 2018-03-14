@@ -69,4 +69,5 @@
   https://forum.xda-developers.com/pixel-xl/development/kernel-purez-kernel-google-pixel-pixel-t3742489
 
 Regards,
-Zat
+
+ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
