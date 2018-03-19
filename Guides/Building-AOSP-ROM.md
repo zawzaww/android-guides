@@ -1,9 +1,9 @@
 <img src="https://s20.postimg.org/mynqibckt/Android-_Open-_Source-_Project-710x277.jpg" height="100%" width="100%;"/>
 
-# How To Build an AOSP ROM for Android Devices
+# How To Build Pure AOSP ROM for Android Devices
 
 ## AOSP - Android Open Source Project
-## Building Pure Android OS
+## Building Pure Android
 
 # Introduction
    ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ AOSP SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ အခုနည္းကုိ သိသြားၿပီဆုိရင္ တျခားေသာ AOSP based ROM ေတြေရာ LineageOS based ROM ေတြေရာ build တတ္သြားပါလိမ့္မယ္၊ တခုပဲကြဲျပားသြားတာပါ Android SourceCode ယူရတဲ့ ေနရာပဲကြဲသြားတာပါ။ တခုေတာ့ သတိေပးထားပါရေစ Android ရဲ႕ SourceCode ေတြရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
@@ -216,4 +216,4 @@ Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
 
-Copyright (C) 2018, ZawZaw.
+Copyright (C) 2018, Zaw Zaw.
