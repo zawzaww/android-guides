@@ -2,7 +2,7 @@
 
 ### Zat, A Technical Writer of TechX Myanmar.
 
-### Android Articles/Guides: Android OS, Linux Kernel, Customization, Porting and Building the Android OS.
+### Android Articles/Guides: Android OS, Linux Kernel, Customization, Porting and Building the Android.
 
 ### Index
 - [How To Build Pure Android OS](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
