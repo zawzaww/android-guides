@@ -1,5 +1,6 @@
+# Android Articles / Guides
 
-## Android Articles/Guides: Android OS, Linux Kernel, Customizing, Porting and Building the Android OS
+## GUIDES : Android OS, Linux Kernel, Customizing, Porting and Building the Android OS
 
 ### Index
 - [How To Build Pure Android OS](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
