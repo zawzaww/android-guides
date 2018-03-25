@@ -1,4 +1,3 @@
-# Android Articles / Guides
 
 ## Android Articles/Guides: Android OS, Linux Kernel, Customizing, Porting and Building the Android OS
 
