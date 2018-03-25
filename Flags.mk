@@ -1,3 +1,7 @@
+# USEFUL TWRP RECOVERY FLAGS
+# by ZawZaw @XDA-Developers
+# Thanks to : @xda-developers for helps
+
 # Add EXT4 support
 TARGET_USERIMAGES_USE_EXT4 := true
 
@@ -218,5 +222,3 @@ RECOVERY_TOUCHSCREEN_FLIP_X := true
 
 # flip y axis for touch,
 RECOVERY_TOUCHSCREEN_FLIP_Y := true
-
-# Thanks to : @xda-developers for useful twrp flags
