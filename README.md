@@ -1,14 +1,14 @@
 # Android Articles / Guides
 
-## GUIDES : Android OS, Linux Kernel, Customizing, Porting and Building the Android OS
+### GUIDES : Android OS, Linux Kernel, Customizing, Porting and Building the Android OS
 
-### Index
-- [How To Build Pure Android OS](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
-- [How To Build Android Kernel](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Building-Android-Kernel.md)
-- [How To Build TWRP Recovery](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
-- [How To Build LineageOS](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Building-LineageOS.md)
-- [How To Update Linux Kernel Patchs](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Updating-Linux-Kernel-Patchs.md)
-- [How To Update Android Security Patchs](https://github.com/zawzaww/android-articles/blob/techx-android/Guides/Updating-Android-Security-Patchs.md)
+### Guide Index
+- [How To Build Pure Android OS](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
+- [How To Build Android Kernel](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-Android-Kernel.md)
+- [How To Build TWRP Recovery](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
+- [How To Build LineageOS](https://github.com/android-guide-articles/blob/techx-android/Guides/Building-LineageOS.md)
+- [How To Update Linux Kernel Patchs](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Updating-Linux-Kernel-Patchs.md)
+- [How To Update Android Security Patchs](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Updating-Android-Security-Patchs.md)
 
 This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 
@@ -18,5 +18,6 @@ This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
+
 
 Copyright (C) 2018, Zaw Zaw.
