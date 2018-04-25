@@ -12,7 +12,7 @@
 
 This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 
-<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/511px-Android_robot_2014.svg.png" height="54%" width="54%;"/></center> 
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/511px-Android_robot_2014.svg.png" height="39%" width="39%;"/></center> 
 
 
 Regards,
