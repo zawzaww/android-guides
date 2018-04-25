@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-
-# Script to setup environment for android ROM development
-# For linux: ubuntu
+# A Script to automatic setup environment for android ROM development
+# for ubuntu linux
 # 
 
 clear
