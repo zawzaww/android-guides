@@ -2,13 +2,16 @@
 
 ### GUIDES : Android OS, Kernel, Customizing, Porting and Building the Android OS
 
-### Index
+## Index
+### Guides/Articles
 - [How To Build AOSP ROM (Pure Android)](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-Android-Kernel.md)
 - [How To Build TWRP Recovery](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
 - [How To Build LineageOS](https://github.com/android-guide-articles/blob/techx-android/Guides/Building-LineageOS.md)
 - [How To Update Linux Kernel Patches](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Updating-Linux-Kernel-Patchs.md)
 - [How To Update Android Security Patches](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Updating-Android-Security-Patchs.md)
+### XDA-Developers Forums
+- [XDA-Threads-Collection](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Notes/XDA-Threads-Collection.md)
 
 This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 
