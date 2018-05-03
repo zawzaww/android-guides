@@ -16,6 +16,10 @@
 - [Pixel Bootanimation Black & White for all Android Devices](https://forum.xda-developers.com/crossdevice-dev/sony-themes-apps/bootanimation-official-google-pixel-t3480843/post69139140#post69139140)
 
 
+## Font Flashable Zips
+- [Font Flashable Zips for all Android 5.0+ Devices](https://forum.xda-developers.com/crossdevice-dev/sony-themes-apps/fonts-font-style-flashable-devices-t3532561)
+
+
 ## Android ROMs
 - [PureZ ROM for Motorola Nexus 6](https://forum.xda-developers.com/nexus-6/development/rom-purez-rom-purez-project-pixel-t3580752/post71631160#post71631160)
 
