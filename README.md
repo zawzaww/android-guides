@@ -2,6 +2,7 @@
 ## Android OS/Kernel : Customizing, Porting and Building the Android
 
 ## Index
+### Guides
 - [How To Build AOSP ROM (Pure Android)](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-AOSP-ROM.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-Android-Kernel.md)
 - [How To Build Bootable Recovery (TWRP)](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Guides/Building-TWRP-Recovery.md)
@@ -12,7 +13,11 @@
 ### XDA-Developers Forums
 - [XDA-Threads-Collection](https://github.com/zawzaww/android-guide-articles/blob/techx-android/Notes/XDA-Threads-Collection.md)
 
-This Repo is for my Myanmar friends and TechX Myanmar's Articles.
+### TWRP Recovery Flags
+- [TWRP-Recovery-Flags](https://github.com/zawzaww/android-guide-articles/blob/android/Notes/twrp-recovery-flags.mk)
+
+You need recovery flags for building bootable custom recovery.
+
 
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/511px-Android_robot_2014.svg.png" height="39%" width="39%;"/></center> 
 
@@ -20,6 +25,3 @@ This Repo is for my Myanmar friends and TechX Myanmar's Articles.
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
-
-Copyright (C) 2017-2018, Zaw Zaw.
