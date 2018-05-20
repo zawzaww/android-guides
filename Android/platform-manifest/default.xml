@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--an android manifest file: to show how to write a xml for downloading the multiple android repos-->
+<!--an android platform manifest file: to show how to write a xml for downloading the multiple android repos-->
 <manifest>
   <!-- AOSP remote -->
   <remote  name="aosp"
