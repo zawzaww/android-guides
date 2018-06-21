@@ -16,8 +16,7 @@
 ### TWRP Recovery Flags
 - [TWRP-Recovery-Flags](https://github.com/zawzaww/android-guide-articles/blob/android/Notes/twrp-recovery-flags.mk)
 
-You need recovery flags for building bootable custom recovery.
-
+This repository is for my Myanmar friends and android enthusiasts.
 
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/511px-Android_robot_2014.svg.png" height="39%" width="39%;"/></center> 
 
