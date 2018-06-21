@@ -1,11 +1,11 @@
-<img src="https://s20.postimg.org/mynqibckt/Android-_Open-_Source-_Project-710x277.jpg" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/mynqibckt/Android-_Open-_Source-_Project-710x277.jpg" height="100%" width="100%;"/>
 
 # How To Build Pure AOSP ROM for Android Devices
 
-## AOSP - Android Open Source Project
 ## Building Pure Android
 
 # Introduction
+### AOSP - Android Open Source Project
    ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ AOSP SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ အခုနည္းကုိ သိသြားၿပီဆုိရင္ တျခားေသာ AOSP based ROM ေတြေရာ LineageOS based ROM ေတြေရာ build တတ္သြားပါလိမ့္မယ္၊ တခုပဲကြဲျပားသြားတာပါ Android SourceCode ယူရတဲ့ ေနရာပဲကြဲသြားတာပါ။ တခုေတာ့ သတိေပးထားပါရေစ Android ရဲ႕ SourceCode ေတြရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
 
 # Requirements
@@ -125,7 +125,7 @@ SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connect
 /device/lge/bullhead
 ```
 
-<img src="https://s20.postimg.org/4hn5zcmx9/Screenshot_from_2017-11-03_21-54-22.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/4hn5zcmx9/Screenshot_from_2017-11-03_21-54-22.png" />
 
 - ROM build တဲ့ေနရာမွာ Kernel ပုိင္းက ႏွစ္မ်ဳိးကြဲပါမယ္၊ Kernel source ကေန build တာရယ္ အဆင္သင့္ build ထားၿပီးသား prebuilt kernel ကေန ROM ထဲထည့္ၿပီး Build တာဆုိၿပီး ႐ွိပါတယ္၊ kernel source ကေန build တာပဲ အၾကံေပးတယ္။
 - ၿပီးတဲ့ေနာက္ Kernel source ကေန build မယ္ဆုိရင္ Device tree ထဲက ျပင္ဆင္စရာ႐ွိပါတယ္၊ Nexus 5X အေနနဲ႔ ေျပာပါမယ္ /device/lge/bullhead/BoardConfig.mk ကုိ TextEditor တခုနဲ႔ ဖြင့္ၿပီး ေအာက္က code ေလးေတြ ထပ္ျဖည့္လုိက္ပါ။
@@ -147,7 +147,7 @@ Line 4 - Kernel build ဖုိ႔အတြက္ kernel configuration လုပ
 Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မယ့္ Kernel image name ကုိ အတိအက်ေရးေပးရပါမယ္
 ```
 
-<img src="https://s20.postimg.org/thf0h4mjh/Screenshot_from_2017-11-03_21-58-30.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/thf0h4mjh/Screenshot_from_2017-11-03_21-58-30.png" />
 
 - ေနာက္တဆင့္က Kernel source အပုိင္းပါ သြားထည့္ေပးရမယ့္ Location က Source dir ေအာက္က /kernel ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
 - Format:
@@ -159,7 +159,7 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 /kernel/lge/bullhead
 ```
 
-<img src="https://s20.postimg.org/852x5n81p/Screenshot_from_2017-11-03_21-54-57.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/852x5n81p/Screenshot_from_2017-11-03_21-54-57.png" />
 
 - vendor အပုိင္းပါ အဲဒီေကာင္က Source dir ေအာက္က /vendor ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
 - Format:
@@ -171,7 +171,7 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 /vendor/lge/bullhead
 ```
 
-<img src="https://s20.postimg.org/yesl2cjel/Screenshot_from_2017-11-03_21-56-37.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/yesl2cjel/Screenshot_from_2017-11-03_21-56-37.png" />
 
 ဒါေတြျပည့္စုံသြားရင္ေတာ့ AOSP ROM တခု Build ဖုိ႔ အဆင္သင့္ ျဖစ္ပါၿပီ။
 
@@ -189,7 +189,7 @@ Example: for Nexus 5X
 lunch aosp_bullhead-userdebug
 ```
 
-<img src="https://s20.postimg.org/oy2rvsk59/Screenshot_from_2017-11-04_06-23-10.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/htkymict9/Screenshot_from_2017-11-03_21-59-06.png" />
 
 - အေကာင္းဆုံးက lunch လုိ႔ ႐ုိက္လုိက္ရင္ ကုိယ္ build မယ့္ device name ေတြ က်လာၿပီး build ခ်င္တဲ့ device no. ကုိ ဆက္႐ုိက္ေပးပါ။
 ```bash
