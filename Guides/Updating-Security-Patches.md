@@ -17,7 +17,7 @@
 - ပထမဦးဆုံး ကုိယ့္ဖုန္းအတြက္ အဆင္သင့္ Kernel source တခု႐ွိဖုိ႔လုိပါတယ္။ အဲဒီအထဲကုိ Security Update Code ေတြ Merge မွာျဖစ္ပါတယ္။ Nexus 5X နဲ႔ ဥပမာေပး ေျပာျပမွာ ျဖစ္ပါတယ္။
 - ၿပီးတဲ့ေနာက္ Google Nexus နဲ႔ Pixel Device ေတြအတြက္ Kernel Repo ေတြ ႐ွိတဲ့ေနရာကုိ သိရပါမယ္ (Qualcomm chipset only Devices) https://android.googlesource.com/kernel/msm
 
-<img src="https://s20.postimg.org/4auhrh17h/Screenshot_from_2017-11-10_22-12-45.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/4auhrh17h/Screenshot_from_2017-11-10_22-12-45.png" />
 
 - အရင္ ကုိယ့္ရဲ႕ Local Kernel Source Repo ထဲ ဝင္ၿပီး Terminal ကုိ ဖြင့္လုိက္ပါ။
 - ေအာက္က command ေလး႐ုိက္ေပးပါ။ ( git fetch ၿပီး tag အလုိက္ merge မွာ ျဖစ္ပါတယ္ )
@@ -30,13 +30,13 @@ git fetch --tags <repo_url> <branch_name>
 git fetch --tags https://android.googlesource.com/kernel/msm/ android-msm-bullhead-3.10-oreo-r6
 ```
 
-<img src="https://s20.postimg.org/tgvfy6cql/Screenshot_from_2017-11-10_22-12-30.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/tgvfy6cql/Screenshot_from_2017-11-10_22-12-30.png" />
 
 - ၿပီးရင္ ဒီ Link...https://android.googlesource.com/kernel/msm/+/android-msm-bullhead-3.10-oreo-r6 မွာဝင္ၿပီး log ဆုိတာေတြ႔ရမွာ ျဖစ္ပါတယ္၊ အဲဒီ log ေလးကုိႏွိတ္လုိက္ပါ၊ အေပၚဆုံး commit ကုိ ၾကည့္လုိက္ရင္ အစိမ္းေရာင္ tag ေလးတခု ေတြ႔ရပါလိမ့္မယ္၊ အခု ႏုိဝင္ဘာလအတြက္ android-8.0.0_r25 ဆုိတာ႐ွိပါတယ္။ ( အဲဒီ tag name ေလးမွတ္ထားပါ git merge တဲ့ေနရာမွာ ျပန္သုံးမွာပါ )
 
-<img src="https://s20.postimg.org/e9fgdlv3x/Screenshot_from_2017-11-10_22-13-09.png" height="100%" width="100%;"/>
-<img src="https://s20.postimg.org/6uq4l3r71/Screenshot_from_2017-11-10_22-13-22.png" height="100%" width="100%;"/>
-<img src="https://s20.postimg.org/o80f029od/Screenshot_from_2017-11-10_22-13-44.png" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/e9fgdlv3x/Screenshot_from_2017-11-10_22-13-09.png" />
+<img src="https://s20.postimg.cc/6uq4l3r71/Screenshot_from_2017-11-10_22-13-22.png" />
+<img src="https://s20.postimg.cc/o80f029od/Screenshot_from_2017-11-10_22-13-44.png" />
 
 - ၿပီးတဲ့ေနာက္ fetch ၿပီးသြားရင္ Terminal မွာ ေအာက္က command ေလး႐ုိက္ေပးပါ။
 - Format
