@@ -1,4 +1,6 @@
-<img src="https://img.xda-cdn.com/XXEijIJ9sFe_-u4VZQgkjZkKwcU=/http%3A%2F%2Fwww.aftvnews.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fteamwin-recovery-project-twrp-logo.jpg" height="100%" width="100%;" />
+<center>
+<img src="https://s20.postimg.cc/jzy9c1dzh/twrp-recovery.jpg" height="100%" width="100%;" />
+</center>
 
 # How To Build TWRP Recovery for Android Devices
 
