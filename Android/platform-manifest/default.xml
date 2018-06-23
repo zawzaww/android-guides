@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--an android platform manifest file: to show how to write a xml for downloading the multiple android repos-->
 <manifest>
   <!-- AOSP remote -->
   <remote  name="aosp"
@@ -11,7 +10,7 @@
            fetch="https://github.com/" />
 
   <!-- AOSP Android Version Release -->         
-  <default revision="refs/tags/android-8.1.0_r23"
+  <default revision="refs/tags/android-8.1.0_r33"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -241,7 +240,6 @@
   <project path="external/libusb" name="platform/external/libusb" groups="pdk" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk" />
   <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk" />
-  <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk" />
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk" />
   <project path="external/libxml2" name="platform/external/libxml2" groups="pdk,libxml2" />
