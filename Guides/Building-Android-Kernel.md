@@ -114,7 +114,7 @@ make -j$(nproc --all)
 
 - Compilation process time က ကုိယ့္ Computer ရဲ႕ CPU core ေပၚမူတည္ၿပီးၾကာႏုိင္ပါတယ္။
 - အဲဒါေတြၿပီးသြားရင္ Compiler ကေန Compile လုပ္သြားပါလိမ့္မယ္။
-<center><img src="https://s20.postimg.org/w69xzzwxp/Screenshot_from_2017-10-16_11-25-22.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc/w69xzzwxp/Screenshot_from_2017-10-16_11-25-22.png" />
 
 
 - Build လုိက္တဲ့ Kernel zImage ေတြက ARM ဆုိရင္ - kernelsource/arch/arm/boot/ေအာက္မွာ ထြက္ပါတယ္၊ ARM64 ဆုိရင္ - kernelsource/arch/arm64/boot/ေအာက္မွာ ထြက္သြားလိမ့္မယ္။
