@@ -1,3 +1,14 @@
+<!-- Android Platform Manifest -->
+
+<!-- Guide : How to Write a XML for downloading the Android OS sources -->
+<!-- 
+Step(1) : Create a new Repo on your GitHub.
+Step(2) : Create a XML like this file's code.
+Step(3) : Install Google's git-repo in your Computer
+Step(4) : And then, you will initialize repo like this "repo init -u <your_repo_url> -b <branch_name>"
+Step(5) : Type this command "repo sync" for downloading the source trees
+You can read more here : https://github.com/zawzaww/aosp-android/blob/android-8.1.0/README.md
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- AOSP remote -->
