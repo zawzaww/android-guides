@@ -1,3 +1,7 @@
+<center>
+ <img src="https://s20.postimg.cc/u66uv28od/android-kernel.jpg" height="100%" width="100%;" /> 
+</center>
+
 # How To Build Kernel For Android Devices
 
 # Introduction
