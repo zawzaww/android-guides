@@ -1,3 +1,7 @@
+<center>
+ <img src="https://s20.postimg.cc/efls1gka5/android-security.jpg" height="100%" width="100%;" />
+</center>
+
 # How To Update Android Security Patches for Google's Android Devices
 
 ## Introduction
