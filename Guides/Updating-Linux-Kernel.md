@@ -21,7 +21,7 @@
  
 ## Method(1) : git merge
 - ပထမဦးဆုံး အေနနဲ႔ linux kernel branch ေတြရွိတဲ့ ေနရာ သိရပါမယ္ Link...https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
-<img src="https://s20.postimg.org/9ormx6trx/Screenshot_from_2018-03-08_10-17-42.png" /> 
+<img src="https://s20.postimg.cc/9ormx6trx/Screenshot_from_2018-03-08_10-17-42.png" /> 
 
 - ေနာက္တခုက ကိုယ့္ဖုန္းအတြက္ Kernel source က ဘယ္ linux kernel branch ကို သုံးလဲ ဆိုတာ သိရပါမယ္၊ ဥပမာ kernel-source/Makefile ကို ဖြင့္ၾကည့္လိုက္ပါ၊ Nexus 5X မွဆို 3.10.73 ဆိုၿပီး ေတြ႕ရပါမယ္။
 - Format
@@ -43,7 +43,7 @@ git fetch --tags <repo_url> <branch_name>
 ```bush
 git fetch --tags https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/ linux-3.10.y
 ```
-<img src="https://s20.postimg.org/ijsh7pqa5/Screenshot_from_2018-03-08_10-18-14.png" />
+<img src="https://s20.postimg.cc/ijsh7pqa5/Screenshot_from_2018-03-08_10-18-14.png" />
 
 - git fetch လုပ္တာက Internet connection ေပၚ မူတည္ၿပီး ၾကာပါမယ္၊ ၿပီးသြားရင္ tags အလိုက္ေတြ Terminal မွာ စီၿပီးျပေပးပါလိမ့္မယ္။
 - git merge ပါေတာ့မယ္။ (ဒီေနရာက အေရးႀကီးပါတယ္ ခုလက္ရွိ ကိုယ့္ Kernel source ထဲက Makefile မွာ တခ်က္ေလာက္ ၾကည့္လိုက္ပါ kernel version ကို 3.10.73 ဆိုရင္ ေနာက္ git mergeရင္ .74 ကို တဆင့္ခ်င္း merge ပါ၊ မဟုတ္ဘူးဆိုရင္ Latest .108 ကို တန္းၿပီး mergeရင္ merge conflicts ေတြမ်ားသြားပါလိမ့္မယ္)
@@ -99,11 +99,11 @@ git fetch <repo_url> <branch_name>
 ```bush
 git fetch https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/ linux-3.10.y
 ```
-<img src="https://s20.postimg.org/ijsh7pqa5/Screenshot_from_2018-03-08_10-18-14.png" />
+<img src="https://s20.postimg.cc/ijsh7pqa5/Screenshot_from_2018-03-08_10-18-14.png" />
 
 - ၿပီးသြားရင္ ကိုယ္ Update ခ်င္တဲ့ Linux kernel version Page ထိ သြားရပါမယ္၊ ဥပမာ Nexus 5X အတြက္ Linux v3.10.73 ကေန v3.10.74 ကို update ခ်င္ရင္ https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.10.y သြားပါ၊ အဲဒီမွာ v3.10.74 ဆိုတဲ့ Yellow color tag နဲ့ Page ထိ သြားပါ၊ အဲဒီ အေပၚဆုံးက Linux 3.10.74 commit က အခုလက္ရွိ kernel version(3.10.74) ရဲဲ့ last commit ပါ၊ ၿပီးရင္ေအာက္ထိ ဆင္းပါ၊ အဝါေရာင္ေလးနဲ႔ ေရးထားတဲ့ tag ေလး v3.10.73 ထိ သြားၿပီး၊ အဲဒီအပၚ commit တေၾကာင္းက Linux kernel version(3.10.74) ရဲ first commit ပါ။ (ဒီေနရာမွာက ေျပာခ်င္တာက first commit နဲ႔ last commit အေၾကာင္းပါ )
 
-<img src="https://s20.postimg.org/f06jhxxv1/Screenshot_from_2018-03-08_10-20-32.png" />
+<img src="https://s20.postimg.cc/f06jhxxv1/Screenshot_from_2018-03-08_10-20-32.png" />
 
 - First commit နဲ႔ Last commit အေၾကာင္း အေပၚမွာ ရွင္းျပထားပါတယ္၊ အဲဒါ git cherry-pick တဲ့ ေနရာမွာ ျပန္သုံးရမွာပါ၊ အဲဒါေၾကာင့္ ရွင္းျပတာပါ။
 - အေပၚမွာ git fetch သြားတာ ၿပီးသြားရင္ ဒီ command ေလး ရိုက္လိုက္ပါ
@@ -120,8 +120,8 @@ git cherry-pick <first_commit>^..<last_commit>
 ```bush
 git cherry-pick 70bd96c4dfffc1e34a7e9225220405e0adb93d69^..c9ef473a544f0c10e631c25e631f31f9dc0eaed7
 ```
-<img src="https://s20.postimg.org/c63e4h0tp/Screenshot_from_2018-03-08_10-20-01.png" />
-<img src="https://s20.postimg.org/msx79woel/Screenshot_from_2018-03-08_10-20-17.png" />
+<img src="https://s20.postimg.cc/c63e4h0tp/Screenshot_from_2018-03-08_10-20-01.png" />
+<img src="https://s20.postimg.cc/msx79woel/Screenshot_from_2018-03-08_10-20-17.png" />
  
  (OR)
 
