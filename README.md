@@ -1,5 +1,5 @@
-# Android Guides / Articles
-## Android OS/Kernel : Customizing, Porting and Building the Android
+# Android Guides / Tutorials
+## Building Pure Android OS, Kernel, Bootable Recovery and More
 
 ## Index
 ### Guides
