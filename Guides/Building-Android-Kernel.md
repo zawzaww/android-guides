@@ -72,7 +72,7 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 ```bush
 /home/zawzaw/PureZ-Kernel-N5X/bullhead
 ```
-<center><img src="https://s20.postimg.org/c06g0zj8t/Screenshot_from_2017-10-16_11-42-11.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc/c06g0zj8t/Screenshot_from_2017-10-16_11-42-11.png" />
 
 - ၿပီးရင္ ကုိယ့္ဖုန္းအတြက္ download ထားတဲ့ Kernel source Folder ထဲ ဝင္လုိက္ပါ။
 - Right Click ေထာက္ၿပီး Terminal ေလးကုိ ဖြင့္လုိက္ပါ။
@@ -93,7 +93,7 @@ export ARCH=arm64 && export SUBARCH=arm64
 ```bush
 make clean && make mrproper
 ```
-<center><img src="https://s20.postimg.org/ljg4uhorh/Screenshot_from_2017-10-16_10-55-41.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc/ljg4uhorh/Screenshot_from_2017-10-16_10-55-41.png" />
 
 - ေနာက္ထက္တခု သိဖုိ႔ကေတာ့ ကုိယ့္ build မယ့္ Kernel ရဲ႕ build kernel configuration ပါ။
 - ARM device ဆုိရင္ kernelsource/arch/arm/configs/ ေအာက္မွာ ႐ွိပါတယ္။
@@ -104,13 +104,13 @@ make clean && make mrproper
 ```bush
 make bullhead_defconfig
 ```
-<center><img src="https://s20.postimg.org/708zt6b31/Screenshot_from_2017-10-16_11-27-13.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc//708zt6b31/Screenshot_from_2017-10-16_11-27-13.png" />
 
 - ၿပီးရင္ Kernel compile ပါေတာ့မယ္၊ compile ဖုိ႔အတြက္ ေအာက္က command ေလး႐ုိက္လုိက္ပါ။
 ```bush
 make -j$(nproc --all)
 ```
-<center><img src="https://s20.postimg.org/6aq7gqi8d/Screenshot_from_2017-10-16_10-56-47.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc/6aq7gqi8d/Screenshot_from_2017-10-16_10-56-47.png" />
 
 - Compilation process time က ကုိယ့္ Computer ရဲ႕ CPU core ေပၚမူတည္ၿပီးၾကာႏုိင္ပါတယ္။
 - အဲဒါေတြၿပီးသြားရင္ Compiler ကေန Compile လုပ္သြားပါလိမ့္မယ္။
@@ -119,7 +119,7 @@ make -j$(nproc --all)
 
 - Build လုိက္တဲ့ Kernel zImage ေတြက ARM ဆုိရင္ - kernelsource/arch/arm/boot/ေအာက္မွာ ထြက္ပါတယ္၊ ARM64 ဆုိရင္ - kernelsource/arch/arm64/boot/ေအာက္မွာ ထြက္သြားလိမ့္မယ္။
 
-<center><img src="https://s20.postimg.org/963ank47x/Screenshot_from_2017-10-16_11-42-53.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc/963ank47x/Screenshot_from_2017-10-16_11-42-53.png" />
 
 - အဲဒါ ေတြ ေအာင္ျမင္သြာၿပီး ဆုိရင္ ကုိယ္ဖုန္းအတြက္ Kernel Install ဖု႔ိ FlashableZip ဘယ္လုိလုပ္မလဲ ဆုိိိတာ ဆက္ေရးပါမယ္။
 
@@ -159,7 +159,7 @@ device.name2=Bullhead
 ```bush
 block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
 ```
-<center><img src="https://s20.postimg.org/576jo7bz1/Screenshot_20171016-175722.png" height="54%" width="54%;"/></center>
+<img src="https://s20.postimg.cc//576jo7bz1/Screenshot_20171016-175722.png" />
 
 
 - fstab.device-name : AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab.bullhead file ေလး ကုိ သြားထည့္ရမွာပါ။ (အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့  <mount_point> partition ေတြ ပါဝင္ပါတယ္၊ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပဲ ျဖစ္ပါတယ္၊ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android filesystems table ေလး တခုပါပဲ)
@@ -175,46 +175,6 @@ block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
 ```
   
 - For Nexus 5X (fstab.bullhead) Sample : https://android.googlesource.com/device/lge/bullhead/+/oreo-r6-release/fstab.bullhead
-
-
-```bush
-# Android fstab file.
-#<src>                                         <mnt_point>  <type>  <mnt_flags and options>  <fs_mgr_flags>
-# The filesystem that contains the filesystem checker binary (typically /system) cannot
-# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/system       /system         ext4    ro,barrier=1,inode_readahead_blks=8                             wait,verify=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor       /vendor         ext4    ro,barrier=1,inode_readahead_blks=8                             wait,verify=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic,inode_readahead_blks=8 wait,check,forcefdeorfbe=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/persist      /persist        ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nodelalloc,nomblk_io_submit,errors=panic wait,notrim
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/modem        /firmware       vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0        wait
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot         /boot           emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/recovery     /recovery       emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/misc         /misc           emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/modem        /radio          emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/sbl1         /sbl1           emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/tz           /tz             emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/rpm          /rpm            emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/sdi          /sdi            emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/aboot        /aboot          emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/imgdata      /imgdata        emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/pmic         /pmic           emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/hyp          /hyp            emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/sec          /sec            emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/keymaster    /keymaster      emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/cmnlib       /cmnlib         emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/persistent   /persistent     emmc    defaults                                                        defaults
-/devices/soc.0/f9200000.ssusb/f9200000.dwc3/xhci-hcd.0.auto/usb*    auto      auto    defaults                                                        voldmanaged=usb:auto
-/dev/block/zram0                                              none            swap    defaults                                                        zramsize=533413200,notrim
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/sbl1bak      /sbl1bak        emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/tzbak        /tzbak          emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/rpmbak       /rpmbak         emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/abootbak     /abootbak       emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/pmicbak      /pmicbak        emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/hypbak       /hypbak         emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/keymasterbak /keymasterbak   emmc    defaults                                                        defaults
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/cmnlibbak    /cmnlibbak      emmc    defaults                                                        defaults
-```
 
 - အဲဒါေတြ ေအာင္ျမင္ၿပီ ဆုုိုိုိုိရင္ FlashableZip တခု Create ပါမယ္။
 - AnyKernel2 folder ထဲမွာ Right Click ေထာက္ၿပီး Terminal ကုိဖြင့္လုိက္ပါ။
