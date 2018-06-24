@@ -1,9 +1,9 @@
 # Android Guides / Tutorials
-## Building Pure Android OS, Kernel, Bootable Recovery and More
+## Building Custom Android OS, Kernel, Bootable Recovery and More
 
 ## Index
 ### Guides
-- [How To Build AOSP ROM (Pure Android)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
+- [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-Android-Kernel.md)
 - [How To Build Bootable Recovery (TWRP)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-TWRP-Recovery.md)
 - [How To Build LineageOS](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-LineageOS.md)
