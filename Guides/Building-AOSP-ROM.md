@@ -1,8 +1,7 @@
 <img src="https://s20.postimg.cc/mynqibckt/Android-_Open-_Source-_Project-710x277.jpg" height="100%" width="100%;"/>
 
-# How To Build Pure AOSP ROM for Android Devices
-
-## Building Pure Android
+# How To Build Custom Android OS for Android Devices
+# Building Pure Android
 
 # Introduction
 ### AOSP - Android Open Source Project
@@ -99,12 +98,7 @@ repo init -u https://android.googlesource.com/platform/manifest.git -b android-8
 ```bash
 repo init -u https://github.com/zawzaww/aosp-android.git -b android-8.1.0
 ```
- (OR)
-- တျခား CustomROM တခုရဲ႕ SourceCode ပါ Download ဖုိ႔အတြက္ ထပ္ျဖည့္ေျပာပါမယ္။ ( လူသိမ်ားတဲ့ LineageOS နဲ႔ပဲ ဥပမာေပး ေျပာပါမယ္ )
-- -b ေနာက္ကေကာင္က branch name ပါ၊ lineage-15.0 က Oreo build အတြက္ပါ၊ cm-14.1/cm-14.0 သုံးရင္ Nougat build အတြက္ပါ၊ ၾကဳိက္တဲ့ Android version ကုိ Build ႏုိင္ပါတယ္။
-```bash
-repo init -u git://github.com/LineageOS/android.git -b lineage-15.0
-```
+
 - Sources ေတြ download ဖုိ႔ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
 ```bash
 repo sync
@@ -112,7 +106,7 @@ repo sync
 အဲဒီေနာက္မွာေတာ့ Sources ေတြ Downloading လုပ္ေနတဲ့ အပုိင္းပါ၊
 SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connection ေပၚမွာ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
 
-## Building AOSP from Sources
+## Building Custom Android OS from Sources
 - အရင္ဆုံး Source ကေန Compilation မလုပ္ခင္ ၾကဳိတင္ျပင္ဆင္ရမယ့္ အရာေတြကုိ ေျပာျပေပးပါမယ္။
 - ပထမဆုံး လုိအပ္တာက ကုိယ့္ဖုန္းရဲ႕ Device tree ပါ
 - Location က ဘယ္မွာ သြားထည့္ရမလဲဆုိရင္ Download ထားတဲ့ Source dir ေအာက္က /device ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
