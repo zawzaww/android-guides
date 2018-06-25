@@ -1,7 +1,6 @@
 # Android Guides / Tutorials
 ## Building Custom Android OS, Kernel, Bootable Recovery and More
 
-## Index
 ### Guides
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-Android-Kernel.md)
@@ -10,10 +9,10 @@
 - [How To Merge Android Security Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Android-Security-Patchs.md)
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Linux-Kernel-Patchs.md)
 
-### Threads/Projects on XDA
+### My Works on XDA
 - [XDA-Threads-Collection](https://github.com/zawzaww/android-tutorials/blob/android/Notes/XDA-Threads-Collection.md) by [ZawZaw](https://forum.xda-developers.com/member.php?u=7581611)
 
-### TWRP Recovery Flags
+### Recovery Flags
 - [TWRP-Recovery-Flags](https://github.com/zawzaww/android-tutorials/blob/android/Notes/twrp-recovery-flags.mk)
 
 This repository is for my Myanmar friends and android enthusiasts.
