@@ -15,9 +15,6 @@
 ### My Works on XDA
 - [XDA-Threads-Collection](https://github.com/zawzaww/android-tutorials/blob/android/Notes/XDA-Threads-Collection.md)
 
-### Recovery Flags
-- [TWRP-Recovery-Flags](https://github.com/zawzaww/android-tutorials/blob/android/Notes/twrp-recovery-flags.mk)
-
 This repository is for my Myanmar friends and android enthusiasts.
 
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/511px-Android_robot_2014.svg.png" height="39%" width="39%;"/></center> 
