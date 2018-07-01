@@ -8,15 +8,22 @@
    ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ AOSP SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ အခုနည္းကုိ သိသြားၿပီဆုိရင္ တျခားေသာ AOSP based ROM ေတြေရာ LineageOS based ROM ေတြေရာ build တတ္သြားပါလိမ့္မယ္၊ တခုပဲကြဲျပားသြားတာပါ Android SourceCode ယူရတဲ့ ေနရာပဲကြဲသြားတာပါ။ တခုေတာ့ သတိေပးထားပါရေစ Android ရဲ႕ SourceCode ေတြရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
 
 # Requirements
-- Linux OS သုံးထားတဲ့ Computer တလုံး႐ွိရပါမယ္
+- Linux Computer
 - OpenJDK Install ထားရပါမယ္
 - Python 2.7+ Install ထားရပါမယ္ ( ဘာလုိ႔လဲဆုိေတာ့ Google ရဲ့ git-repo က Python နဲ႔ေရးထားတာပါ၊ အဲဒါေၾကာင့္ Python Install လုပ္မထားရင္ git-repo က အလုပ္မလုပ္ပါဘူး )
 - Git အသုံးျပဳတတ္ရပါမယ္
-- Google ရဲ႕ git-repo လည္း သုံးတတ္ရပါမယ္။ 
+- Google ရဲ႕ git-repo လည္း သုံးတတ္ရပါမယ္။
+
+# About Google's git-repo
+Google ကေန Android အတြက္ အဓိကဦးတည္ၿပီး လုပ္ထားတဲ့ git-repo (Repo) အေၾကာင္းေျပာျပခ်င္ပါတယ္။ မ်ားေသာအားျဖင့္ Repo လု႔ိ လူသိမ်ားပါတယ္ သိၾကပါတယ္။ Repo ဆုိတာ GitHub က Project Repository မ်ဳိးကုိ ေခၚတာ မဟုတ္ပါဘူး။ Google က Git အေပၚမွာ အေျခခံၿပီး develope ထားတဲ့ Tool ရဲ႕အမည္ျဖစ္ပါတယ္။ ဘာလု႔ိ Android အတြက္ ဖန္းတီထားတာလဲဆုိေတာ့ Custom Android OS တခု Sources ကေန Build ခ်င္တယ္ပဲ ဆုိပါစု႔ိ Android OS တနည္းအားျဖင့္ AOSP မွာ Android OS ႀကီး တခုလုံးအတြက္လုိအပ္တဲ့ Repositories ေတြက အမ်ားႃကီး႐ွိပါတယ္။ အဲဒါေတြကုိ တခုခ်င္း git clone လုပ္ေနရင္ အဆင္ေျပမွာ မဟုတ္ပါဘူး။ အဲဒီအတြက္ Repo က Custom Android OS build မယ္သူေတြကုိ ကူညီႏုိင္ပါတယ္။
 git-repo အေၾကာင္းကုိ ဒီမွာဝင္ဖက္ႏုိင္ပါတယ္...
 https://code.google.com/archive/p/git-repo/
 ၿပီးသြားရင္ git-repo command ေတြကုိ ဒီမွာ ေလ့လာၾကည့္ပါ... https://source.android.com/source/using-repo
-( git-repo ဆုိတာ Git ေပၚမွာ အေျခခံၿပီး Google က develop ထားတဲ့ tool တခုပါ၊ Android ROM Development မွာ အရမ္းအသုံးဝင္ပါတယ္၊ [ git-repo - Multiple Repository Tool ] လုိ႔ေခၚပါတယ္၊ သူ႔ရဲ႕ အသုံးဝင္ပုံက Repo တခုေဆာက္ၿပီး အဲဒီထဲမွာ .xml file ေလးတခုေဆာက္ၿပီး ကုိယ္လုိခ်င္တဲ့ ကုိယ္ remote လုပ္ခ်င္တဲ့ repo ေတြကုိအမ်ာႀကီးကုိ link ေပးၿပီး repo sync ဆုိတဲ့ command ကုိသုံးၿပီး၊ ကုိယ့္ရဲ႕ Local machine ထဲကုိ တေနရာတည္းမွာပဲ Repository ေတြအမ်ာႀကီးကုိ download ဆြဲလုိ႔ရပါတယ္၊ သေဘာက ROM တခု build ဖုိ႔ လုိအပ္တဲ့ Android SourceCode Repository ေတြက အမ်ားႀကီးပါ အဲဒါကုိ တခုခ်င္းလုိက္ git clone မေနပဲ .xml file ေလးကေန Repository အမ်ားႀကီးစုၿပီး Local ထဲကုိ download ဆြဲလုိက္တဲ့ သေဘာပါပဲ။ )
+သူက Android ROM Development မွာ အရမ္းအသုံးဝင္ပါတယ္။ [ git-repo - Multiple Repository Tool ] လုိ႔ေခၚပါတယ္။ သူ႔ရဲ႕ အသုံးဝင္ပုံက GitHub မွွွာ Repo တခုေဆာက္ၿပီး အဲဒီထဲမွာ XML file ေလးတခုေဆာက္ၿပီး ကုိယ္လုိခ်င္တဲ့ ကုိယ္ remote လုပ္ခ်င္တဲ့ repo ေတြကုိအမ်ာႀကီးကုိ link ခ်ိတ္ေပးထာၿပီး repo sync ဆုိတဲ့ command ကုိသုံးၿပီး၊ ကုိယ့္ရဲ႕ Local machine ထဲကုိ တေနရာတည္းမွာပဲ Repository ေတြအမ်ာႀကီးကုိ download ဆြဲလုိ႔ရပါတယ္၊ သေဘာက Custom ROM တခု build ဖုိ႔ လုိအပ္တဲ့ Android SourceCode Repository ေတြက အမ်ားႀကီးပါ အဲဒါကုိ တခုခ်င္းလုိက္ git clone မေနပဲ XML file ေလးကေန Repository အမ်ားႀကီးစုၿပီး Local ထဲကုိ download ဆြဲလုိက္တဲ့ သေဘာပါပဲ။ တနည္းအားျဖင့္ ဒါဟာ Android တခုတည္းအတြက္္္္တင္ မဟုတ္ပါဘူူူး သြယ္ဝုိက္ႃပီးသုံးႏုိင္ပါတယ္။ တကယ္လုုုု႔ိ ကုုိယ္က Git Repository အမ်ားႀကီး download ဆြဲဲဲဲဲခ်င္တဲ့အခါ ဒီနည္းက တကယ္မုိက္ပါတယ္။
+အဲဒီအတြက္ XML file တခုေရးနည္းက မခက္ပါဘူး တကယ္လြယ္ပါတယ္။ ကြၽန္ေတာ္ရဲ႕ "aosp-android" repository မွာ ေလ့လာႏုိင္ပါတယ္။
+https://github.com/zawzaww/aosp-android/blob/android-8.1.0/default.xml
+
+
 
 # Setup Your Environment
 ## Step 1: Installation OpenJDK
@@ -34,7 +41,7 @@ OpenJDK Install တဲ့ ေနရာမွာ နည္းနည္းေျ�
 ( သူ႔ရဲ႕ ေအာက္က Android version အတြက္ေတာ့ မေျပာေတာ့ပါဘူး ဘယ္သူမွလည္း Build မွာ မဟုတ္ေတာ့ပါဘူး )
 
 ## Step 2: Installation Python
-- ေနာက္တဆင့္ကေတာ့ Python install ေပးဖု႔ိ လုိပါတယ္၊ Python 2.7 ေလာက္ဆုိ အဆင္ေျပပါၿပီ။ ( Python 3+ ဆုိ git-repo အတြက္ သိပ္အဆင္မေျပပါဘူး အဲဒါေၾကာင့္ 2.7 ပဲ Install ေပးပါ )
+- ေနာက္တဆင့္ကေတာ့ Python install ေပးဖု႔ိ လုိပါတယ္၊ Python 2.7 ေလာက္ဆုိ အဆင္ေျပပါၿပီ။ ( Python 3+ ဆုိ git-repo အတြက္ သိပ္အဆင္မေျပပါဘူး အဲဒါေၾကာင့္ 2.7 ပဲ Install ေပးပါ ) ဒီေနရာမွာ Ubuntu သုံးေနတာဆုိရင္ တခါတည္း Install လုပ္ၿပီးသားဆုိရင္ မလုိအပ္ပါဘူး။
 ```bash
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
