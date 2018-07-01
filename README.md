@@ -9,6 +9,9 @@
 - [How To Merge Android Security Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Android-Security-Patchs.md)
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Linux-Kernel-Patchs.md)
 
+### Articles
+- [About the Gin Android OEMs](https://github.com/zawzaww/android-tutorials/blob/android/Articles/Gin-Android-OEMs.md)
+
 ### My Works on XDA
 - [XDA-Threads-Collection](https://github.com/zawzaww/android-tutorials/blob/android/Notes/XDA-Threads-Collection.md)
 
