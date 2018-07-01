@@ -1,4 +1,4 @@
-<img src="https://cdn-images-1.medium.com/max/800/1*F7UyC8Ry4X8PMNuFUMkC-w.jpeg" height="100%" width="100%;"/>
+<img src="https://s20.postimg.cc/wr7f8z1nh/Screenshot_from_2018-05-15_07-12-46.png" height="100%" width="100%;" />
 
 # About the Gin Android OEMs (Android Phone Manufacturers)
 
@@ -12,14 +12,22 @@ About the “Make” and “Makefile”
 
 Source: Wikipedia
 ```bash
-In software development, Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program.
+In software development, Make is a build automation tool 
+that automatically builds executable programs 
+and libraries from source code by reading files called Makefiles 
+which specify how to derive the target program.
 
-A Makefile is a file (by default named “Makefile”) containing a set of directives used by a make build automation tool to generate a target/goal.
+A Makefile is a file (by default named “Makefile”) 
+containing a set of directives used by a make build automation tool 
+to generate a target/goal.
 ```
 အဲဒီ (https://android.googlesource.com/platform/build.git) Repository ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
 ```bash
+#
 # Handle various build version information.
+#
 # Guarantees that the following are defined:
+#
 # PLATFORM_VERSION
 # PLATFORM_SDK_VERSION
 # PLATFORM_VERSION_CODENAME
@@ -29,6 +37,7 @@ A Makefile is a file (by default named “Makefile”) containing a set of direc
 # PLATFORM_SECURITY_PATCH
 # PLATFORM_VNDK_VERSION
 # PLATFORM_SYSTEMSDK_VERSIONS
+#
 ```
 အစ႐ွိသျဖင့္ အကုန္ Define လုပ္ေပးလု႔ိ ရပါတယ္။ April လ တုန္းက သတင္းမွာ Android OEM Company တခ်ဳိ႔ Android Security Patch Level လိမ္ခဲ့တယ္ဆုိတဲ့ အဓိပၸါယ္က သက္ဆုိင္ရာ Android Security flaw ေတြကုိ Fix လုပ္ထားတဲ့ Security patches / Code ေတြကို Merge ခဲ့တာ မဟုတ္ပဲ "Date" ေလးပဲ Change ႐ုံသက္သက္ပဲ လုပ္ခဲ့ၿပီး User ေတြဆီ Software update ျပန္ေပးခဲ့တဲ့ဆုိတဲ့ သေဘာျဖစ္ပါတယ္။
 
@@ -42,7 +51,7 @@ ifndef PLATFORM_SECURITY_PATCH
 PLATFORM_SECURITY_PATCH := 2018–05–05
 endif
 ```
-<img src="https://cdn-images-1.medium.com/max/800/1*J88H5_PwEklu9zFgoGfKgg.png" />
+<img src="https://s20.postimg.cc/wr7f8z1nh/Screenshot_from_2018-05-15_07-12-46.png" />
 
 ပုံမွန္လုပ္ရမွာက AOSP က Android platform fixes ေတြ Upstream Linux Kernel fixes ေတြ Hardware Manufacturer ဘက္က System-On-Chip (SOC) နဲ႔ သက္ဆုိင္တဲ့ SOC fixes ေတြကုိ Merge လုပ္ၿပီးမွ Android Build System က Date ကုိ သြားခ်ိန္းေပးရမွာ ျဖစ္ပါတယ္။ ၿပီးမွ Android System / OS တခုလုံးကုိ "system.img" ထြက္လာတဲ့အထိ Compile ျပန္လုပ္ေပးရမွာ ျဖစ္ပါတယ္။ Android Security Updates ပုိင္း အေသးစိတ္ကုိ ဒီမွာ ေလ့လာႏုိင္ပါတယ္...
 Links:
