@@ -7,14 +7,16 @@
 - [How To Build Android Kernel](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-Android-Kernel.md)
 - [How To Build Custom Bootable Recovery (TWRP)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-TWRP-Recovery.md)
 - [How To Build LineageOS](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-LineageOS.md)
-- [How To Merge Android Security Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Android-Security-Patchs.md)
-- [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Linux-Kernel-Patchs.md)
+- [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Security-Patches.md)
+- [How To Merge Upstream Linux Kernel Patches for Android](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Linux-Kernel.md)
 - [About the Gin Android OEMs](https://github.com/zawzaww/android-tutorials/blob/android/Articles/Gin-Android-OEMs.md)
 
+----
 
 ## Author
 [Zaw Zaw](https://zawzaww.github.io)
 
+----
 
 ## License
 This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
