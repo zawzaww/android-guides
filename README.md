@@ -1,7 +1,6 @@
 # ANDROID GUIDES / TUTORIALS
 ## Building Custom Android OS, Kernel, Bootable Recovery and More
 
-
 ## Index
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-Android-Kernel.md)
@@ -11,17 +10,13 @@
 - [How To Merge Upstream Linux Kernel Patches for Android](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Linux-Kernel.md)
 - [About the Gin Android OEMs](https://github.com/zawzaww/android-tutorials/blob/android/Articles/Gin-Android-OEMs.md)
 
-----
 
 ## Author
-[Zaw Zaw](https://zawzaww.github.io)
+Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@Personal Website](https://zawzaww.github.io), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
 
-----
 
 ## License
 This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
-
-<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/511px-Android_robot_2014.svg.png" height="39%" width="39%;"/></center> 
 
 
 Regards,
