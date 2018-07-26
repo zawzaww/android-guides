@@ -1,6 +1,6 @@
 <img src="https://s20.postimg.cc/wr7f8z1nh/Screenshot_from_2018-05-15_07-12-46.png" height="100%" width="100%;" />
 
-# About the Gin Android OEMs (Android Phone Manufacturers)
+# Gin Android OEMs (Android Phone Manufacturers)
 
 ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ ႏုိင္ငံျခား Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ တကယ္ေတာ္တဲ့ Security Researcher ေတြ ႐ွာေတြ႔ခဲလု႔ိ Report တင္ခဲ့တဲ့အတြက္ေၾကာင့္ပါ။
 

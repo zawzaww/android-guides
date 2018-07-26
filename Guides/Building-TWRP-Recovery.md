@@ -2,11 +2,10 @@
 <img src="https://s20.postimg.cc/jzy9c1dzh/twrp-recovery.jpg" height="100%" width="100%;" />
 </center>
 
-# How To Build TWRP Recovery for Android Devices
-
-# Team Win Recovery Project (TWRP)
+# Building TWRP Recovery for Android Devices
 
 ## Introduction
+### Team Win Recovery Project (TWRP)
    ဒီတခါ ကြၽန္ေတာ္ေျပာျပမယ့္ အေၾကာင္းအရာကေတာ့ SourceCode ကေန Android Devices ေတြအတြက္ Custom Recovery တခု Build နည္းကုိ ေျပာျပေပးမွာျဖစ္ပါတယ္။ ဒီေနရာမွာ ႐ွင္းျပစရာေတြ႐ွိပါတယ္ Android မွာ Recovery ပုိင္းမွာ ႏွစ္မ်ဳိး႐ွိပါယ္။ Stock Recovery နဲ႔ Custom Recovery ဆုိၿပီး ႐ွိပါတယ္။ 
 Stock Recovery က ပုံမွန္အားျဖင့္ ဖုန္းဝယ္ကတည္းက built-in ပါလာတဲ့ Recovery တခုျဖစ္ပါတယ္ (ခြၽင္းခ်က္ - တခ်ဳိ့ device ေတြမွာေတာ့ ပါမလာတတ္ပါဘူး)၊ ပုံမွန္အားျဖင့္ ဘာေတြလုပ္လုိ႔ရလည္းဆုိေတာ့ အဲဒီ Stock Recovery Mode ကေန ဖုန္းရဲ႕ Data ေတြကုိ Wipe Data/Factory Reset ခ်ႏုိင္မယ္ Wipe Cache လုပ္ႏုိင္မယ္၊ Firmware Official Update Zip ေတြနဲ႔ Update လုပ္ႏုိင္တယ္ (ဥပမာ OnePlus ဖုန္းေတြ သုံးဖူးရင္ သိပါတယ္ သူ႔ရဲ႕ Stock Recovery ကေန Firmware Update ေတြ လုပ္သြားလု႔ိရပါတယ္ ) ၊ Stock ကေတာ့ ဒီေလာက္ပါပဲ features အမ်ားႀကီးေတာ့ မပါပါဘူး။
 Custom Recovery ဆုိတဲ့ ေခါင္းစဥ္ေအာက္မွာ ထပ္ခြဲလုိ႔ ရပါေသးတယ္။ CWM(ClockworkMod) Recovery / PhilZ Touch Recovery / TWRP Revovery ဆုိၿပီး ႐ွိပါတယ္၊ PhilZ Touch က တကယ္က CWM Advanced Edition တခုပါပဲ။ ကြၽန္ေတာ္ အဓိကေျပာမွာက Features အၾကမ္းေတြနဲ႔ လူအမ်ားသိတဲ့ TWRP (Team Win Recovery Project) အေၾကာင္းပါပဲ။ TWRP ရဲ႕ ပုံမွန္ features ေတြက FlashableZip ေတြ Install လုပ္ႏုိင္မယ္ အဲဒီထဲမွာ Custom ROM ေတြ Kernel ေတြ Install လုပ္တာေတြ Android Rooting အပုိင္းေတြ အကုန္ပါပါတယ္၊ /data  /boot  /system  /recovery partition ေတြ အကုန္ Backup and Restore လုပ္ႏုိင္မယ္(တနည္းအားျဖင့္ Firmware ႀကီးတခုလုံး full Backup/Restore လုပ္ႏုိင္မယ္)၊ Wipe System / Wipe Data/Factory Reset / Wipe Cache/Dalvik cache / Format Data လုပ္တာေတြ အကုန္ပါပါတယ္ ၊ ေနာက္ /system  /data  /cache ေတြကုိ mount/unmount လုပ္ခြင့္႐ွိမယ္၊ TWRP Recovery Mode ရဲ႔ file manager ကေန file ေတြအားလုံး  access (read/write) လုပ္ခြင့္႐ွိမယ္၊ ေနာက္ထပ္ features ေတြ အမ်ားႀကီး ႐ွိပါေသးတယ္ ဒီေလာက္ဆုိ လုံေလာက္မယ္ ထင္ပါတယ္။
@@ -271,11 +270,9 @@ mka recoveryimage
 <img src="https://s20.postimg.cc/chh95lta5/Screenshot_from_2017-11-22_17-11-18.png" />
 
 - DONE
+
 <img src="https://s20.postimg.cc/turjker59/Screenshot_2017-11-22-04-47-48.png" /> 
 
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
-
-Copyright (C) 2017-2018, Zaw Zaw.

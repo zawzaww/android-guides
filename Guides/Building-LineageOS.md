@@ -1,6 +1,6 @@
 <center><img src="https://www1-lw.xda-cdn.com/files/2017/03/LineageOS-810x298_c.png" height="100%" width="100%;"/></center>
 
-# How To Build LineageOS for Android Devices
+# Building LineageOS for Android Devices
 
 # Introduction
    ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ LineageOS SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ LineageOS CustomROM တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ LineageOS ဆုိတာ Android CustomROM Cummunity ေတြထဲမွာ Support Device အမ်ားဆုံး Popular အျဖစ္ဆုံးနဲ႔ အႀကီးဆုံးလု႔ိ ေျပာလု႔ိ ရပါတယ္၊ Android User ေတာ္ေတာ္မ်ားမ်ားလည္း ရင္းႏွီးၾကပါတယ္။ အခုမွ စလုပ္မယ့္သူေတြအတြက္က LineageOS နဲ႔ စၿပီး Build ၾကည့္တာ အလြယ္ကူဆုံး ႃဖစ္ပါတယ္။ ဘာေၾကာင့္လဲ ဆုိေတာ့ LineageOS Team မွာ Developers/Contributors ေတြ အမ်ားႀကီး႐ွိပါတယ္၊ Android Device ေတာ္ေတာ္မ်ားမ်ားရဲ႔ Kernel Source နဲ႔ Device tree ေတြ အမ်ားႀကီး႐ွိပါတယ္၊ အျမဲ Update လုပ္ေပးေနပါတယ္၊ ကုိယ္တုိင္ Source ကေန Modification ပုိင္း လုပ္တာ မကြၽမ္းက်င္ဘူဆုိရင္ အဆင္သင့္ယူလု႔ိရပါတယ္။ ဘယ္မွာ သြားယူရမလဲဆုိရင္ https://github.com/LineageOS/ ေအာက္မွာ ကုိယ့္ဖုန္းရဲ႕ device name အလုိက္ ႐ွာလု႔ိရပါတယ္။ အခု ကြၽန္ေတာ္ရဲဲဲ႕ Guide ကုိ ဖက္ႃပီးသြားရင္ တျခားေသာ Android CustomROM အမ်ားအျပားပါ build တတ္သြားပါလိမ့္မယ္။ တခုပဲကြဲျပားသြားပါလိမ့္မယ္ Android OS SourceCode ယူရတဲ့ ေနရာနဲ႔ တခ်ဳိိိိိ႕ေသာ linux make command ေတြ ကြာသြားပါလိမ့္မယ္။ (Example: Android CustomROM Teams - OmniROM, AOSiP, AOKP, AOSP Extended, Dirty Unicorns, ResurrectionRemix and etc...) တခုေတာ့ သတိေပးထားပါရေစ Android OS SourceCode ရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Google Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
@@ -12,8 +12,10 @@
 - LineageOS Downloads: for support Devices (https://download.lineageos.org)
 - LineageOS XDA Forum (https://forum.xda-developers.com/lineage)
 - LineageOS Developers and Contributors (https://wiki.lineageos.org/contributors.html)
+
 ## Project
 - LineageOS Project SourceCode (https://github.com/LineageOS)
+
 ## Support
 - LineageOS Twitter (https://twitter.com/lineageandroid)
 - LineageOS G+ Community (https://plus.google.com/+LineageOS)
@@ -233,6 +235,3 @@ Compilation process time က Computer ရဲ႕ CPU core ေပၚ မူတည�
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
-
-Copyright (C) 2017-2018, Zaw Zaw.

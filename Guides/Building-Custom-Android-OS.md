@@ -1,7 +1,6 @@
 <img src="https://s20.postimg.cc/mynqibckt/Android-_Open-_Source-_Project-710x277.jpg" height="100%" width="100%;"/>
 
-# How To Build Custom Android OS for Android Devices
-# Building Pure Android
+# Building Custom Android OS for Android Devices
 
 # Introduction
 ### AOSP - Android Open Source Project
@@ -216,6 +215,3 @@ Output - /out/target/product/bullhead/ ေအာက္မွာ ထြက္သ�
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
-
-Copyright (C) 2017-2018, Zaw Zaw.

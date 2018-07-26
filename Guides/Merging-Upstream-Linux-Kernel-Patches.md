@@ -2,7 +2,7 @@
  <img src="https://s20.postimg.cc/6f7hczy7h/android-linux-stable.jpg" height="100%" width="100%;" /> 
 </center>
 
-# How To Merge Upstream Linux Kernel Patches for Android
+# Merging Upstream Linux Kernel Patches for Android
  
 # Indroduction
   ဒီတခါက Guide က ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Android Kernel မွာ Linux Kernel version ေတြကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ (၄)မ်ိဳး ကြဲျပားပါတယ္ ( Prepatch, Mainline, Stable & Long Term ) ဆိုၿပီး ရွိပါတယ္။ အေသးစိတ္ကိုေတာ့ ဒီမွာ ေလ့လာၾကည့္ပါ https://www.kernel.org/category/releases.html ပထမ Android Kernel building tutorial မွာလည္း ကၽြန္ေတာ္ေျပာခဲ့ပါတယ္ Android မွာ သုံးတဲ့ Linux Kernel branch ေတြက Long Term Support (LTS) branch ေတြျဖစ္ပါတယ္။ Linux Kernel LTS branch ေတြအမ်ားႀကီး ရွိပါတယ္။ Android ဖုန္း အမ်ိဳးအစားေပၚ မူတည္ၿပီး သုံးတဲ့ Linux Kernel LTS branch ေတြက မတူပါဘူး။ ဥပမာ အေနနဲ႔ ေျပာျပရရင္ Nexus 5X မွာဆိုရင္ linux-3.10.y ဆိုတဲ့ LTS branch ကိုသုံးၿပီး၊ Google Pixel မွာဆိုရင္ linux-3.18.y ဆိုတဲ့ LTS branch ကို သုံးပါတယ္။ Android က အဲဒီ သက္ဆိုင္ရာ LTS Linux kernel branch ေတြကို အေျခခံၿပီး အသုံးခ်ၿပီး သူရဲ့ Android Mobile Device အတြက္ ကိုက္ညီမႈရွိေအာင္ Device driver ျပန္ျပင္ေရးၿပီး ျပန္ Modifed ခဲ့တဲ့သေဘာပါပဲ။ ဒါေၾကာင့္ ကိုယ့္ဖုန္းအတြက္ Kernel source ယူရင္ Android ဘက္က သက္ဆိုင္ရာ Mobile OEM's Engineer ေတြက ေပးတဲ့ Kernel source ေတြယူရၿပီး၊ Linux kernel version update ေတြ လုပ္ခ်င္ရင္ မူရင္း git.kernel.org ကေန Git ကိုသုံးၿပီး code ေတြ merge ၿပီး ကိုယ့္ဖုန္းအတြက္ kernel version ေတြ update လုပ္ေပးရမွာပါ။ အခု Guide မွာ Git ကိုသုံးၿပီး git.kernel.org ကေန ကိုယ့္ Android ဖုန္းအတြက္ linux kernel version (Code) ေတြ ဘယ္လို merge လုပ္မလဲ ဆိုတာ ဆက္ေရးပါမယ္။ ဒီေနရာမွာ နည္းနည္း ေျပာျပခ်င္ပါတယ္ Linux kernel က C နဲ႔ ေရးပါတယ္။ ကိုယ့္ဖုန္းအတြက္ Git ကုိသုံးၿပီး code ေတြ merge ရင္ အနည္းနဲ႔ အမ်ား "merge conflicts" ေတြျဖစ္နိုင္ပါတယ္။ အဲဒါေၾကာင့္ Merge conflicts ေတြရွင္းနိုင္တဲ့ အရည္အခ်င္းေတာ့ ရွိရပါမယ္။ အဲလိုမွ မရွင္းနိုင္ရင္ compile ေနတဲ့အခ်ိန္ Terminal ကေန Line no. နဲ႔အတူ Code error ေတြျပပါလိမ့္မယ္ Kernel image ေတြ ထြက္မလာနိုင္ေတာ့ပါဘူး။ တနည္းအားျဖင့္ ဒီအတိုင္းႀကီးရွင္းတာထက္ စာရင္ C Programming Language ကို အတုိင္းတာတခု ေလ့လာၿပီး ေကာင္းေကာင္း နားလည္ထားရင္ အေကာင္းဆုံးပါလု႔ိ ေျပာခ်င္ပါတယ္။
@@ -148,6 +148,3 @@ Example: (v3.10.74 first commit ကေန last commit ထဲ တခုခ်င�
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
-
-Copyright (C) 2017-2018, Zaw Zaw.
