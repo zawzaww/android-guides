@@ -1,6 +1,6 @@
 <img src="https://s20.postimg.cc/mynqibckt/Android-_Open-_Source-_Project-710x277.jpg" height="100%" width="100%;"/>
 
-# Building Custom Android OS for Android Devices
+# How To Build Custom Android OS (Pure Android) for Android Devices
 
 # Introduction
 ### AOSP - Android Open Source Project

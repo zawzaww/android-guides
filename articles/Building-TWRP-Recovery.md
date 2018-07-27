@@ -2,7 +2,7 @@
 <img src="https://s20.postimg.cc/jzy9c1dzh/twrp-recovery.jpg" height="100%" width="100%;" />
 </center>
 
-# Building TWRP Recovery for Android Devices
+# How To Build TWRP Recovery for Android Devices
 
 ## Introduction
 ### Team Win Recovery Project (TWRP)
