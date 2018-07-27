@@ -1,14 +1,14 @@
-# Android Guides and Articles
-## Building Custom Android OS, Kernel, Bootable Recovery and More
+# Android Articles and Guides
+## Android OS/Kernel Based Articles, How-To Articles, Git, Linux Kernel and More
 
 ## Content
-- [Building Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/Guides/Building-Custom-Android-OS.md)
-- [Building Android Kernel](https://github.com/zawzaww/android-articles/blob/android/Guides/Building-Android-Kernel.md)
-- [Building Android Bootable Recovery (TWRP)](https://github.com/zawzaww/android-articles/blob/android/Guides/Building-TWRP-Recovery.md)
-- [Building LineageOS](https://github.com/zawzaww/android-articles/blob/android/Guides/Building-LineageOS.md)
-- [Merging Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/Guides/Merging-Kernel-Security-Patches.md)
-- [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/Articles/Gin-Android-OEMs.md)
-- [Merging Upstream Linux Kernel Patches for Android](https://github.com/zawzaww/android-articles/blob/android/Guides/Merging-Upstream-Linux-Kernel-Patches.md)
+- [Building Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
+- [Building Android Kernel](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Android-Kernel.md)
+- [Building Android Bootable Recovery (TWRP)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-TWRP-Recovery.md)
+- [Building LineageOS](https://github.com/zawzaww/android-articles/blob/android/articles/Building-LineageOS.md)
+- [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Upstream-Linux-Kernel-Patches.md)
+- [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Kernel-Security-Patches.md)
+- [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
 
 
 ## Author
