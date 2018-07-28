@@ -1,5 +1,6 @@
 # Android Articles and Guides
-## Android OS Based Articles, How-To Articles, Git, Linux Kernel and More
+
+## Android OS/Kernel Based Articles, How-To Articles, Git and More Articles
 
 ## Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
@@ -10,6 +11,8 @@
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Kernel-Security-Patches.md)
 - [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
 
+## Contributing
+Found a issue (or) spelling errors? Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
 
 ## Author
 Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@Personal Website](https://zawzaww.github.io), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
