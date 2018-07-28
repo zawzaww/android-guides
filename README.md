@@ -13,7 +13,7 @@
 
 
 ## Help
-Found a issue? Please, help and open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
+Found some issues (or) typo errors? Please, help me and open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
 
 
 ## Author
