@@ -1,6 +1,6 @@
 # Android Articles and Guides
+## Android OS Based Articles, How-To Articles, Guides and More Articles
 
-## Android OS/Kernel Based Articles, How-To Articles, Git and More Articles
 
 ## Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
@@ -11,8 +11,10 @@
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Kernel-Security-Patches.md)
 - [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
 
-## Contributing
-Found a issue (or) spelling errors? Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
+
+## Help
+Found a issue? Please, help and open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
+
 
 ## Author
 Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@Personal Website](https://zawzaww.github.io), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
@@ -21,9 +23,22 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 ## License
 This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
 
+```bash
+MIT License
+
+Copyright (C) 2017-2018, Zaw Zaw.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
 
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
-Copyright (C) 2017-2018, Zaw Zaw.
