@@ -5,6 +5,7 @@
 ## Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Android-Kernel.md)
+- [How To Create Kernel FlashableZip](https://github.com/zawzaww/android-articles/blob/android/articles/Creating-FlashableZip.md)
 - [How To Build Android Bootable Recovery (TWRP)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-TWRP-Recovery.md)
 - [How To Build LineageOS](https://github.com/zawzaww/android-articles/blob/android/articles/Building-LineageOS.md)
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Upstream-Linux-Kernel-Patches.md)
