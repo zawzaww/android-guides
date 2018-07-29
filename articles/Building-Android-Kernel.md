@@ -5,17 +5,17 @@
 # How To Build Kernel for Android Devices
 
 # Introduction
-  အရင္ဆုံး Intro အေနနဲ႔ Kernel ဆုိတာ ဘာလဲ ဘာအတြြြြက္လဲဆုိတာ ႐ွင္းျပ ေပးပါမယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး၊ Android ရဲ႕ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မွာသုံံံံံးထား Linux Kernel branch ေတြက Long Term Support(LTS) branch ေတြ ျဖစ္ပါတယ္။  https://www.kernel.org မွာ Long term branch ေတြၾကည့္ႏုိင္ပါတယ္။ ဥပမာ Nexus 5X, 6, 6P မွာဆုိ linux-3.10-y ဆုိတဲ့ branch ကုိ သုံးပါတယ္။
-  Android OS က Linux Kernel ေပၚမွာ အေျခခံၿပီး တည္ေဆာက္ထားတာ ျဖစ္ၿပီး၊ Kernel ဆုိတာ OS တခုရဲ႕ အေရးႀကီးတဲ့ အစိတ္အပိုင္းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ္အပုိင္းေတြ နဲ႔ Software နဲ႔ၾကား ခ်ိတ္ဆက္ၿပီး အလုပ္လုပ္တဲ့ ေနရာမွာ Kernel က အေရႀကီးတဲ့ အပုိင္းမွာ ပါဝင္ပါတယ္။ Android OS Architecture ရဲ႕ Linux Kernel အပုိင္းမွာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစ႐ွိသျဖင့္ပါဝင္ပါတယ္(ဥပမာ ေျပာျပတာပါ ေနာက္ထက္က်န္ပါ ေသးတယ္)။ နမူနာေျပာျပရရင္ ကြၽန္ေတာ့္္ရဲ႕ Nexus 5X မွာ ပုံမွန္ built-in ပါတဲ့ Stock Kernel မွာ Double Tap to Wake/Sleep တုိ႔ Disaply နဲ႔ ပတ္သက္တဲ့ KCAL Color Control တုိ႔ Audio နဲ႔ ပတ္သက္တဲ့ Sound Control တုိ႔ မပါပါဘူူူူး၊ ကုိယ့္မွာ Skill ႐ွိရင္ Kernel source တခုုု ကေန အဲဒီ Kernel features ေတြ add ၿပီး ျပန္ compile လုပ္ႏုိင္ပါတယ္။ ဆုိိိလုိတဲ့ သေဘာက အဲဒါေတြက Kernel ပုိင္းက လုပ္ႏုိင္တဲ့ features ေတြပါ။ ဘာလုိ႔ Custom Kernel တခု ျပန္ Compile ရတာလည္း ဆုိရင္ အဲဲဲဲလုိ Kernel features ေတြ လုိခ်င္လုိ႔ပါပဲ။
+Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ္လို Build မလဲဆိုတဲ့ အေၾကာင္းအရာကို ဒီ How-To article မွာ အဓိက ေျပာသြားမွာျဖစ္ပါတယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး Android ရဲ႕ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မွာသုံံံံံးထား Linux Kernel branch ေတြက Long Term Support(LTS) branch ေတြ ျဖစ္ပါတယ္။ https://www.kernel.org မွာ Long term branch ေတြၾကည့္ႏုိင္ပါတယ္။ ဥပမာ Nexus 5X, 6, 6P မွာဆုိရင္ “linux-3.10-y” ဆုိတဲ့ branch ကုိ သုံးပါတယ္ Google Pixel/Pixel XL မွာဆုိရင္ “linux-3.18-y” ဆုိတဲ့ LTS branch ေတြ သုံးၾကပါတယ္။ Android OS က Linux Kernel ေပၚမွာ အေျခခံၿပီး တည္ေဆာက္ထားတာ ျဖစ္ၿပီး Kernel ဆုိတာ OS တခုရဲ႕ အေရးႀကီးတဲ့ အစိတ္အပိုင္းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ္အပုိင္းေတြ နဲ႔ Software နဲ႔ၾကား ခ်ိတ္ဆက္ၿပီး အလုပ္လုပ္တဲ့ ေနရာမွာ Kernel က အေရႀကီးတဲ့ အပုိင္းမွာ ပါဝင္ပါတယ္။ Android OS Architecture ရဲ႕ Linux Kernel အပုိင္းမွာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစ႐ွိသျဖင့္ပါဝင္ပါတယ္။ နမူနာေျပာျပရရင္ ကြၽန္ေတာ့္္ရဲ႕ Nexus 5X မွာ ပုံမွန္ built-in ပါတဲ့ Stock Kernel မွာ Double Tap to Wake/Sleep / Disaply နဲ႔ ပတ္သက္တဲ့ KCAL - Advanced Color Control / Audio driver နဲ႔ ပတ္သက္တဲ့ Sound Control with High Performance Audio စသျဖင့္ မပါ၀င္ၾကပါဘူး။ ကုိယ့္မွာ C Programming Skill ႐ွိရင္ Kernel source တခုုု ကေန အဲဒီ Kernel features ေတြ ေရးၿပီး ျပန္ Recompile လုပ္ႏုိင္ပါတယ္။ ဒီေနရာမွာ Google ရဲ့ Nexus/Pixel လုိမ်ဳိး Stock Pure Android ဖုန္းေတြ မဟုတ္တဲ့ တျခား Android OEMs ေတြျဖစ္တဲ့ (Samsung, HTC, Sony and etc…) စတဲ့ Company ေတြရဲ့ဖုန္းေတြမွာ ေတာ္ေတာ္မ်ားမွာ အဲဒီ Features အနည္းနဲ႔အမ်ား ပါဝင္ၾကပါတယ္။ ဘာလု႔ိ အဆင္သင့္ပါလဲဆုိေတာ့ သူတုိ႔ရဲ႕ Company က သက္ဆုိင္ရာ Android Engineer ေတြက Source ကေန Modified လုပ္ထားၿပီးသားျဖစ္ေနလု႔ိပါပဲ။ အဲဒီ Features ေတြ Device drivers - Audio, Display, Camera, USB and etc… / Memory / Power Management ပုိင္းေတြက Low-level ထိဆင္းၿပီး C Programming နဲ႔ေရးၾကပါတယ္။ Custom Android Kernel တခု Build ရတဲ့အေၾကာင္းက Kernel source ယူၿပီး Features ေတြ ထပ္ေပါင္းထည့္ဖို႔အတြက္ ျဖစ္ပါတယ္။
+  
 <center><img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" height="54%" width="54%;"/></center>  
 
 
 # Requirements
-- Linux OS သုံးထားေသာ Computer တလုံး (ကြၽန္ေတာ္ကေတာ့ ubuntu သုံးပါတယ္)
-- အေျခခံ Linux command အနည္းအပါး သိရပါမယ္
-- ကုိယ္ရဲ႕ ဖုန္းအတြက္ လုိအပ္တဲ့ Kernel Source တခု
-- Kernel compile ဖုိ႔အတြက္ လုိအပ္တဲ့ Toolchins (တနည္းအားျဖင့္ ARM/ARM64 GCC Compiler တခု)
-- Git သုံးတတ္ရင္ ပုိေကာင္းပါမယ္ ေနာက္ပုိင္း Kernel features ေတြ add ရင္ လုိလာပါလိမ့္မယ္
+- Linux Computer
+- Linux command ေတြ သုံးတတ္ရပါမယ္
+- ကုိယ္ရဲ႕ ဖုန္းအတြက္ လုိအပ္တဲ့ Kernel Source
+- Kernel compile ဖုိ႔အတြက္ လုိအပ္တဲ့ Toolchins (တနည္းအားျဖင့္ ARM/ARM64 GCC Compiler)
+- Git သုံးတတ္ရပါမယ္
 
 
 # Kernel Sources
@@ -122,70 +122,8 @@ make -j$(nproc --all)
 <img src="https://s20.postimg.cc/963ank47x/Screenshot_from_2017-10-16_11-42-53.png" />
 
 - အဲဒါ ေတြ ေအာင္ျမင္သြာၿပီး ဆုိရင္ ကုိယ္ဖုန္းအတြက္ Kernel Install ဖု႔ိ FlashableZip ဘယ္လုိလုပ္မလဲ ဆုိိိတာ ဆက္ေရးပါမယ္။
+- DONE
 
-# How To Create FlashableZip
-- Kernel Build ၿပီးလုိ႔ zImage ေတြ ထြက္လာၿပီဆုိရင္ ကုိယ့္ရဲ႕ဖုန္းအတြက္ CustomRecovery (TWRP) ကေန Install လု႔ိရမယ့္ FlashableZip Create နည္းကုိ ေျပာျပပါမယ္။ XDA Recognized Developer တေယာက္ျဖစ္တဲ့ osm0sis ေရးထားတဲ့ AnyKernel2 - Kernel FlashableZip Template ဆုိတာ႐ွိပါတယ္။ အဲဒီ Template ကေန ကုိယ့္ဖုန္းအတြက္ ဘာေတြ ျပင္ဆင္ဖုိ႔ လုိအပ္လည္းဆုိတာ ဆက္ေျပာပါမယ္။
-- AnyKernel2 Documentation နည္းနည္းဖက္ၾကည့္လုိက္ပါ လြယ္ပါတယ္ : https://github.com/osm0sis/AnyKernel2/blob/master/README.md
-
-- အရင္ဆုံး AnyKernel2 ကုိ download လုိက္ပါ။
-```bush
-git clone https://github.com/osm0sis/AnyKernel2
-```
-### OR ###
-
-- Recommended for Nexus 5X
-```bush
-git clone -b bullhead --depth=1 https://github.com/zawzaww/anykernel2-flashable
-```
-- ဘာေတြလုိအပ္လည္း ဆုိရင္ Kernel name ျပင္ ေပးလုိ႔ရမယ္၊ device name သိရပါမယ္ (eg: LG Nexus 5X ဆုိ device name - bullhead)၊ ကုိယ့္ဖုန္းရဲ႕ boot partition location သိရမယ္၊ ramdisk ထဲမွာဆုိရင္ ကုိယ့္ဖုန္းရဲ႕ fstab.devicename (eg- fstab.bullhead) လုိပါတယ္၊ fstab ဆုိတာ file systems table ကုိေျပာတာပါ။ 
-- Nexus 5X အတြက္ fstab.bullhead တခု ဥပမာေပးပါမယ္ : https://github.com/purezandroid/device-lge-bullhead/blob/purez-8.0.0/fstab.bullhead ( အဲလုိပဲ ကုိယ့္ရဲ႕ဖုန္းအတြက္ လုိအပ္ပါတယ္ device-tree/fstab.your-devicename )
-- ပထမဦးဆုံး အေနနဲ႔ Compile လုိ႔ရလာတဲ့ Image.gz-dtb (kernelsource/arch/arm64/boot/Image-gz-dtb) ကုိ Copy ကူးၿပီး ခုနက AnyKernel2 Folder ထဲ Paste လုိက္ပါ၊ ၿပီးရင္ zImage-dtb လုိ႔ rename လုိက္​ပါ။
-- ျပင္ရမယ့္ ေကာင္ေတြကုိ စေျပာပါမယ္
-- Kernel Name : AnyKernel2 ထဲက anykernel2.sh file ေလးကုိ Text Editor တခုခုနဲ႔ ဖြင္လုိက္ၿပီး kernel.string= kernel name ေရးလုိက္ပါ။
-```bush
-kernel.string=PureZ Kernel by ZawZaw @XDA-Developers
-```
-
-- Device Name : anykernel2.sh ကုိဖြင့္ၿပီး device.name1 နဲ႔ device.name2 ေနရာမွာ ကုိယ္႔ဖုန္းရဲ႕ device name ကုိ ေရးလုိက္ပါ။ (ဖုန္း အမ်ဳိးအစာေပၚ မူတည္ၿပီး device name ကြာသြားပါလိမ့္မယ္)
-```bush
-device.name1=bullhead
-```
-```bush
-device.name2=Bullhead
-```
-
-- boot partition : ဒါက အေရးႀကီးပါတယ္ ကုိယ့္ဖုန္းအတြက္ boot partition location ကုိ အတိအက် သိရပါမယ္၊ ဘယ္လုိ႐ွာၾကည့္ႏုိင္လဲ ဆုိရင္ ကုိယ့္ဖုန္းက Root ထားရင္ၾကည့္ႏုိင္ပါတယ္၊ anykernel2.sh ထဲက "block=/dev/block/platform/..." ဆုိတဲ့ line မွာ ျပင္ေပးရမွာပါ။
-- For Nexus 5X 
-```bush
-block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
-```
-<img src="https://s20.postimg.cc//576jo7bz1/Screenshot_20171016-175722.png" />
-
-
-- fstab.device-name : AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab.bullhead file ေလး ကုိ သြားထည့္ရမွာပါ။ (အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့  <mount_point> partition ေတြ ပါဝင္ပါတယ္၊ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပဲ ျဖစ္ပါတယ္၊ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android filesystems table ေလး တခုပါပဲ)
-- သူရဲ႕ format ေလးကုိ နည္းနည္းေရးျပပါမယ္။ (Android 4.3 နဲ႔ ေနာက္ပုိင္း version ေတြရဲ႕ ပုံစံပါ)
-- ဒီထက္မက ေလ့လာခ်င္ရင္ AOSP site မွာ အျပည့္အစုံဖက္ႏုိင္ပါတယ္ : https://source.android.com/devices/storage/config
-```bush
- <src>  <mount_point>  <type>  <mount_flags>  <fs_mgr_flags>
-```
- 
-- E.g for Nexus 5X ( /system )
-```bush
- /dev/block/platform/soc.0/f9824900.sdhci/by-name/system       /system         ext4   ro,barrier=1,inode_readahead_blks=8
-```
-  
-- For Nexus 5X (fstab.bullhead) Sample : https://android.googlesource.com/device/lge/bullhead/+/oreo-r6-release/fstab.bullhead
-
-- အဲဒါေတြ ေအာင္ျမင္ၿပီ ဆုုိုိုိုိရင္ FlashableZip တခု Create ပါမယ္။
-- AnyKernel2 folder ထဲမွာ Right Click ေထာက္ၿပီး Terminal ကုိဖြင့္လုိက္ပါ။
-- Type this command
-```bush
-zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
-```
-
-- ၿပီးသြာရင္ AnyKernel2 folder ထဲမွာ Kernel Flashable Zip တခုထြက္လာပါၿပီ။
-- Reday to flash your Kernel Zip from TWRP Recovery for your Android Device
-- Done
 
 Regards,
 
