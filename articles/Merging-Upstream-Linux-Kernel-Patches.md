@@ -5,13 +5,13 @@
 # How To Merge Upstream Linux Kernel Patches for Android
  
 # Indroduction
-  ဒီတခါက Guide က ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Android Kernel မွာ Linux Kernel version ေတြကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ (၄)မ်ိဳး ကြဲျပားပါတယ္ ( Prepatch, Mainline, Stable & Long Term ) ဆိုၿပီး ရွိပါတယ္။ အေသးစိတ္ကိုေတာ့ ဒီမွာ ေလ့လာၾကည့္ပါ https://www.kernel.org/category/releases.html ပထမ Android Kernel building tutorial မွာလည္း ကၽြန္ေတာ္ေျပာခဲ့ပါတယ္ Android မွာ သုံးတဲ့ Linux Kernel branch ေတြက Long Term Support (LTS) branch ေတြျဖစ္ပါတယ္။ Linux Kernel LTS branch ေတြအမ်ားႀကီး ရွိပါတယ္။ Android ဖုန္း အမ်ိဳးအစားေပၚ မူတည္ၿပီး သုံးတဲ့ Linux Kernel LTS branch ေတြက မတူပါဘူး။ ဥပမာ အေနနဲ႔ ေျပာျပရရင္ Nexus 5X မွာဆိုရင္ linux-3.10.y ဆိုတဲ့ LTS branch ကိုသုံးၿပီး၊ Google Pixel မွာဆိုရင္ linux-3.18.y ဆိုတဲ့ LTS branch ကို သုံးပါတယ္။ Android က အဲဒီ သက္ဆိုင္ရာ LTS Linux kernel branch ေတြကို အေျခခံၿပီး အသုံးခ်ၿပီး သူရဲ့ Android Mobile Device အတြက္ ကိုက္ညီမႈရွိေအာင္ Device driver ျပန္ျပင္ေရးၿပီး ျပန္ Modifed ခဲ့တဲ့သေဘာပါပဲ။ ဒါေၾကာင့္ ကိုယ့္ဖုန္းအတြက္ Kernel source ယူရင္ Android ဘက္က သက္ဆိုင္ရာ Mobile OEM's Engineer ေတြက ေပးတဲ့ Kernel source ေတြယူရၿပီး၊ Linux kernel version update ေတြ လုပ္ခ်င္ရင္ မူရင္း git.kernel.org ကေန Git ကိုသုံးၿပီး code ေတြ merge ၿပီး ကိုယ့္ဖုန္းအတြက္ kernel version ေတြ update လုပ္ေပးရမွာပါ။ အခု Guide မွာ Git ကိုသုံးၿပီး git.kernel.org ကေန ကိုယ့္ Android ဖုန္းအတြက္ linux kernel version (Code) ေတြ ဘယ္လို merge လုပ္မလဲ ဆိုတာ ဆက္ေရးပါမယ္။ ဒီေနရာမွာ နည္းနည္း ေျပာျပခ်င္ပါတယ္ Linux kernel က C နဲ႔ ေရးပါတယ္။ ကိုယ့္ဖုန္းအတြက္ Git ကုိသုံးၿပီး code ေတြ merge ရင္ အနည္းနဲ႔ အမ်ား "merge conflicts" ေတြျဖစ္နိုင္ပါတယ္။ အဲဒါေၾကာင့္ Merge conflicts ေတြရွင္းနိုင္တဲ့ အရည္အခ်င္းေတာ့ ရွိရပါမယ္။ အဲလိုမွ မရွင္းနိုင္ရင္ compile ေနတဲ့အခ်ိန္ Terminal ကေန Line no. နဲ႔အတူ Code error ေတြျပပါလိမ့္မယ္ Kernel image ေတြ ထြက္မလာနိုင္ေတာ့ပါဘူး။ တနည္းအားျဖင့္ ဒီအတိုင္းႀကီးရွင္းတာထက္ စာရင္ C Programming Language ကို အတုိင္းတာတခု ေလ့လာၿပီး ေကာင္းေကာင္း နားလည္ထားရင္ အေကာင္းဆုံးပါလု႔ိ ေျပာခ်င္ပါတယ္။
+ဒီတခါက Guide က ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Android Kernel မွာ Linux Kernel version ေတြကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ (၄)မ်ိဳး ကြဲျပားပါတယ္ ( Prepatch, Mainline, Stable & Long Term ) ဆိုၿပီး ရွိပါတယ္။ အေသးစိတ္ကိုေတာ့ ဒီမွာ ေလ့လာၾကည့္ပါ https://www.kernel.org/category/releases.html ပထမ Android Kernel building tutorial မွာလည္း ကၽြန္ေတာ္ေျပာခဲ့ပါတယ္ Android မွာ သုံးတဲ့ Linux Kernel branch ေတြက Long Term Support (LTS) branch ေတြျဖစ္ပါတယ္။ Linux Kernel LTS branch ေတြအမ်ားႀကီး ရွိပါတယ္။ Android ဖုန္း အမ်ိဳးအစားေပၚ မူတည္ၿပီး သုံးတဲ့ Linux Kernel LTS branch ေတြက မတူပါဘူး။ ဥပမာ အေနနဲ႔ ေျပာျပရရင္ Nexus 5X မွာဆိုရင္ linux-3.10.y ဆိုတဲ့ LTS branch ကိုသုံးၿပီး၊ Google Pixel မွာဆိုရင္ linux-3.18.y ဆိုတဲ့ LTS branch ကို သုံးပါတယ္။ Android က အဲဒီ သက္ဆိုင္ရာ LTS Linux kernel branch ေတြကို အေျခခံၿပီး အသုံးခ်ၿပီး သူရဲ့ Android Mobile Device အတြက္ ကိုက္ညီမႈရွိေအာင္ Device driver ျပန္ျပင္ေရးၿပီး ျပန္ Modifed ခဲ့တဲ့သေဘာပါပဲ။ ဒါေၾကာင့္ ကိုယ့္ဖုန္းအတြက္ Kernel source ယူရင္ Android ဘက္က သက္ဆိုင္ရာ Mobile OEM's Engineer ေတြက ေပးတဲ့ Kernel source ေတြယူရၿပီး၊ Linux kernel version update ေတြ လုပ္ခ်င္ရင္ မူရင္း git.kernel.org ကေန Git ကိုသုံးၿပီး code ေတြ merge ၿပီး ကိုယ့္ဖုန္းအတြက္ kernel version ေတြ update လုပ္ေပးရမွာပါ။ အခု Guide မွာ Git ကိုသုံးၿပီး git.kernel.org ကေန ကိုယ့္ Android ဖုန္းအတြက္ Linux Kernel version (Code) ေတြကုိ ဘယ္လို Merge လုပ္မလဲ ဆိုတာ ဆက္ေရးပါမယ္။
 
  
 # Requirements
 - Linux OS သုံး Computer တလုံး
 - Git သုံးတတ္ရပါမယ္ 
-- C Programming ကို basic ေလာက္ေတာ့ သိရပါမယ္
+- C Programming ကို အတိုင္းအတာတခုထိ သိရပါမယ္ (Merge conflicts ေတြ Reslove လုပ္ႏိုင္ဖို႔ အတြက္ပါ)
  
  
 # How To Update
@@ -141,7 +141,7 @@ Example: (v3.10.74 first commit ကေန last commit ထဲ တခုခ်င�
 
 - အဲဒါေတြ ၿပီးသြားရင္ Merge တဲ့ လုပ္ငန္းေတာ့ ၿပီးသြားၿပီ။
 - အဲဒီေနာက္ ပထမက Kernel-Building Tutorial အတိုင္း ျပန္ Compile လိုက္ပါ။
-- တကယ္လို႔ Merge conflicts ေတြ ျဖစ္ခဲ့ရင္ Terminal ကေန code error ေတြ line no. အတိအက်ေျပာေပးပါလိမ့္မယ္။ (C Programmig Language ကို အနည္းအပါး ရရင္ ေျဖရွင္းနိုင္ပါ လိမ့္မယ္)
+- တကယ္လို႔ Merge conflicts ေတြ ျဖစ္ခဲ့ရင္ Terminal ကေန code error ေတြ line no. အတိအက်ေျပာေပးပါလိမ့္မယ္။ (C Programmig Language ကို ရရင္ ေျဖရွင္းနိုင္ပါ လိမ့္မယ္)
 - Conflicts ေတြ ေျဖရွင္းတဲ့ နည္းလမ္းေတြ ေနာက္ထက္ သက္သက္ဆက္ေရးပါ့မယ္။
 - DONE
 
