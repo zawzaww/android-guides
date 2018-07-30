@@ -1,9 +1,13 @@
-# How To Create FlashableZip for Android Kernel
+<p align="center"> 
+  <img src="https://cdn-images-1.medium.com/max/1200/1*9pYZldzILwgx7FvJJbGD-A.png" /> 
+</p>
+
+# How To Create FlashableZip for Kernel Installation for Android Devices
 
 # Introduction
 အခု Guide က ပထမက ေရးခဲ့တဲ့ [How To Build Kernel](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Android-Kernel.md) Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန Compile ၿပီးလို႔ kernel img ေတြ ထြက္လာၿပီဆိုရင္ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom Recovery (TWRP) ကေန Kernel ကို Install လုပ္ဖို႔အတြက္ Kernel FlashableZip တခုလိုအပ္ပါတယ္။ အဲဒီအတြက္ FlashableZip Create နည္းကို ေျပာျပေပးမွာ ျဖစ္ပါတယ္။ XDA Recognized Developer တေယာက္ျဖစ္တဲ့ osm0sis ရဲ႕ AnyKernel2 - Android Kernel FlashableZip Template တခု ရွိပါတယ္။ အဲဒီ Template ကေန ကိုယ့္ဖုန္းအတြက္ ဘာေတြ ျပင္ဆင္ဖို႔ လိုအပ္လည္းဆိုတာ ဆက္ေျပာပါမယ္။
 
-# How To Create
+# How To Create Kernel FlashableZip
 - အရင္ဆုံး AnyKernel2 Documentation နည္းနည္းဖက္ၾကည့္လုိက္ပါ လြယ္ပါတယ္။ 
 https://github.com/osm0sis/AnyKernel2/blob/master/README.md
 - အရင္ဆုံး AnyKernel2 ကုိ download လုိက္ပါ။
@@ -15,11 +19,11 @@ git clone https://github.com/osm0sis/AnyKernel2
 <img src="https://cdn-images-1.medium.com/max/800/1*Mtv_oPxSpkJTmqM0reuQjA.png" />
 
 - ဘာေတြလုိအပ္လည္း ဆုိရင္ Kernel name ျပင္ ေပးလုိ႔ရမယ္၊ device name သိရပါမယ္ (eg: LG Nexus 5X ဆုိ device name - bullhead)၊ ကုိယ့္ဖုန္းရဲ႕ boot partition location သိရမယ္၊ ramdisk ထဲမွာဆုိရင္ ကုိယ့္ဖုန္းရဲ႕ fstab.devicename (eg- fstab.bullhead) လုိပါတယ္၊ fstab ဆုိတာ file systems table ကုိေျပာတာပါ။
-- ပထမဦးဆုံး အေနနဲ႔ Compile လုိ႔ရလာတဲ့ Image.gz-dtb (kernelsource/arch/arm64/boot/Image-gz-dtb) ကုိ Copy ကူးၿပီး ခုနက AnyKernel2 Folder ထဲ Paste လုိက္ပါ။
+- ပထမဦးဆုံး အေနနဲ႔ Compile လုိ႔ရလာတဲ့ Image.gz-dtb `/kernelsource/arch/arm64/boot/Image-gz-dtb` ကုိ Copy ကူးၿပီး ခုနက AnyKernel2 Folder ထဲ Paste လုိက္ပါ။
 - ျပင္ရမယ့္ ေကာင္ေတြကုိ စေျပာပါမယ္။
 
 ## Kernel Name:
-- AnyKernel2 ထဲက anykernel2.sh file ေလးကုိ Text Editor တခုခုနဲ႔ ဖြင္လုိက္ၿပီး kernel.string= kernel name ေရးလုိက္ပါ။
+- AnyKernel2 ထဲက anykernel2.sh file ေလးကုိ Code Editor (Atom, VS Code and etc..) တခုခုနဲ႔ ဖြင္လုိက္ၿပီး `kernel.string= kernel name` ေရးလုိက္ပါ။
 
 ```bash
 kernel.string=PureZ Kernel by ZawZaw @XDA-Developers
@@ -46,10 +50,11 @@ block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
 <img src= "https://cdn-images-1.medium.com/max/800/1*Q6PUEF1pMX8yrFjEVcjv7Q.png" />
 
 ## File Systems Table: fstab
-Note: (ဒီအဆင့္က တကယ္ေတာ့ မထည့္လည္း ရပါတယ္။ ေက်ာ္သြားလုိ႔ရပါတယ္။ သိေအာင္ တမင္တကာ ထည့္ေရးလုိက္တာ။ Kernel Install လုပ္ဖု႔ိအတြက္ Kernel FlashableZip ျဖစ္႐ုံသက္သက္အတြက္ဆုိ ဒါေတြ မလုိအပ္ပါဘူး။ ဘာအတြက္ လုိအပ္တာလဲ ဆုိေတာ့ filesystem support (e.g - f2fs support) အပုိင္းေတြနဲ႔ Disable forced encryption and dm-verity လုပ္ဖု႔ိအတြက္ လုိအပ္ပါတယ္။ တနည္းအားျဖင့္ Android File System အေၾကာင္း ေကာင္းေကာင္းနားလည္မွ ဒါေတြ လုပ္ႏုိင္ပါလိမ့္မယ္။ [Android File System](http://techx.com.mm/features/249-things-to-know-about-android-file-system) အေၾကာင္းကုိ TechX Myanmar မွာ အရင္ဆုံး နားလည္ေအာင္ ဖက္ထားသင့္ပါတယ္။)
-- AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab (file systems table) file ေလး ကုိ သြားထည့္ရမွာပါ။ အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့ <mount_point> partition ေတြ ပါဝင္ပါတယ္။ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပဲ ျဖစ္ပါတယ္။ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android file systems table ျဖစ္ပါတယ္။
+Note: (ဒီအဆင့္က တကယ္ေတာ့ မထည့္လည္း ရပါတယ္။ ေက်ာ္သြားလုိ႔ရပါတယ္။ သိေအာင္ တမင္တကာ ထည့္ေရးလုိက္တာ။ Kernel Install လုပ္ဖု႔ိအတြက္ Kernel FlashableZip ျဖစ္႐ုံသက္သက္အတြက္ဆုိ ဒါေတြ မလုိအပ္ပါဘူး။ ဘာအတြက္ လုိအပ္တာလဲ ဆုိေတာ့ filesystem support (e.g - f2fs support) အပုိင္းေတြနဲ႔ Disable forced encryption and dm-verity လုပ္ဖု႔ိအတြက္ လုိအပ္ပါတယ္။ တနည္းအားျဖင့္ Android File System အေၾကာင္း ေကာင္းေကာင္းနားလည္မွ ဒါေတြ လုပ္ႏုိင္ပါလိမ့္မယ္။ [Android File System](http://techx.com.mm/features/249-things-to-know-about-android-file-system) အေၾကာင္းကုိ TechX Myanmar မွာ အရင္ဆုံး နားလည္ေအာင္ ဖက္ထားသင့္ပါတယ္။ ၿပီးရင္ Android partitions and file systems အေၾကာင္းကို AOSP မွာ အေသးစိတ္ေလ့လာလို႔ရပါတယ္ https://source.android.com/devices/bootloader/partitions-images
+)
+- AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab (file systems table) file ေလး ကုိ သြားထည့္ရမွာပါ။ အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့ `<mount_point>` partition ေတြ ပါဝင္ပါတယ္။ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပါ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android file systems table ျဖစ္ပါတယ္။
 - သူရဲ႕ format ေလးကုိ နည္းနည္းေရးျပပါမယ္။ (Android 4.3 နဲ႔ ေနာက္ပုိင္း version ေတြရဲ႕ ပုံစံပါ)
-- ဒီထက္မက ေလ့လာခ်င္ရင္ AOSP site မွာ အျပည့္အစုံဖက္ႏုိင္ပါတယ္ https://source.android.com/devices/storage/config
+- ဒီထက္မက Details ေလ့လာခ်င္ရင္ AOSP မွာ အျပည့္အစုံဖက္ႏုိင္ပါတယ္ https://source.android.com/devices/storage/config
 
 ```bash
 <src> <mount_point> <type> <mount_flags> <fs_mgr_flags>
