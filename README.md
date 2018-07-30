@@ -1,4 +1,5 @@
 # Android Articles and Guides
+
 ## Android OS Based Articles, How-To Articles, Guides and More Articles
 
 
@@ -14,7 +15,7 @@
 
 
 ## Contributing
-Found some issues or typo errors? Please, open [new issue](https://github.com/zawzaww/android-articles/issues/new) and pull requests.
+Found some issues or typo errors? Please, open [new issue](https://github.com/zawzaww/android-articles/issues/new) and [pull requests.](https://github.com/zawzaww/android-articles/pulls)
 
 
 ## Author
