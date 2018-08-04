@@ -14,8 +14,9 @@
 - [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
 
 
-## Contributing
-Found some issues or typo errors? Please, open [new issue](https://github.com/zawzaww/android-articles/issues/new) and [pull requests.](https://github.com/zawzaww/android-articles/pulls)
+## Issue
+Found issues or typo errors? 
+Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
 
 
 ## Author
