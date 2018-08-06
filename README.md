@@ -12,6 +12,7 @@
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Upstream-Linux-Kernel-Patches.md)
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Kernel-Security-Patches.md)
 - [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
+- [About the "aosp-android" Repository](https://github.com/zawzaww/android-articles/blob/android/articles/AOSP-Android-GitHub-Repo.md)
 
 
 ## Issue
