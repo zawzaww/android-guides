@@ -2,7 +2,8 @@
   <img src="https://cdn-images-1.medium.com/max/800/1*8n61mSsv8cH32HmWU5G2Bw.png" /> 
 </p>
 
-# About the “aosp-android” GitHub Repository
+# AOSP-Android GitHub Repository
+
 ## Android Platform Manifest : My Personal AOSP SourceCode for Building Pure Android
 
 ဒီ Article ကေတာ့ AOSP ဆိုတာ ဘာလဲဆိုတဲ့ အေၾကာင္းအရာအနည္းငယ္နဲ႕ ကြၽန္ေတာ့္ရဲ႕ GitHub က Personal “aosp-android” Repository အေၾကာင္းကို ေရးေပးသြားမွာ ျဖစ္ပါတယ္။
@@ -68,4 +69,3 @@ make -j4 (OR) make -j$(nproc --all)
 Regards,
 
 ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-
