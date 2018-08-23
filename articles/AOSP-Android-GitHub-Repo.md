@@ -9,7 +9,7 @@
 ဒီ Article ကေတာ့ AOSP ဆိုတာ ဘာလဲဆိုတဲ့ အေၾကာင္းအရာအနည္းငယ္နဲ႕ ကြၽန္ေတာ့္ရဲ႕ GitHub က Personal “aosp-android” Repository အေၾကာင္းကို ေရးေပးသြားမွာ ျဖစ္ပါတယ္။
 
 # What is AOSP?
-AOSP ဆိုတာ Android Open Source Project ရဲ႕ အတိုေကာက္ စကားလုံး ျဖစ္ပါတယ္။ AOSP မွာ ႏွစ္ပိုင္းခြဲၾကည့္လို႔ရမယ္ ပထမတခုက Android OS/System ပိုင္းနဲ႕ ပတ္သက္ၿပီး Documentation ေတြ ဖက္လု႔ိရမယ့္ (https://source.android.com) နဲ႕ Android OS တခုလုံးအတြက္ SourceCode Git Repositories ေတြရွိတဲ့ AOSP Google Git (https://android.googlesource.com) တို႔ ျဖစ္တယ္။ အဲဒီ AOSP Google Git မွာ Android OS ပတ္သက္တဲ့ “system package apps / framework support / framework native / bionic / bootable recovery / art and dalvik VM, android build system and etc.. စတဲ့ Git Repositories ေတြ အားလုံး Open Source အေနနဲ႕ ရယူနိုင္ပါတယ္။ တခုသိရမွာက Google ရဲ႕ ကိုယ္ပိုင္ Android apps ေတြေတာ့ AOSP ထဲမွာ မပါဝင္ဘူး (e.g : Gapps) သူတု႔ိေတြက Open Source မဟုတ္ပါဘူး။ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom OS build မယ္ဆိုရင္ Android OS SourceCode ေတြကို AOSP Google Git က ကရယူရမွာ ျဖစ္ပါတယ္။
+AOSP ဆိုတာ Android Open Source Project ရဲ႕ အတိုေကာက္ စကားလုံး ျဖစ္ပါတယ္။ AOSP မွာ ႏွစ္ပိုင္းခြဲၾကည့္လို႔ရမယ္ ပထမတခုက Android OS/System ပိုင္းနဲ႕ ပတ္သက္ၿပီး Documentation ေတြ ဖက္လု႔ိရမယ့္ (source.android.com) နဲ႕ Android OS တခုလုံးအတြက္ SourceCode Git Repositories ေတြရွိတဲ့ AOSP Google Git (https://android.googlesource.com) တို႔ ျဖစ္တယ္။ အဲဒီ AOSP Google Git မွာ Android OS ပတ္သက္တဲ့ "system package apps / framework support / framework native / bionic / bootable recovery / art and dalvik VM, android build system and etc.. စတဲ့ Git Repositories ေတြ အားလုံး Open Source အေနနဲ႕ ရယူနိုင္ပါတယ္။ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom OS build မယ္ဆိုရင္ Android OS SourceCode ေတြကို AOSP Google Git က ကရယူရမွာ ျဖစ္ပါတယ္။ ဒီေနရာမွာ တခုသိရမွာက Google ရဲ႕ ကိုယ္ပိုင္ Android apps ေတြေတာ့ AOSP ထဲမွာ မပါဝင္ဘူး (e.g : Google PlayStore, Gmail, Maps, PlayMusic, Drive and etc..) သူတု႔ိေတြက တကယ္က Open Source မဟုတ္ပါဘူး Google က သီသန္႔ပုိင္ဆုိင္တဲ့ Apps ေတြ ျဖစ္ပါတယ္။ ဒါေၾကာင့္ သတိထားမိပါလိမ့္မယ္ Pure AOSP ROM (or) AOSP Based Android Custom ROM ေတြမွာ Google's apps ေတြ မပါတာ ေတြ႕ရပါမယ္ ROM Install လုပ္ၿပီးတိုင္း အျပင္ Team ေတြက လုပ္ထားတဲ့ Gapps package တခု သြင္းေပးဖို႔လိုပါတယ္ အဲဒီ Team ေတြထဲမွာ [OpenGapps](https://opengapps.org/) ကေတာ့ လူသိအမ်ားဆုံးလို႔ ေျပာလို႔ရပါတယ္ Package ေတြလည္း ေတာ္ေတာ္စုံပါတယ္။
 
 # GitHub Repository: aosp-android
 ## https://github.com/zawzaww/aosp-android
@@ -63,7 +63,7 @@ lunch <device_name>
 make -j4 (OR) make -j$(nproc --all)
 ```
 
-ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Android OS version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [“Building Custom Android OS”](https://medium.com/zawzaww/how-to-build-custom-android-os-for-android-devices-cf4bba4bb3a5) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။
+ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Android OS version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [“Building Custom Android OS”](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။
 
 
 Regards,
