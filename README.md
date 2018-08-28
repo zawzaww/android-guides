@@ -25,22 +25,18 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 
 
 ## License
-This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
+This Repository is licensed under GPL-3.0 License. See the [LICENSE](https://github.com/zawzaww/android-articles/blob/android/LICENSE) for details.
 
 ```bash
-MIT License
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-Copyright (C) 2017-2018, Zaw Zaw.
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
 ```
 
 Regards,
