@@ -31,12 +31,14 @@ This Repository is licensed under GPL-3.0 License. See the [LICENSE](https://git
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
-Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
+Copyright (C) 2017-2018, Zaw Zaw
 
-The GNU General Public License is a free, copyleft license for
-software and other kinds of works.
+This guides and articles are free and you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License or any version.
+
+You should have received a copy of the GNU General Public License along with this program.
+If not, see <http://www.gnu.org/licenses/>
 ```
 
 Regards,
