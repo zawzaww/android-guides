@@ -1,22 +1,20 @@
-# Android Articles and Guides
+# Android OSS Guides
 
-## Android OS Based Articles, How-To Articles, Guides and More Articles
+## Android OS/Kernel Based Guides, How-To Articles and More
 
 
 ## Content
-- [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
-- [How To Build Android Kernel](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Android-Kernel.md)
-- [How To Create Kernel FlashableZip](https://github.com/zawzaww/android-articles/blob/android/articles/Creating-FlashableZip.md)
-- [How To Build Android Bootable Recovery (TWRP)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-TWRP-Recovery.md)
-- [How To Build LineageOS](https://github.com/zawzaww/android-articles/blob/android/articles/Building-LineageOS.md)
-- [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Upstream-Linux-Kernel-Patches.md)
-- [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Kernel-Security-Patches.md)
-- [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
-- [AOSP-Android GitHub Repository](https://github.com/zawzaww/android-articles/blob/android/articles/AOSP-Android-GitHub-Repo.md)
+- [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)
+- [How To Build Android Kernel](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Android-Kernel.md)
+- [How To Create Kernel FlashableZip](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Creating-Kernel-FlashableZip.md)
+- [How To Build Android Bootable Recovery (TWRP)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-TWRP-Recovery.md)
+- [How To Build LineageOS](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-LineageOS.md)
+- [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Upstream-Linux-Kernel-Patches.md)
+- [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Kernel-Security-Patches.md)
 
 
 ## Issue
-Found issues or typo errors? 
+Found issues (or) typo errors? 
 Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
 
 
@@ -33,7 +31,7 @@ Version 3, 29 June 2007
 
 Copyright (C) 2017-2018, Zaw Zaw
 
-This guides and articles are free and you can redistribute it and/or modify
+This guides are free software and you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License or any version.
 
