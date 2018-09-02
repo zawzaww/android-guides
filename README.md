@@ -13,6 +13,10 @@
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Kernel-Security-Patches.md)
 
 
+## Blog Posts
+You can also read guides on my [Personal Blog.](https://medium.com/zawzaww/tagged/how-to)
+
+
 ## Issue
 Found issues (or) typo errors? 
 Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
@@ -38,6 +42,7 @@ the Free Software Foundation, either version 3 of the License or any version.
 You should have received a copy of the GNU General Public License along with this program.
 If not, see <http://www.gnu.org/licenses/>
 ```
+
 
 Regards,
 
