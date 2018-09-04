@@ -1,5 +1,5 @@
 # Android OSS Guides
-## Android OS Based Guides, How-Tos, Embedded and Android Internals Guides
+## Android OS/Kernel Based Guides, Android Internals Guides and How-To Articles
 
 
 ## Content
