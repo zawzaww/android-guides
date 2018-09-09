@@ -12,6 +12,12 @@
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Kernel-Security-Patches.md)
 
 
+## Useful files
+- [default.xml](https://github.com/zawzaww/androidoss-guides/blob/android/android/default.xml): Android Platform Manifest
+- [envsetup.sh](https://github.com/zawzaww/androidoss-guides/blob/android/android/envsetup.sh): Android Setup Environment Script
+- [twrp-flags.mk](https://github.com/zawzaww/androidoss-guides/blob/android/android/twrp-flags.mk): TWRP Recovery flags
+
+
 ## Blog Posts
 You can also read guides on my [Personal Blog.](https://medium.com/zawzaww/tagged/how-to)
 

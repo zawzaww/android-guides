@@ -1,6 +1,6 @@
 ###########################################################################################
 #                                                                                         #
-# Copyright(C) 2017-2018, Zaw Zaw                                                         #
+# Copyright(C) 2018, Zaw Zaw                                                              #
 #                                                                                         #
 # This file is free and you can distribute it and/or modify                               #
 # it under the terms of the GNU General Public License as published by                    #
