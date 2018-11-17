@@ -1,21 +1,15 @@
 # Android OSS Guides
-## Android OS Based Guides, How-Tos, OS/Kernel and Android Internals Guides
+## Android OS/Kernel Based Guides, How-Tos and Android Internals Guides
 
 
 ## Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Android-Kernel.md)
 - [How To Create Kernel FlashableZip](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Creating-Kernel-FlashableZip.md)
-- [How To Build Android Bootable Recovery (TWRP)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-TWRP-Recovery.md)
+- [How To Build Android Custom Recovery (TWRP)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-TWRP-Recovery.md)
 - [How To Build LineageOS](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-LineageOS.md)
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Upstream-Linux-Kernel-Patches.md)
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Kernel-Security-Patches.md)
-
-
-## Useful files
-- [default.xml](https://github.com/zawzaww/androidoss-guides/blob/android/android/default.xml): Android Platform Manifest
-- [envsetup.sh](https://github.com/zawzaww/androidoss-guides/blob/android/android/envsetup.sh): Android Setup Environment Script
-- [twrp-flags.mk](https://github.com/zawzaww/androidoss-guides/blob/android/android/twrp-flags.mk): TWRP Recovery flags
 
 
 ## Blog Posts
@@ -24,7 +18,7 @@ You can also read guides on my [Personal Blog.](https://medium.com/zawzaww/tagge
 
 ## Issue
 Found issues (or) typo errors? 
-Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
+Please, open [new issue.](https://github.com/zawzaww/androidoss-guides/issues/new)
 
 
 ## Author
