@@ -1,6 +1,6 @@
 <!-- Android Platform Manifest -->
 
-<!-- Guide : How to Write a XML for downloading the Android OS sources -->
+<!-- Guide : How to Write a XML Manifest for downloading the Android OS sources -->
 <!-- 
 Step(1) : Create a new Repo on your GitHub.
 Step(2) : Create a XML like this file's code.
@@ -17,7 +17,7 @@ You can read more here : https://github.com/zawzaww/aosp-android/blob/android-9.
            review="https://android-review.googlesource.com/" />
 
   <!-- AOSP Android Version Release -->         
-  <default revision="refs/tags/android-9.0.0_r3"
+  <default revision="refs/tags/android-9.0.0_r16"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -71,6 +71,9 @@ You can read more here : https://github.com/zawzaww/aosp-android/blob/android-9.
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device,pdk" />
   <project path="device/google/atv" name="device/google/atv" groups="device,broadcom_pdk,generic_fs,pdk" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device,marlin,pdk" />
+  <project path="device/google/crosshatch" name="device/google/crosshatch" groups="device,crosshatch" />
+  <project path="device/google/crosshatch-kernel" name="device/google/crosshatch-kernel" groups="device,crosshatch" clone-depth="1" />
+  <project path="device/google/crosshatch-sepolicy" name="device/google/crosshatch-sepolicy" groups="device,crosshatch" />
   <project path="device/google/cuttlefish" name="device/google/cuttlefish" groups="device" />
   <project path="device/google/cuttlefish_common" name="device/google/cuttlefish_common" groups="device" />
   <project path="device/google/cuttlefish_kernel" name="device/google/cuttlefish_kernel" groups="device" clone-depth="1" />
@@ -500,6 +503,16 @@ You can read more here : https://github.com/zawzaww/aosp-android/blob/android-9.
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84,pdk-qcom" />
   <project path="hardware/qcom/neuralnetworks/hvxservice" name="platform/hardware/qcom/neuralnetworks/hvxservice" groups="wahoo" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom,pdk-qcom" />
+  <project path="hardware/qcom/sdm845/bt" name="platform/hardware/qcom/sdm845/bt" groups="qcom_sdm845" />
+  <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" groups="vendor,qcom_sdm845" >
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile dest="hardware/qcom/sdm845/Android.bp" src="os_pickup.bp" />
+  </project>
+  <project path="hardware/qcom/sdm845/display" name="platform/hardware/qcom/sdm845/display" groups="qcom_sdm845" />
+  <project path="hardware/qcom/sdm845/gps" name="platform/hardware/qcom/sdm845/gps" groups="qcom_sdm845" />
+  <project path="hardware/qcom/sdm845/media" name="platform/hardware/qcom/sdm845/media" groups="qcom_sdm845" />
+  <project path="hardware/qcom/sdm845/thermal" name="platform/hardware/qcom/sdm845/thermal" groups="qcom_sdm845" />
+  <project path="hardware/qcom/sdm845/vr" name="platform/hardware/qcom/sdm845/vr" groups="qcom_sdm845" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk-qcom" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" />
