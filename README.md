@@ -10,15 +10,20 @@
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Upstream-Linux-Kernel-Patches.md)
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Kernel-Security-Patches.md)
 
+
 ## Blog Posts
 You can also read How-To articles and Guides on my [Personal Blog.](https://zawzaww.github.io/blog)
 
+
 ## Issue
-Found issues (or) typo errors? 
+Found issues (or) typo errors?
+
 Please, open [new issue.](https://github.com/zawzaww/androidoss-guides/issues/new)
+
 
 ## Author
 Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Telegram](https://t.me/zawzaww)
+
 
 ## License
 This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/androidoss-guides/blob/android/LICENSE) for details.
@@ -46,6 +51,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
 
 Regards,
 
