@@ -1,7 +1,7 @@
 # Android OSS Guides
 ## Android OS/Kernel-Based Guides, How-Tos and Android Internals Guides
 
-## Content
+## Content List
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Android-Kernel.md)
 - [How To Create Kernel FlashableZip](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Creating-Kernel-FlashableZip.md)
@@ -12,23 +12,21 @@
 
 
 ## Blog Posts
-You can also read How-To articles and Guides on my [Personal Blog.](https://zawzaww.github.io/blog)
-
-
-## Issue
-Found issues (or) typo errors?
-
-Please, open [new issue.](https://github.com/zawzaww/androidoss-guides/issues/new)
+You can also read Articles and Guides on my [Personal Blog.](https://zawzaww.github.io/blog)
 
 
 ## Author
 Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Telegram](https://t.me/zawzaww)
 
 
-## License
-This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/androidoss-guides/blob/android/LICENSE) for details.
+## Source Code
+[https://github.com/zawzaww/androidoss-guides](https://github.com/zawzaww/androidoss-guides)
 
-```md
+
+## License
+[Android OSS Guides](https://github.com/zawzaww/androidoss-guides) are licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/androidoss-guides/blob/android/LICENSE) for details.
+
+```
 MIT License
 
 Copyright (C) 2017-2018, Zaw Zaw.
@@ -51,8 +49,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-
-Regards,
-
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
